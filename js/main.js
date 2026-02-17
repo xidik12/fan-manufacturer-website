@@ -10,15 +10,17 @@ if (mobileToggle && mobileMenu) {
     });
 }
 
-// Navbar scroll effect
-const nav = document.querySelector('nav');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        nav.classList.add('shadow-lg', 'bg-white/95', 'backdrop-blur-sm');
-    } else {
-        nav.classList.remove('shadow-lg', 'bg-white/95', 'backdrop-blur-sm');
-    }
-});
+// Header scroll effect
+const header = document.querySelector('.header-area');
+if (header) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+}
 
 // Counter animation
 function animateCounter(el) {
@@ -42,7 +44,6 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('animate-fade-in-up');
-            // Trigger counters
             entry.target.querySelectorAll('[data-target]').forEach(animateCounter);
             observer.unobserve(entry.target);
         }
