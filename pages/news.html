@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Media - AeroFlow Ventilation Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0a1628',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        highlight: '#60a5fa',
+                        sky: '#0ea5e9',
+                        dark: '#050d1a',
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-primary text-white text-sm py-2">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="hidden md:flex items-center gap-6">
+                <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +1 (800) XXX-XXXX</span>
+                <span><i class="fas fa-envelope mr-1 text-accent"></i> info@aeroflowfans.com</span>
+                <span><i class="fas fa-map-marker-alt mr-1 text-accent"></i> Global Headquarters</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <span class="text-gray-500 mx-2">|</span>
+                <a href="#" class="hover:text-accent transition text-xs font-medium">EN</a>
+                <a href="#" class="text-gray-400 hover:text-accent transition text-xs">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center gap-3">
+                    <div class="relative">
+                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
+                            <i class="fas fa-fan text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-black text-primary text-xl tracking-tight">AEROFLOW</div>
+                        <div class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Ventilation Solutions</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-1">
+                    <div class="relative group">
+                        <a href="products.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Products <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="products.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm font-medium">All Products</a>
+                            <a href="products.html#axial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Axial Fans</a>
+                            <a href="products.html#centrifugal" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Centrifugal Fans</a>
+                            <a href="products.html#inline" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">In-Line Fans</a>
+                            <a href="products.html#jet" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Jet Fans</a>
+                            <a href="products.html#roof" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Roof Exhaust Fans</a>
+                            <a href="products.html#domestic" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Domestic Fans</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="applications.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Applications <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="applications.html#hvac" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">HVAC & Air Conditioning</a>
+                            <a href="applications.html#carpark" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Car Park Ventilation</a>
+                            <a href="applications.html#commercial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Commercial Buildings</a>
+                            <a href="applications.html#industrial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Industrial & Manufacturing</a>
+                            <a href="applications.html#tunnel" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Tunnels & Transport</a>
+                            <a href="applications.html#residential" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Residential</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="about.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Why AeroFlow <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="about.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Company Profile</a>
+                            <a href="about.html#facts" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Facts & Figures</a>
+                            <a href="about.html#innovation" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Innovation</a>
+                            <a href="projects.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Prestigious Projects</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="resources.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Resources <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="resources.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Case Studies</a>
+                            <a href="resources.html#software" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Fan Selection Software</a>
+                            <a href="resources.html#docs" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Literature & Documentation</a>
+                        </div>
+                    </div>
+                    <a href="news.html" class="px-4 py-2 rounded-md bg-blue-50 font-semibold text-secondary transition">News</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">Contact</a>
+                </div>
+
+                <!-- CTA + Mobile -->
+                <div class="flex items-center gap-3">
+                    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow-md">
+                        <i class="fas fa-headset text-sm"></i> Get a Quote
+                    </a>
+                    <button id="mobile-toggle" class="lg:hidden text-2xl text-primary"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-2">
+                <a href="products.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Products</a>
+                <a href="applications.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Applications</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Why AeroFlow</a>
+                <a href="resources.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Resources</a>
+                <a href="news.html" class="block py-2 text-secondary font-semibold">News</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Contact</a>
+                <a href="contact.html" class="block bg-gradient-to-r from-secondary to-accent text-white text-center font-semibold py-3 rounded-lg mt-3">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header text-white">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-10 right-10 w-72 h-72 border border-accent/10 rounded-full"></div>
+            <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-secondary/10 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 right-1/3 opacity-5">
+                <i class="fas fa-newspaper text-[200px]"></i>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Stay Informed</p>
+            <h1 class="text-4xl md:text-5xl font-black mb-4">News & Media</h1>
+            <p class="text-blue-300 text-lg max-w-2xl mb-6">The latest updates, product launches, industry insights, and company announcements from AeroFlow.</p>
+            <nav class="text-sm text-blue-300">
+                <a href="../index.html" class="hover:text-accent transition">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-white">News & Media</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+                <div class="grid md:grid-cols-2">
+                    <div class="bg-gradient-to-br from-primary to-secondary p-10 md:p-14 flex flex-col justify-center relative overflow-hidden min-h-[350px]">
+                        <div class="absolute top-6 right-6 opacity-10">
+                            <i class="fas fa-fan text-[150px] animate-spin-slow"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/50 to-transparent"></div>
+                        <div class="relative z-10">
+                            <div class="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 text-accent text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
+                                <i class="fas fa-star"></i> Featured Story
+                            </div>
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-20 h-20 bg-accent/20 rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-microchip text-4xl text-accent"></i>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="bg-white/10 text-blue-200 text-xs font-medium px-3 py-1 rounded-full">EC Motors</span>
+                                <span class="bg-white/10 text-blue-200 text-xs font-medium px-3 py-1 rounded-full">Energy Efficiency</span>
+                                <span class="bg-white/10 text-blue-200 text-xs font-medium px-3 py-1 rounded-full">Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-10 md:p-14 flex flex-col justify-center">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="bg-blue-100 text-secondary text-xs font-bold px-3 py-1 rounded-full uppercase">Product Launch</span>
+                            <span class="text-gray-400 text-sm">February 12, 2026</span>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4 leading-tight">AeroFlow Launches Next-Generation EC Motor Fan Series</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            AeroFlow is proud to announce the launch of its next-generation EC (Electronically Commutated) motor fan series, representing a major leap forward in ventilation technology. The new lineup delivers up to 70% energy savings compared to traditional AC motor fans, while offering superior speed control, reduced noise levels, and extended operational lifespan.
+                        </p>
+                        <p class="text-gray-500 leading-relaxed mb-6">
+                            Designed for HVAC, commercial, and industrial applications, the EC motor series features integrated smart controls compatible with BMS systems, making it the ideal choice for modern, energy-conscious building projects worldwide.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-8 py-3 rounded-lg transition shadow-md w-fit">
+                            Read Full Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Filter Tabs -->
+    <section class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center gap-1 overflow-x-auto py-4 -mb-px" id="news-filters">
+                <button class="news-filter-btn active px-5 py-2.5 rounded-lg text-sm font-semibold transition whitespace-nowrap bg-secondary text-white" data-filter="all">
+                    All News
+                </button>
+                <button class="news-filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-secondary" data-filter="product-launch">
+                    <i class="fas fa-rocket mr-1.5"></i> Product Launches
+                </button>
+                <button class="news-filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-secondary" data-filter="company-news">
+                    <i class="fas fa-building mr-1.5"></i> Company News
+                </button>
+                <button class="news-filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-secondary" data-filter="exhibition">
+                    <i class="fas fa-calendar-alt mr-1.5"></i> Exhibitions
+                </button>
+                <button class="news-filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-secondary" data-filter="industry-insights">
+                    <i class="fas fa-lightbulb mr-1.5"></i> Industry Insights
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="news-grid">
+
+                <!-- Card 1: EC Motor Series -->
+                <article class="news-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="product-launch">
+                    <div class="h-48 bg-gradient-to-br from-blue-900 to-secondary flex items-center justify-center relative">
+                        <i class="fas fa-microchip text-6xl text-white/20"></i>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Product Launch</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>February 12, 2026</span>
+                        </div>
+                        <h3 class="font-bold text-primary text-lg mb-3 leading-snug">AeroFlow Launches New EC Motor Series</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">The new high-efficiency EC motor lineup delivers up to 70% energy savings compared to traditional AC motor fans, with integrated smart controls.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 2: HVAC Expo -->
+                <article class="news-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="exhibition">
+                    <div class="h-48 bg-gradient-to-br from-cyan-800 to-cyan-600 flex items-center justify-center relative">
+                        <i class="fas fa-trophy text-6xl text-white/20"></i>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-sky text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Exhibition</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>January 28, 2026</span>
+                        </div>
+                        <h3 class="font-bold text-primary text-lg mb-3 leading-snug">AeroFlow at HVAC Expo 2026</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Visit us at booth A120 to see our latest innovations in ventilation technology and meet our engineering team for live product demonstrations.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 3: ISO 14001 -->
+                <article class="news-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="company-news">
+                    <div class="h-48 bg-gradient-to-br from-indigo-900 to-indigo-700 flex items-center justify-center relative">
+                        <i class="fas fa-award text-6xl text-white/20"></i>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Company News</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>January 15, 2026</span>
+                        </div>
+                        <h3 class="font-bold text-primary text-lg mb-3 leading-snug">ISO 14001 Environmental Certification Achieved</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Demonstrating our commitment to sustainable manufacturing practices, AeroFlow has achieved ISO 14001 environmental management certification.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 4: Factory Expansion -->
+                <article class="news-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="company-news">
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-600 flex items-center justify-center relative">
+                        <i class="fas fa-industry text-6xl text-white/20"></i>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Company News</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>December 20, 2025</span>
+                        </div>
+                        <h3 class="font-bold text-primary text-lg mb-3 leading-snug">New Factory Expansion Announced</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">AeroFlow announces a major expansion of its manufacturing facility, adding 50,000 sq ft of production space to meet growing global demand.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 5: IoT Platform -->
+                <article class="news-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="product-launch">
+                    <div class="h-48 bg-gradient-to-br from-blue-800 to-accent flex items-center justify-center relative">
+                        <i class="fas fa-wifi text-6xl text-white/20"></i>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Product Launch</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>December 5, 2025</span>
+                        </div>
+                        <h3 class="font-bold text-primary text-lg mb-3 leading-snug">Smart Ventilation IoT Platform Unveiled</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Our new cloud-based IoT platform enables real-time monitoring and control of ventilation systems, optimizing energy usage across entire buildings.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 6: Partnership -->
+                <article class="news-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="company-news">
+                    <div class="h-48 bg-gradient-to-br from-gray-800 to-gray-600 flex items-center justify-center relative">
+                        <i class="fas fa-handshake text-6xl text-white/20"></i>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Company News</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>November 18, 2025</span>
+                        </div>
+                        <h3 class="font-bold text-primary text-lg mb-3 leading-snug">Partnership with Major Construction Group</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">AeroFlow signs a strategic partnership agreement with a leading international construction group for ventilation supply across multiple mega-projects.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 7: White Paper -->
+                <article class="news-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="industry-insights">
+                    <div class="h-48 bg-gradient-to-br from-teal-800 to-teal-600 flex items-center justify-center relative">
+                        <i class="fas fa-file-alt text-6xl text-white/20"></i>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-teal-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Industry Insights</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>November 1, 2025</span>
+                        </div>
+                        <h3 class="font-bold text-primary text-lg mb-3 leading-snug">Energy Efficiency White Paper Published</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Our latest white paper explores advanced strategies for reducing energy consumption in commercial HVAC systems through optimized fan selection.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 8: Q3 Revenue -->
+                <article class="news-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="company-news">
+                    <div class="h-48 bg-gradient-to-br from-emerald-800 to-emerald-600 flex items-center justify-center relative">
+                        <i class="fas fa-chart-line text-6xl text-white/20"></i>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Company News</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>October 15, 2025</span>
+                        </div>
+                        <h3 class="font-bold text-primary text-lg mb-3 leading-snug">Record Q3 Revenue Growth</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">AeroFlow reports record Q3 2025 revenue growth driven by strong demand for energy-efficient ventilation solutions across global markets.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 9: Car Park Design Guide -->
+                <article class="news-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="industry-insights">
+                    <div class="h-48 bg-gradient-to-br from-amber-800 to-amber-600 flex items-center justify-center relative">
+                        <i class="fas fa-book-open text-6xl text-white/20"></i>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-teal-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Industry Insights</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>October 1, 2025</span>
+                        </div>
+                        <h3 class="font-bold text-primary text-lg mb-3 leading-snug">Car Park Ventilation Design Guide Released</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">A comprehensive design guide covering jet fan selection, CFD simulation best practices, and compliance requirements for underground car park ventilation.</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex items-center justify-center gap-2 mt-12">
+                <a href="#" class="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-400 hover:border-secondary hover:text-secondary transition">
+                    <i class="fas fa-chevron-left text-sm"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-lg bg-secondary text-white flex items-center justify-center font-semibold text-sm">1</a>
+                <a href="#" class="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-600 hover:border-secondary hover:text-secondary transition font-semibold text-sm">2</a>
+                <a href="#" class="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-600 hover:border-secondary hover:text-secondary transition font-semibold text-sm">3</a>
+                <a href="#" class="w-10 h-10 rounded-lg border border-gray-200 flex items-center justify-center text-gray-400 hover:border-secondary hover:text-secondary transition">
+                    <i class="fas fa-chevron-right text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Kit Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">For Media</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Media Kit & Press Resources</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Download our official press materials, brand guidelines, and high-resolution assets for media use.</p>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 hover:border-secondary/30 hover:shadow-lg transition group">
+                    <div class="w-16 h-16 bg-blue-100 text-secondary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5 group-hover:bg-secondary group-hover:text-white transition">
+                        <i class="fas fa-file-zipper"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-2">Press Kit</h3>
+                    <p class="text-gray-500 text-sm mb-5">Company overview, fact sheets, executive bios, and press releases.</p>
+                    <a href="#" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm transition hover:shadow-md">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 hover:border-secondary/30 hover:shadow-lg transition group">
+                    <div class="w-16 h-16 bg-blue-100 text-secondary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5 group-hover:bg-secondary group-hover:text-white transition">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-2">Brand Guidelines</h3>
+                    <p class="text-gray-500 text-sm mb-5">Logo usage, color palette, typography, and visual identity standards.</p>
+                    <a href="#" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm transition hover:shadow-md">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 hover:border-secondary/30 hover:shadow-lg transition group">
+                    <div class="w-16 h-16 bg-blue-100 text-secondary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5 group-hover:bg-secondary group-hover:text-white transition">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-2">High-Res Logos</h3>
+                    <p class="text-gray-500 text-sm mb-5">Official AeroFlow logos in SVG, PNG, and EPS formats for all media.</p>
+                    <a href="#" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm transition hover:shadow-md">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="py-16 bg-gradient-to-r from-secondary to-accent text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Subscribe to AeroFlow Updates</h2>
+            <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+                Stay ahead with the latest product launches, industry insights, and company news delivered straight to your inbox.
+            </p>
+            <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                <input type="email" placeholder="Enter your email address" class="flex-1 px-5 py-3.5 rounded-lg text-gray-800 text-sm font-medium outline-none focus:ring-2 focus:ring-white/50 placeholder-gray-400">
+                <button type="submit" class="bg-primary hover:bg-dark text-white font-semibold px-8 py-3.5 rounded-lg transition shadow-lg flex items-center justify-center gap-2 whitespace-nowrap">
+                    <i class="fas fa-paper-plane"></i> Subscribe
+                </button>
+            </form>
+            <p class="text-blue-200 text-xs mt-4">We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                            <i class="fas fa-fan text-white text-sm"></i>
+                        </div>
+                        <div class="font-black text-lg">AEROFLOW</div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Leading manufacturer of energy efficient ventilation solutions for commercial, industrial, and residential applications.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Products</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="products.html#axial" class="hover:text-accent transition">Axial Fans</a></li>
+                        <li><a href="products.html#centrifugal" class="hover:text-accent transition">Centrifugal Fans</a></li>
+                        <li><a href="products.html#inline" class="hover:text-accent transition">In-Line Fans</a></li>
+                        <li><a href="products.html#jet" class="hover:text-accent transition">Jet Fans</a></li>
+                        <li><a href="products.html#roof" class="hover:text-accent transition">Roof Exhaust Fans</a></li>
+                        <li><a href="products.html#domestic" class="hover:text-accent transition">Domestic Fans</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-accent transition">About AeroFlow</a></li>
+                        <li><a href="projects.html" class="hover:text-accent transition">Projects</a></li>
+                        <li><a href="news.html" class="hover:text-accent transition">News & Media</a></li>
+                        <li><a href="resources.html" class="hover:text-accent transition">Resources</a></li>
+                        <li><a href="careers.html" class="hover:text-accent transition">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>[Street Address]<br>[City, Country]</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><span>+1 (800) XXX-XXXX</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><span>info@aeroflowfans.com</span></li>
+                    </ul>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=ISO" alt="ISO" class="h-8 rounded opacity-60">
+                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=CE" alt="CE" class="h-8 rounded opacity-60">
+                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=UL" alt="UL" class="h-8 rounded opacity-60">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 AeroFlow Ventilation. All rights reserved.</p>
+                <div class="flex gap-4 mt-2 md:mt-0">
+                    <a href="#" class="hover:text-accent transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-accent transition">Terms of Use</a>
+                    <a href="#" class="hover:text-accent transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // News filter functionality
+        const filterBtns = document.querySelectorAll('.news-filter-btn');
+        const newsCards = document.querySelectorAll('.news-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button styles
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-secondary', 'text-white');
+                    b.classList.add('bg-gray-100', 'text-gray-600');
+                });
+                btn.classList.remove('bg-gray-100', 'text-gray-600');
+                btn.classList.add('bg-secondary', 'text-white');
+
+                const filter = btn.getAttribute('data-filter');
+
+                newsCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeInUp 0.4s ease-out forwards';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

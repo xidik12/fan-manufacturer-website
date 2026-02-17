@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AeroFlow Ventilation Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0a1628',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        highlight: '#60a5fa',
+                        sky: '#0ea5e9',
+                        dark: '#050d1a',
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-primary text-white text-sm py-2">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="hidden md:flex items-center gap-6">
+                <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +1 (800) XXX-XXXX</span>
+                <span><i class="fas fa-envelope mr-1 text-accent"></i> info@aeroflowfans.com</span>
+                <span><i class="fas fa-map-marker-alt mr-1 text-accent"></i> Global Headquarters</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <span class="text-gray-500 mx-2">|</span>
+                <a href="#" class="hover:text-accent transition text-xs font-medium">EN</a>
+                <a href="#" class="text-gray-400 hover:text-accent transition text-xs">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center gap-3">
+                    <div class="relative">
+                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
+                            <i class="fas fa-fan text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-black text-primary text-xl tracking-tight">AEROFLOW</div>
+                        <div class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Ventilation Solutions</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-1">
+                    <div class="relative group">
+                        <a href="products.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Products <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="products.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm font-medium">All Products</a>
+                            <a href="products.html#axial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Axial Fans</a>
+                            <a href="products.html#centrifugal" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Centrifugal Fans</a>
+                            <a href="products.html#inline" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">In-Line Fans</a>
+                            <a href="products.html#jet" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Jet Fans</a>
+                            <a href="products.html#roof" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Roof Exhaust Fans</a>
+                            <a href="products.html#domestic" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Domestic Fans</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="applications.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Applications <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="applications.html#hvac" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">HVAC & Air Conditioning</a>
+                            <a href="applications.html#carpark" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Car Park Ventilation</a>
+                            <a href="applications.html#commercial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Commercial Buildings</a>
+                            <a href="applications.html#industrial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Industrial & Manufacturing</a>
+                            <a href="applications.html#tunnel" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Tunnels & Transport</a>
+                            <a href="applications.html#residential" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Residential</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="about.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Why AeroFlow <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="about.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Company Profile</a>
+                            <a href="about.html#facts" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Facts & Figures</a>
+                            <a href="about.html#innovation" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Innovation</a>
+                            <a href="projects.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Prestigious Projects</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="resources.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Resources <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="resources.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Case Studies</a>
+                            <a href="resources.html#software" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Fan Selection Software</a>
+                            <a href="resources.html#docs" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Literature & Documentation</a>
+                        </div>
+                    </div>
+                    <a href="news.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">News</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-md bg-blue-50 font-semibold text-secondary transition">Contact</a>
+                </div>
+
+                <!-- CTA + Mobile -->
+                <div class="flex items-center gap-3">
+                    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow-md">
+                        <i class="fas fa-headset text-sm"></i> Get a Quote
+                    </a>
+                    <button id="mobile-toggle" class="lg:hidden text-2xl text-primary"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-2">
+                <a href="products.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Products</a>
+                <a href="applications.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Applications</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Why AeroFlow</a>
+                <a href="resources.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Resources</a>
+                <a href="news.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">News</a>
+                <a href="contact.html" class="block py-2 text-secondary font-semibold">Contact</a>
+                <a href="contact.html" class="block bg-gradient-to-r from-secondary to-accent text-white text-center font-semibold py-3 rounded-lg mt-3">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header text-white">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-10 right-10 w-72 h-72 border border-accent/10 rounded-full"></div>
+            <div class="absolute -bottom-20 -left-10 w-60 h-60 bg-secondary/10 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 right-1/3 opacity-5">
+                <i class="fas fa-envelope text-[200px]"></i>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <nav class="flex items-center gap-2 text-sm text-blue-300 mb-6">
+                <a href="../index.html" class="hover:text-accent transition">Home</a>
+                <i class="fas fa-chevron-right text-xs text-blue-500"></i>
+                <span class="text-white">Contact Us</span>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-black mb-4">Contact Us</h1>
+            <p class="text-blue-200 text-lg max-w-2xl">We'd love to hear from you. Reach out to our team for inquiries, technical support, or partnership opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="relative z-20 -mt-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 card-hover text-center">
+                    <div class="w-14 h-14 bg-blue-100 text-secondary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-1">Phone</h3>
+                    <p class="text-gray-500 text-sm mb-2">Mon - Fri, 8:00 AM - 5:00 PM</p>
+                    <a href="tel:+1800XXXXXXX" class="text-secondary font-semibold hover:text-accent transition">+1 (800) XXX-XXXX</a>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 card-hover text-center">
+                    <div class="w-14 h-14 bg-cyan-100 text-sky rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-1">Email</h3>
+                    <p class="text-gray-500 text-sm mb-2">We respond within 24 hours</p>
+                    <a href="mailto:info@aeroflowfans.com" class="text-secondary font-semibold hover:text-accent transition">info@aeroflowfans.com</a>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 card-hover text-center">
+                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-1">Address</h3>
+                    <p class="text-gray-500 text-sm mb-2">Visit our headquarters</p>
+                    <span class="text-secondary font-semibold">123 Ventilation Blvd,<br>Industrial City, CA 90210</span>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 card-hover text-center">
+                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-1">Working Hours</h3>
+                    <p class="text-gray-500 text-sm mb-2">Our business hours</p>
+                    <span class="text-secondary font-semibold">Mon - Fri: 8:00 - 17:00</span>
+                    <p class="text-gray-400 text-xs mt-1">Sat - Sun: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form + Info -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-10">
+                <!-- Contact Form (2 columns wide) -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 md:p-10">
+                        <h2 class="text-2xl md:text-3xl font-bold text-primary mb-2">Send Us a Message</h2>
+                        <p class="text-gray-500 mb-8">Fill out the form below and our team will get back to you as soon as possible.</p>
+                        <form action="#" method="POST">
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
+                                    <input type="text" id="name" name="name" placeholder="Your full name" class="form-input" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address <span class="text-red-500">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="your@email.com" class="form-input" required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+1 (XXX) XXX-XXXX" class="form-input">
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-sm font-semibold text-gray-700 mb-2">Company</label>
+                                    <input type="text" id="company" name="company" placeholder="Your company name" class="form-input">
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Subject <span class="text-red-500">*</span></label>
+                                    <select id="subject" name="subject" class="form-input" required>
+                                        <option value="" disabled selected>Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="product">Product Information</option>
+                                        <option value="technical">Technical Support</option>
+                                        <option value="quote">Quote Request</option>
+                                        <option value="distributor">Distributor Partnership</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="application" class="block text-sm font-semibold text-gray-700 mb-2">Application Type</label>
+                                    <select id="application" name="application" class="form-input">
+                                        <option value="" disabled selected>Select application</option>
+                                        <option value="hvac">HVAC</option>
+                                        <option value="carpark">Car Park</option>
+                                        <option value="commercial">Commercial</option>
+                                        <option value="industrial">Industrial</option>
+                                        <option value="tunnel">Tunnel</option>
+                                        <option value="residential">Residential</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message <span class="text-red-500">*</span></label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project requirements..." class="form-input resize-vertical" required></textarea>
+                            </div>
+                            <div class="mb-8">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Attachment (optional)</label>
+                                <div class="border-2 border-dashed border-gray-200 rounded-xl p-6 text-center hover:border-accent transition cursor-pointer">
+                                    <i class="fas fa-cloud-upload-alt text-3xl text-gray-300 mb-2"></i>
+                                    <p class="text-gray-500 text-sm">Drag & drop files here or <span class="text-accent font-semibold">browse</span></p>
+                                    <p class="text-gray-400 text-xs mt-1">PDF, DWG, DOCX, JPG up to 10MB</p>
+                                    <input type="file" name="attachment" class="hidden">
+                                </div>
+                            </div>
+                            <button type="submit" class="w-full md:w-auto bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-10 py-3.5 rounded-lg transition shadow-md flex items-center justify-center gap-2 text-lg">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="space-y-8">
+                    <!-- Map Placeholder -->
+                    <div class="bg-gradient-to-br from-secondary to-accent rounded-2xl overflow-hidden shadow-lg relative h-64 flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary/40 to-secondary/40"></div>
+                        <div class="relative z-10 text-center text-white">
+                            <i class="fas fa-map-marker-alt text-5xl mb-3 animate-bounce"></i>
+                            <p class="font-semibold text-lg">AeroFlow Headquarters</p>
+                            <p class="text-blue-200 text-sm">123 Ventilation Blvd, Industrial City</p>
+                        </div>
+                    </div>
+
+                    <!-- Visit Our Showroom -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+                        <h3 class="font-bold text-primary text-lg mb-4 flex items-center gap-2">
+                            <i class="fas fa-store text-accent"></i> Visit Our Showroom
+                        </h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                            Experience our full range of ventilation products in person. Our showroom features working demonstrations of our latest fan technologies and ventilation systems.
+                        </p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex items-center gap-2 text-gray-600">
+                                <i class="fas fa-clock text-accent w-5 text-center"></i>
+                                <span>Monday - Friday: 9:00 AM - 4:30 PM</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-600">
+                                <i class="fas fa-calendar-check text-accent w-5 text-center"></i>
+                                <span>Appointments recommended</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Department Contacts -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+                        <h3 class="font-bold text-primary text-lg mb-4 flex items-center gap-2">
+                            <i class="fas fa-building text-accent"></i> Direct Department Contacts
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 bg-blue-100 text-secondary rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary text-sm">Sales Department</h4>
+                                    <a href="mailto:sales@aeroflowfans.com" class="text-accent text-sm hover:text-secondary transition">sales@aeroflowfans.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 bg-cyan-100 text-sky rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-wrench"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary text-sm">Technical Support</h4>
+                                    <a href="mailto:tech@aeroflowfans.com" class="text-accent text-sm hover:text-secondary transition">tech@aeroflowfans.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 bg-green-100 text-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-primary text-sm">After-Sales Service</h4>
+                                    <a href="mailto:support@aeroflowfans.com" class="text-accent text-sm hover:text-secondary transition">support@aeroflowfans.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Offices -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Global Presence</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Our Regional Offices</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">With offices across four continents, we provide local support and service wherever your projects are located.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Head Office -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary to-accent"></div>
+                    <div class="w-12 h-12 bg-blue-100 text-secondary rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-1">Head Office</h3>
+                    <p class="text-accent text-sm font-semibold mb-3">United States</p>
+                    <div class="space-y-2 text-sm text-gray-500">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-map-marker-alt mt-1 text-gray-400 w-4 text-center"></i>
+                            <span>123 Ventilation Blvd,<br>Industrial City, CA 90210</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-phone text-gray-400 w-4 text-center"></i>
+                            <span>+1 (800) XXX-XXXX</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-gray-400 w-4 text-center"></i>
+                            <span>hq@aeroflowfans.com</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Asia Pacific -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky to-cyan-400"></div>
+                    <div class="w-12 h-12 bg-cyan-100 text-sky rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-1">Asia Pacific</h3>
+                    <p class="text-sky text-sm font-semibold mb-3">Singapore</p>
+                    <div class="space-y-2 text-sm text-gray-500">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-map-marker-alt mt-1 text-gray-400 w-4 text-center"></i>
+                            <span>45 Tech Park Drive,<br>Singapore 609927</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-phone text-gray-400 w-4 text-center"></i>
+                            <span>+65 XXXX XXXX</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-gray-400 w-4 text-center"></i>
+                            <span>apac@aeroflowfans.com</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Middle East -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-indigo-400"></div>
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-1">Middle East</h3>
+                    <p class="text-indigo-500 text-sm font-semibold mb-3">United Arab Emirates</p>
+                    <div class="space-y-2 text-sm text-gray-500">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-map-marker-alt mt-1 text-gray-400 w-4 text-center"></i>
+                            <span>78 Commerce Avenue,<br>Dubai, UAE</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-phone text-gray-400 w-4 text-center"></i>
+                            <span>+971 X XXX XXXX</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-gray-400 w-4 text-center"></i>
+                            <span>mena@aeroflowfans.com</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Europe -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 card-hover relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-green-400"></div>
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <h3 class="font-bold text-primary text-lg mb-1">Europe</h3>
+                    <p class="text-green-500 text-sm font-semibold mb-3">Germany</p>
+                    <div class="space-y-2 text-sm text-gray-500">
+                        <div class="flex items-start gap-2">
+                            <i class="fas fa-map-marker-alt mt-1 text-gray-400 w-4 text-center"></i>
+                            <span>15 Industriestrasse,<br>Frankfurt 60311, Germany</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-phone text-gray-400 w-4 text-center"></i>
+                            <span>+49 XXX XXXX XXXX</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-gray-400 w-4 text-center"></i>
+                            <span>europe@aeroflowfans.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">FAQ</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Frequently Asked Questions</h2>
+                <p class="text-gray-500 mt-4">Quick answers to the most common questions we receive.</p>
+            </div>
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition" onclick="this.parentElement.classList.toggle('faq-open')">
+                        <span class="font-semibold text-primary text-lg pr-4">How do I request a quote for ventilation products?</span>
+                        <i class="fas fa-chevron-down text-accent transition-transform duration-300 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 leading-relaxed pb-6">
+                            You can request a quote by filling out the contact form on this page and selecting "Quote Request" as the subject. Alternatively, you can email us directly at <a href="mailto:sales@aeroflowfans.com" class="text-accent hover:text-secondary font-medium">sales@aeroflowfans.com</a> with your project specifications including airflow requirements, static pressure, application type, and quantity. Our engineering team will typically respond with a detailed quotation within 24-48 business hours.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition" onclick="this.parentElement.classList.toggle('faq-open')">
+                        <span class="font-semibold text-primary text-lg pr-4">Do you offer custom ventilation solutions?</span>
+                        <i class="fas fa-chevron-down text-accent transition-transform duration-300 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 leading-relaxed pb-6">
+                            Yes, AeroFlow specializes in custom-engineered ventilation solutions. Our in-house engineering team can design and manufacture fans tailored to your specific requirements, including custom sizes, materials, motor configurations, coatings, and certifications. We work closely with consultants and contractors to ensure the perfect fit for every project, no matter how unique the specifications.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition" onclick="this.parentElement.classList.toggle('faq-open')">
+                        <span class="font-semibold text-primary text-lg pr-4">What is the typical lead time for orders?</span>
+                        <i class="fas fa-chevron-down text-accent transition-transform duration-300 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 leading-relaxed pb-6">
+                            Lead times vary depending on the product type and customization level. Standard catalogue products are typically available within 2-4 weeks. Custom-engineered solutions may require 6-10 weeks from order confirmation. For urgent project needs, we offer expedited manufacturing on select product lines. Contact our sales team for specific lead time estimates based on your requirements.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition" onclick="this.parentElement.classList.toggle('faq-open')">
+                        <span class="font-semibold text-primary text-lg pr-4">Do you provide installation support?</span>
+                        <i class="fas fa-chevron-down text-accent transition-transform duration-300 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 leading-relaxed pb-6">
+                            AeroFlow provides comprehensive installation support including detailed installation manuals, CAD drawings, and technical guidance. For larger projects, our field service engineers can conduct on-site supervision, commissioning, and performance testing. We also offer training programs for maintenance personnel to ensure optimal long-term operation of your ventilation systems.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition" onclick="this.parentElement.classList.toggle('faq-open')">
+                        <span class="font-semibold text-primary text-lg pr-4">What warranty do you offer on your products?</span>
+                        <i class="fas fa-chevron-down text-accent transition-transform duration-300 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="text-gray-600 leading-relaxed pb-6">
+                            All AeroFlow products come with a standard 2-year warranty covering manufacturing defects in materials and workmanship. Extended warranty options of up to 5 years are available for select product ranges. Our warranty includes replacement parts and technical support. For detailed warranty terms and conditions, please contact our after-sales team at <a href="mailto:support@aeroflowfans.com" class="text-accent hover:text-secondary font-medium">support@aeroflowfans.com</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgent Assistance CTA -->
+    <section class="py-16 bg-gradient-to-r from-secondary to-accent text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 border border-white/20">
+                <i class="fas fa-phone-volume"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Need Urgent Assistance?</h2>
+            <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+                For time-critical projects or emergency technical support, call us directly. Our dedicated team is ready to help.
+            </p>
+            <a href="tel:+1800XXXXXXX" class="inline-flex items-center gap-3 bg-white text-secondary font-bold px-10 py-4 rounded-xl shadow-lg hover:bg-blue-50 transition text-2xl">
+                <i class="fas fa-phone-alt"></i> +1 (800) XXX-XXXX
+            </a>
+            <p class="text-blue-200 text-sm mt-4">Available Monday - Friday, 8:00 AM - 5:00 PM (EST)</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                            <i class="fas fa-fan text-white text-sm"></i>
+                        </div>
+                        <div class="font-black text-lg">AEROFLOW</div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Leading manufacturer of energy efficient ventilation solutions for commercial, industrial, and residential applications.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Products</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="products.html#axial" class="hover:text-accent transition">Axial Fans</a></li>
+                        <li><a href="products.html#centrifugal" class="hover:text-accent transition">Centrifugal Fans</a></li>
+                        <li><a href="products.html#inline" class="hover:text-accent transition">In-Line Fans</a></li>
+                        <li><a href="products.html#jet" class="hover:text-accent transition">Jet Fans</a></li>
+                        <li><a href="products.html#roof" class="hover:text-accent transition">Roof Exhaust Fans</a></li>
+                        <li><a href="products.html#domestic" class="hover:text-accent transition">Domestic Fans</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-accent transition">About AeroFlow</a></li>
+                        <li><a href="projects.html" class="hover:text-accent transition">Projects</a></li>
+                        <li><a href="news.html" class="hover:text-accent transition">News & Media</a></li>
+                        <li><a href="resources.html" class="hover:text-accent transition">Resources</a></li>
+                        <li><a href="careers.html" class="hover:text-accent transition">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>123 Ventilation Blvd,<br>Industrial City, CA 90210</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><span>+1 (800) XXX-XXXX</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><span>info@aeroflowfans.com</span></li>
+                    </ul>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=ISO" alt="ISO" class="h-8 rounded opacity-60">
+                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=CE" alt="CE" class="h-8 rounded opacity-60">
+                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=UL" alt="UL" class="h-8 rounded opacity-60">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 AeroFlow Ventilation. All rights reserved.</p>
+                <div class="flex gap-4 mt-2 md:mt-0">
+                    <a href="#" class="hover:text-accent transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-accent transition">Terms of Use</a>
+                    <a href="#" class="hover:text-accent transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* FAQ accordion styles */
+        .faq-open .faq-content {
+            max-height: 300px;
+            padding-bottom: 0;
+        }
+        .faq-open .faq-toggle i {
+            transform: rotate(180deg);
+        }
+    </style>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

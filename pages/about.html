@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why AeroFlow - Company Profile | AeroFlow Ventilation Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0a1628',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        highlight: '#60a5fa',
+                        sky: '#0ea5e9',
+                        dark: '#050d1a',
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-primary text-white text-sm py-2">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="hidden md:flex items-center gap-6">
+                <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +1 (800) XXX-XXXX</span>
+                <span><i class="fas fa-envelope mr-1 text-accent"></i> info@aeroflowfans.com</span>
+                <span><i class="fas fa-map-marker-alt mr-1 text-accent"></i> Global Headquarters</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <span class="text-gray-500 mx-2">|</span>
+                <a href="#" class="hover:text-accent transition text-xs font-medium">EN</a>
+                <a href="#" class="text-gray-400 hover:text-accent transition text-xs">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center gap-3">
+                    <div class="relative">
+                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
+                            <i class="fas fa-fan text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-black text-primary text-xl tracking-tight">AEROFLOW</div>
+                        <div class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Ventilation Solutions</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-1">
+                    <div class="relative group">
+                        <a href="products.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Products <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="products.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm font-medium">All Products</a>
+                            <a href="products.html#axial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Axial Fans</a>
+                            <a href="products.html#centrifugal" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Centrifugal Fans</a>
+                            <a href="products.html#inline" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">In-Line Fans</a>
+                            <a href="products.html#jet" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Jet Fans</a>
+                            <a href="products.html#roof" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Roof Exhaust Fans</a>
+                            <a href="products.html#domestic" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Domestic Fans</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="applications.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Applications <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="applications.html#hvac" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">HVAC & Air Conditioning</a>
+                            <a href="applications.html#carpark" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Car Park Ventilation</a>
+                            <a href="applications.html#commercial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Commercial Buildings</a>
+                            <a href="applications.html#industrial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Industrial & Manufacturing</a>
+                            <a href="applications.html#tunnel" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Tunnels & Transport</a>
+                            <a href="applications.html#residential" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Residential</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="about.html" class="px-4 py-2 rounded-md bg-blue-50 font-semibold text-secondary transition flex items-center gap-1">
+                            Why AeroFlow <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="about.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Company Profile</a>
+                            <a href="about.html#facts" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Facts & Figures</a>
+                            <a href="about.html#innovation" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Innovation</a>
+                            <a href="projects.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Prestigious Projects</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="resources.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Resources <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="resources.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Case Studies</a>
+                            <a href="resources.html#software" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Fan Selection Software</a>
+                            <a href="resources.html#docs" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Literature & Documentation</a>
+                        </div>
+                    </div>
+                    <a href="news.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">News</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">Contact</a>
+                </div>
+
+                <!-- CTA + Mobile -->
+                <div class="flex items-center gap-3">
+                    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow-md">
+                        <i class="fas fa-headset text-sm"></i> Get a Quote
+                    </a>
+                    <button id="mobile-toggle" class="lg:hidden text-2xl text-primary"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-2">
+                <a href="products.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Products</a>
+                <a href="applications.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Applications</a>
+                <a href="about.html" class="block py-2 text-secondary font-medium">Why AeroFlow</a>
+                <a href="resources.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Resources</a>
+                <a href="news.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">News</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Contact</a>
+                <a href="contact.html" class="block bg-gradient-to-r from-secondary to-accent text-white text-center font-semibold py-3 rounded-lg mt-3">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header text-white">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-10 right-10 w-72 h-72 border border-accent/10 rounded-full"></div>
+            <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 right-1/3 -translate-y-1/2 opacity-5">
+                <i class="fas fa-fan text-[200px] animate-spin-slow"></i>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-accent text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                <i class="fas fa-building"></i> About Us
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black mb-4">Why AeroFlow</h1>
+            <p class="text-blue-200 text-lg max-w-2xl mb-6">Discover the story behind three decades of innovation, quality, and commitment to energy-efficient ventilation solutions.</p>
+            <nav class="flex items-center gap-2 text-sm text-blue-300">
+                <a href="../index.html" class="hover:text-accent transition">Home</a>
+                <i class="fas fa-chevron-right text-xs text-blue-500"></i>
+                <span class="text-white font-medium">Why AeroFlow</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Company Profile -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Company Profile</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Over 30 Years of Ventilation Excellence</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Founded in 1994, AeroFlow has grown from a small engineering workshop into one of the world's leading manufacturers of ventilation solutions. With an unwavering commitment to innovation, quality, and energy efficiency, we have earned the trust of engineers, consultants, and building operators across more than 80 countries.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Our comprehensive product portfolio spans axial, centrifugal, in-line, jet, and roof exhaust fans, each designed and manufactured to meet the most demanding international standards. From compact domestic ventilation to large-scale tunnel and industrial systems, AeroFlow delivers the right solution for every environment.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        At the heart of our operations lies a passion for engineering excellence. Our state-of-the-art manufacturing facilities, rigorous quality control processes, and dedicated R&D centers ensure that every AeroFlow product delivers superior performance, reliability, and energy savings throughout its operational life.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 text-secondary rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt"></i></div>
+                            <span class="text-sm font-medium text-gray-700">ISO 9001 & 14001</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 text-secondary rounded-lg flex items-center justify-center"><i class="fas fa-leaf"></i></div>
+                            <span class="text-sm font-medium text-gray-700">Energy Efficient</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 text-secondary rounded-lg flex items-center justify-center"><i class="fas fa-globe"></i></div>
+                            <span class="text-sm font-medium text-gray-700">80+ Countries</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 text-secondary rounded-lg flex items-center justify-center"><i class="fas fa-users"></i></div>
+                            <span class="text-sm font-medium text-gray-700">2,500+ Employees</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-1">
+                    <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-10 text-white flex flex-col justify-center min-h-[420px] relative overflow-hidden">
+                        <div class="absolute top-6 right-6 opacity-10"><i class="fas fa-fan text-[150px]"></i></div>
+                        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-accent/10 to-transparent"></div>
+                        <div class="relative z-10">
+                            <div class="w-20 h-20 bg-accent/20 rounded-2xl flex items-center justify-center mb-6">
+                                <i class="fas fa-industry text-4xl text-accent"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">AeroFlow Manufacturing</h3>
+                            <p class="text-blue-200 leading-relaxed mb-6">
+                                Five world-class manufacturing facilities equipped with cutting-edge CNC machinery, automated production lines, and advanced testing chambers produce over 500,000 fan units annually.
+                            </p>
+                            <div class="flex items-center gap-4">
+                                <div class="bg-white/10 rounded-lg px-4 py-2 text-center">
+                                    <div class="text-xl font-bold text-accent">5</div>
+                                    <div class="text-xs text-blue-200">Plants</div>
+                                </div>
+                                <div class="bg-white/10 rounded-lg px-4 py-2 text-center">
+                                    <div class="text-xl font-bold text-accent">500K+</div>
+                                    <div class="text-xs text-blue-200">Units/Year</div>
+                                </div>
+                                <div class="bg-white/10 rounded-lg px-4 py-2 text-center">
+                                    <div class="text-xl font-bold text-accent">200+</div>
+                                    <div class="text-xs text-blue-200">Models</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission / Vision / Values -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">What Drives Us</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Mission, Vision & Values</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 card-hover text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To design, manufacture, and deliver the most energy-efficient and reliable ventilation solutions that improve air quality, enhance safety, and reduce environmental impact across all building types and industrial applications worldwide.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 card-hover text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-sky to-accent rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To be the global benchmark in ventilation technology, recognized for our relentless innovation, engineering excellence, and sustainable manufacturing practices. We envision a world where every building breathes efficiently and safely.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 card-hover text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-secondary rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Our Values</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Integrity, innovation, and customer focus form the foundation of everything we do. We are committed to exceeding expectations through quality craftsmanship, transparent partnerships, and continuous improvement in every product and service.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facts & Figures -->
+    <section id="facts" class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Facts & Figures</p>
+                <h2 class="text-3xl md:text-4xl font-bold">AeroFlow by the Numbers</h2>
+                <p class="text-blue-300 mt-4 max-w-2xl mx-auto">A snapshot of our scale, reach, and impact across the global ventilation industry.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center card-hover">
+                    <div class="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center text-accent text-2xl mx-auto mb-4">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="text-4xl font-black text-white mb-1" data-target="30" data-suffix="+">0</div>
+                    <div class="text-blue-300 text-sm">Years of Experience</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center card-hover">
+                    <div class="w-14 h-14 bg-sky/20 rounded-xl flex items-center justify-center text-sky text-2xl mx-auto mb-4">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="text-4xl font-black text-white mb-1" data-target="10000" data-suffix="+">0</div>
+                    <div class="text-blue-300 text-sm">Projects Completed</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center card-hover">
+                    <div class="w-14 h-14 bg-highlight/20 rounded-xl flex items-center justify-center text-highlight text-2xl mx-auto mb-4">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="text-4xl font-black text-white mb-1" data-target="80" data-suffix="+">0</div>
+                    <div class="text-blue-300 text-sm">Countries Served</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center card-hover">
+                    <div class="w-14 h-14 bg-indigo-400/20 rounded-xl flex items-center justify-center text-indigo-400 text-2xl mx-auto mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="text-4xl font-black text-white mb-1" data-target="2500" data-suffix="+">0</div>
+                    <div class="text-blue-300 text-sm">Employees Worldwide</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center card-hover">
+                    <div class="w-14 h-14 bg-cyan-400/20 rounded-xl flex items-center justify-center text-cyan-400 text-2xl mx-auto mb-4">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="text-4xl font-black text-white mb-1" data-target="5" data-suffix="">0</div>
+                    <div class="text-blue-300 text-sm">Manufacturing Plants</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Our Journey</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Key Milestones</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">From a single workshop to a global leader in ventilation technology, our journey has been defined by ambition, innovation, and excellence.</p>
+            </div>
+            <div class="relative">
+                <!-- Vertical line -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-secondary via-accent to-sky -translate-x-1/2"></div>
+
+                <div class="space-y-12">
+                    <!-- Milestone 1 -->
+                    <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                        <div class="md:text-right md:pr-12">
+                            <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 card-hover inline-block">
+                                <div class="text-accent font-black text-2xl mb-2">1994</div>
+                                <h3 class="text-lg font-bold text-primary mb-2">Company Founded</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">AeroFlow was established with a vision to manufacture world-class ventilation products. Our first facility began operations with 25 employees and a single product line of axial fans.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white -ml-6 z-10 shadow-lg">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2 -->
+                    <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                        <div class="hidden md:flex items-center justify-end">
+                            <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white -mr-6 z-10 shadow-lg">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                        </div>
+                        <div class="md:pl-12">
+                            <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 card-hover inline-block">
+                                <div class="text-accent font-black text-2xl mb-2">2000</div>
+                                <h3 class="text-lg font-bold text-primary mb-2">First International Export</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Expanding beyond domestic borders, AeroFlow delivered its first international shipment, marking the beginning of a global export operation that would eventually reach over 80 countries.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3 -->
+                    <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                        <div class="md:text-right md:pr-12">
+                            <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 card-hover inline-block">
+                                <div class="text-accent font-black text-2xl mb-2">2005</div>
+                                <h3 class="text-lg font-bold text-primary mb-2">ISO 9001 Certification</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Achieved ISO 9001 Quality Management certification, underscoring our dedication to consistent quality across all manufacturing processes and product lines.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white -ml-6 z-10 shadow-lg">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 4 -->
+                    <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                        <div class="hidden md:flex items-center justify-end">
+                            <div class="w-12 h-12 bg-gradient-to-br from-sky to-accent rounded-full flex items-center justify-center text-white -mr-6 z-10 shadow-lg">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                        </div>
+                        <div class="md:pl-12">
+                            <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 card-hover inline-block">
+                                <div class="text-sky font-black text-2xl mb-2">2012</div>
+                                <h3 class="text-lg font-bold text-primary mb-2">Regional Expansion</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Opened new regional offices and distribution centers across the Middle East, Southeast Asia, and Europe, bringing AeroFlow products and support closer to customers worldwide.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 5 -->
+                    <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                        <div class="md:text-right md:pr-12">
+                            <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 card-hover inline-block">
+                                <div class="text-accent font-black text-2xl mb-2">2018</div>
+                                <h3 class="text-lg font-bold text-primary mb-2">Innovation Center Opened</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Inaugurated a dedicated R&D and Innovation Center featuring advanced CFD simulation labs, acoustic testing chambers, and a prototype workshop to accelerate product development.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white -ml-6 z-10 shadow-lg">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 6 -->
+                    <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                        <div class="hidden md:flex items-center justify-end">
+                            <div class="w-12 h-12 bg-gradient-to-br from-sky to-accent rounded-full flex items-center justify-center text-white -mr-6 z-10 shadow-lg">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                        </div>
+                        <div class="md:pl-12">
+                            <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 card-hover inline-block">
+                                <div class="text-sky font-black text-2xl mb-2">2024</div>
+                                <h3 class="text-lg font-bold text-primary mb-2">10,000th Project Milestone</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Celebrated the completion of our 10,000th project, a landmark tunnel ventilation system, solidifying AeroFlow's position as a global leader in the ventilation industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation -->
+    <section id="innovation" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Innovation & Technology</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Pushing the Boundaries of Ventilation Engineering</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        AeroFlow invests over 5% of annual revenue into research and development, driving continuous advancement in fan aerodynamics, motor efficiency, noise reduction, and smart control systems. Our Innovation Center houses some of the most advanced testing and simulation facilities in the industry.
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-blue-100 text-secondary rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-1">EC Motor Technology</h4>
+                                <p class="text-gray-500 text-sm">Electronically commutated motors delivering up to 70% energy savings compared to traditional AC motors, with integrated speed control and monitoring.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-blue-100 text-secondary rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-1">CFD Analysis & Simulation</h4>
+                                <p class="text-gray-500 text-sm">Computational Fluid Dynamics modeling to optimize blade profiles, housing geometry, and airflow patterns for maximum efficiency and minimum noise.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-blue-100 text-secondary rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-1">Smart Controls & IoT</h4>
+                                <p class="text-gray-500 text-sm">IoT-enabled fan controllers with real-time monitoring, predictive maintenance alerts, and BMS integration for intelligent building ventilation management.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-blue-100 text-secondary rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-1">Advanced Testing Facilities</h4>
+                                <p class="text-gray-500 text-sm">AMCA-certified airflow testing chambers, acoustic labs, vibration analysis, and endurance testing rigs ensuring every product meets the highest performance benchmarks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gradient-to-br from-secondary to-accent rounded-2xl p-6 text-white text-center">
+                        <div class="text-4xl font-black mb-2">25+</div>
+                        <div class="text-blue-200 text-sm">Patents Granted</div>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-6 text-white text-center">
+                        <div class="text-4xl font-black mb-2">5%</div>
+                        <div class="text-blue-200 text-sm">Revenue in R&D</div>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-6 text-white text-center">
+                        <div class="text-4xl font-black mb-2">70%</div>
+                        <div class="text-blue-200 text-sm">Energy Savings (EC)</div>
+                    </div>
+                    <div class="bg-gradient-to-br from-sky to-accent rounded-2xl p-6 text-white text-center">
+                        <div class="text-4xl font-black mb-2">50K</div>
+                        <div class="text-blue-200 text-sm">Hours Testing</div>
+                    </div>
+                    <div class="col-span-2 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl p-8 text-white relative overflow-hidden">
+                        <div class="absolute top-2 right-4 opacity-10"><i class="fas fa-fan text-[80px]"></i></div>
+                        <div class="relative z-10">
+                            <h4 class="font-bold text-lg mb-2">Innovation Center</h4>
+                            <p class="text-blue-200 text-sm leading-relaxed">Our 15,000 sq.m. dedicated R&D facility houses CFD simulation labs, acoustic chambers, rapid prototyping workshops, and a team of over 120 engineers and researchers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Quality Assurance</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Certifications & Accreditations</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Our products and processes are certified to the highest international standards, ensuring quality, safety, and performance you can trust.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-secondary font-black text-lg">ISO</span>
+                    </div>
+                    <h4 class="font-bold text-primary text-sm">ISO 9001</h4>
+                    <p class="text-gray-400 text-xs mt-1">Quality Management</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-green-700 font-black text-lg">ISO</span>
+                    </div>
+                    <h4 class="font-bold text-primary text-sm">ISO 14001</h4>
+                    <p class="text-gray-400 text-xs mt-1">Environmental</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-indigo-700 font-black text-lg">CE</span>
+                    </div>
+                    <h4 class="font-bold text-primary text-sm">CE Marking</h4>
+                    <p class="text-gray-400 text-xs mt-1">European Conformity</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-100 to-red-200 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-red-700 font-black text-lg">UL</span>
+                    </div>
+                    <h4 class="font-bold text-primary text-sm">UL Listed</h4>
+                    <p class="text-gray-400 text-xs mt-1">Safety Certification</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-100 to-cyan-200 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-cyan-700 font-black text-sm">AMCA</span>
+                    </div>
+                    <h4 class="font-bold text-primary text-sm">AMCA Certified</h4>
+                    <p class="text-gray-400 text-xs mt-1">Air Movement</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center card-hover">
+                    <div class="w-16 h-16 bg-gradient-to-br from-amber-100 to-amber-200 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-amber-700 font-black text-xs">EURO</span>
+                    </div>
+                    <h4 class="font-bold text-primary text-sm">Eurovent</h4>
+                    <p class="text-gray-400 text-xs mt-1">Performance Certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence -->
+    <section class="py-20 bg-primary text-white relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/4 left-1/6 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+            <div class="absolute top-1/3 left-1/3 w-2 h-2 bg-sky rounded-full animate-pulse" style="animation-delay: 0.5s"></div>
+            <div class="absolute top-1/2 left-1/2 w-3 h-3 bg-highlight rounded-full animate-pulse" style="animation-delay: 1s"></div>
+            <div class="absolute top-2/5 right-1/4 w-2 h-2 bg-accent rounded-full animate-pulse" style="animation-delay: 1.5s"></div>
+            <div class="absolute bottom-1/3 right-1/3 w-3 h-3 bg-sky rounded-full animate-pulse" style="animation-delay: 0.7s"></div>
+            <div class="absolute top-1/5 right-1/5 w-2 h-2 bg-highlight rounded-full animate-pulse" style="animation-delay: 1.2s"></div>
+            <div class="absolute bottom-1/4 left-1/4 w-2 h-2 bg-accent rounded-full animate-pulse" style="animation-delay: 0.3s"></div>
+            <div class="absolute top-3/4 right-1/6 w-3 h-3 bg-sky rounded-full animate-pulse" style="animation-delay: 0.9s"></div>
+            <!-- Map-like gradient background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-accent/5"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] border border-white/5 rounded-[50%]"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] border border-white/3 rounded-[50%]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Global Presence</p>
+                <h2 class="text-3xl md:text-4xl font-bold">Ventilating the World</h2>
+                <p class="text-blue-300 mt-4 max-w-2xl mx-auto">With offices, manufacturing facilities, and distribution partners across the globe, AeroFlow delivers ventilation solutions wherever you need them.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center card-hover">
+                    <div class="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center text-accent text-xl mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Middle East & Africa</h3>
+                    <p class="text-blue-300 text-sm">UAE, Saudi Arabia, Qatar, Egypt, South Africa</p>
+                    <div class="text-accent text-xs font-semibold mt-3">Regional HQ & Manufacturing</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center card-hover">
+                    <div class="w-14 h-14 bg-sky/20 rounded-xl flex items-center justify-center text-sky text-xl mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Europe</h3>
+                    <p class="text-blue-300 text-sm">United Kingdom, Germany, France, Italy, Spain</p>
+                    <div class="text-sky text-xs font-semibold mt-3">Sales & Distribution</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center card-hover">
+                    <div class="w-14 h-14 bg-highlight/20 rounded-xl flex items-center justify-center text-highlight text-xl mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Asia Pacific</h3>
+                    <p class="text-blue-300 text-sm">India, Singapore, Malaysia, Australia, China</p>
+                    <div class="text-highlight text-xs font-semibold mt-3">Manufacturing & Distribution</div>
+                </div>
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center card-hover">
+                    <div class="w-14 h-14 bg-indigo-400/20 rounded-xl flex items-center justify-center text-indigo-400 text-xl mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Americas</h3>
+                    <p class="text-blue-300 text-sm">United States, Canada, Brazil, Mexico</p>
+                    <div class="text-indigo-400 text-xs font-semibold mt-3">Sales & Technical Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-gradient-to-r from-secondary to-accent text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-handshake text-4xl"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Partner with AeroFlow</h2>
+            <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+                Whether you are an HVAC consultant, contractor, distributor, or building owner, AeroFlow is your trusted partner for world-class ventilation solutions. Let us help you find the right fan for your project.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="contact.html" class="bg-white text-secondary hover:bg-blue-50 font-semibold px-8 py-3.5 rounded-lg transition shadow-lg text-lg flex items-center gap-2">
+                    <i class="fas fa-headset"></i> Contact Our Team
+                </a>
+                <a href="resources.html#software" class="bg-white/10 hover:bg-white/20 backdrop-blur text-white font-semibold px-8 py-3.5 rounded-lg transition border border-white/20 text-lg flex items-center gap-2">
+                    <i class="fas fa-laptop"></i> Fan Selection Tool
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                            <i class="fas fa-fan text-white text-sm"></i>
+                        </div>
+                        <div class="font-black text-lg">AEROFLOW</div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Leading manufacturer of energy efficient ventilation solutions for commercial, industrial, and residential applications.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Products</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="products.html#axial" class="hover:text-accent transition">Axial Fans</a></li>
+                        <li><a href="products.html#centrifugal" class="hover:text-accent transition">Centrifugal Fans</a></li>
+                        <li><a href="products.html#inline" class="hover:text-accent transition">In-Line Fans</a></li>
+                        <li><a href="products.html#jet" class="hover:text-accent transition">Jet Fans</a></li>
+                        <li><a href="products.html#roof" class="hover:text-accent transition">Roof Exhaust Fans</a></li>
+                        <li><a href="products.html#domestic" class="hover:text-accent transition">Domestic Fans</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-accent transition">About AeroFlow</a></li>
+                        <li><a href="projects.html" class="hover:text-accent transition">Projects</a></li>
+                        <li><a href="news.html" class="hover:text-accent transition">News & Media</a></li>
+                        <li><a href="resources.html" class="hover:text-accent transition">Resources</a></li>
+                        <li><a href="careers.html" class="hover:text-accent transition">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>[Street Address]<br>[City, Country]</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><span>+1 (800) XXX-XXXX</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><span>info@aeroflowfans.com</span></li>
+                    </ul>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <div class="h-8 px-3 bg-white/10 rounded flex items-center justify-center text-xs font-bold text-gray-300">ISO</div>
+                        <div class="h-8 px-3 bg-white/10 rounded flex items-center justify-center text-xs font-bold text-gray-300">CE</div>
+                        <div class="h-8 px-3 bg-white/10 rounded flex items-center justify-center text-xs font-bold text-gray-300">UL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 AeroFlow Ventilation. All rights reserved.</p>
+                <div class="flex gap-4 mt-2 md:mt-0">
+                    <a href="#" class="hover:text-accent transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-accent transition">Terms of Use</a>
+                    <a href="#" class="hover:text-accent transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

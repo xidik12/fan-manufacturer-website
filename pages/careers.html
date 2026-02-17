@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - AeroFlow Ventilation Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0a1628',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        highlight: '#60a5fa',
+                        sky: '#0ea5e9',
+                        dark: '#050d1a',
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- Top Bar -->
+    <div class="bg-primary text-white text-sm py-2">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="hidden md:flex items-center gap-6">
+                <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +1 (800) XXX-XXXX</span>
+                <span><i class="fas fa-envelope mr-1 text-accent"></i> info@aeroflowfans.com</span>
+                <span><i class="fas fa-map-marker-alt mr-1 text-accent"></i> Global Headquarters</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <span class="text-gray-500 mx-2">|</span>
+                <a href="#" class="hover:text-accent transition text-xs font-medium">EN</a>
+                <a href="#" class="text-gray-400 hover:text-accent transition text-xs">中文</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center gap-3">
+                    <div class="relative">
+                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
+                            <i class="fas fa-fan text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-black text-primary text-xl tracking-tight">AEROFLOW</div>
+                        <div class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Ventilation Solutions</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-1">
+                    <div class="relative group">
+                        <a href="products.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Products <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="products.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm font-medium">All Products</a>
+                            <a href="products.html#axial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Axial Fans</a>
+                            <a href="products.html#centrifugal" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Centrifugal Fans</a>
+                            <a href="products.html#inline" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">In-Line Fans</a>
+                            <a href="products.html#jet" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Jet Fans</a>
+                            <a href="products.html#roof" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Roof Exhaust Fans</a>
+                            <a href="products.html#domestic" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Domestic Fans</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="applications.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Applications <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="applications.html#hvac" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">HVAC & Air Conditioning</a>
+                            <a href="applications.html#carpark" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Car Park Ventilation</a>
+                            <a href="applications.html#commercial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Commercial Buildings</a>
+                            <a href="applications.html#industrial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Industrial & Manufacturing</a>
+                            <a href="applications.html#tunnel" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Tunnels & Transport</a>
+                            <a href="applications.html#residential" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Residential</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="about.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Why AeroFlow <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="about.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Company Profile</a>
+                            <a href="about.html#facts" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Facts & Figures</a>
+                            <a href="about.html#innovation" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Innovation</a>
+                            <a href="projects.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Prestigious Projects</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="resources.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
+                            Resources <i class="fas fa-chevron-down text-xs"></i>
+                        </a>
+                        <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="resources.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Case Studies</a>
+                            <a href="resources.html#software" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Fan Selection Software</a>
+                            <a href="resources.html#docs" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Literature & Documentation</a>
+                        </div>
+                    </div>
+                    <a href="news.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">News</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">Contact</a>
+                </div>
+
+                <!-- CTA + Mobile -->
+                <div class="flex items-center gap-3">
+                    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow-md">
+                        <i class="fas fa-headset text-sm"></i> Get a Quote
+                    </a>
+                    <button id="mobile-toggle" class="lg:hidden text-2xl text-primary"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-2">
+                <a href="products.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Products</a>
+                <a href="applications.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Applications</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Why AeroFlow</a>
+                <a href="resources.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Resources</a>
+                <a href="news.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">News</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Contact</a>
+                <a href="contact.html" class="block bg-gradient-to-r from-secondary to-accent text-white text-center font-semibold py-3 rounded-lg mt-3">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header text-white">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-10 right-10 w-72 h-72 border border-accent/10 rounded-full"></div>
+            <div class="absolute -bottom-20 -left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 right-1/3 opacity-5">
+                <i class="fas fa-users text-[200px]"></i>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="flex items-center gap-2 text-sm text-blue-300 mb-4">
+                <a href="../index.html" class="hover:text-accent transition">Home</a>
+                <i class="fas fa-chevron-right text-xs text-blue-500"></i>
+                <span class="text-white">Careers</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black mb-4">Careers at AeroFlow</h1>
+            <p class="text-xl text-blue-200 max-w-2xl">Join Our Team of Innovators</p>
+        </div>
+    </section>
+
+    <!-- Why Join AeroFlow -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Why Join Us</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Build Your Future With AeroFlow</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        At AeroFlow, we believe our people are the driving force behind every innovation. We foster a culture of collaboration, continuous learning, and bold thinking. Whether you are an experienced engineer or a fresh graduate, you will find meaningful work that shapes the future of ventilation technology.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        With operations spanning over 50 countries, a commitment to sustainability, and a passion for engineering excellence, AeroFlow offers a career that is as dynamic as the air we move. Join a team where your ideas matter, your growth is supported, and your impact is felt around the world.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="inline-flex items-center gap-2 bg-blue-100 text-secondary text-sm font-medium px-4 py-2 rounded-full">
+                            <i class="fas fa-check-circle"></i> 1,500+ Employees Worldwide
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-blue-100 text-secondary text-sm font-medium px-4 py-2 rounded-full">
+                            <i class="fas fa-check-circle"></i> 50+ Countries
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-blue-100 text-secondary text-sm font-medium px-4 py-2 rounded-full">
+                            <i class="fas fa-check-circle"></i> Award-Winning Workplace
+                        </span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 text-center">
+                        <div class="w-14 h-14 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="font-bold text-primary mb-2">Career Growth & Training</h3>
+                        <p class="text-gray-500 text-sm">Structured development paths, mentorship programs, and continuous upskilling opportunities.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 text-center">
+                        <div class="w-14 h-14 bg-gradient-to-br from-sky to-cyan-400 rounded-xl flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-hand-holding-dollar"></i>
+                        </div>
+                        <h3 class="font-bold text-primary mb-2">Competitive Compensation</h3>
+                        <p class="text-gray-500 text-sm">Industry-leading salaries, performance bonuses, health insurance, and retirement plans.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 text-center">
+                        <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-indigo-400 rounded-xl flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3 class="font-bold text-primary mb-2">Global Opportunities</h3>
+                        <p class="text-gray-500 text-sm">Work across international offices, projects, and cross-functional global teams.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 text-center">
+                        <div class="w-14 h-14 bg-gradient-to-br from-blue-600 to-highlight rounded-xl flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="font-bold text-primary mb-2">Innovation Culture</h3>
+                        <p class="text-gray-500 text-sm">Dedicated R&D labs, hackathons, patent incentives, and freedom to experiment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Values -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Our Core Values</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">What Drives Us Every Day</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">These principles guide everything we do -- from how we engineer products to how we treat each other.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-8 shadow-md card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-secondary text-2xl mb-5 group-hover:bg-secondary group-hover:text-white transition">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Innovation</h3>
+                    <p class="text-gray-500 leading-relaxed">We challenge the status quo and push boundaries in ventilation engineering. Every improvement starts with a bold idea.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center text-sky text-2xl mb-5 group-hover:bg-sky group-hover:text-white transition">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Excellence</h3>
+                    <p class="text-gray-500 leading-relaxed">We hold ourselves to the highest standards in design, manufacturing, and customer service. Good is never good enough.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-500 text-2xl mb-5 group-hover:bg-indigo-500 group-hover:text-white transition">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Integrity</h3>
+                    <p class="text-gray-500 leading-relaxed">We operate with transparency, honesty, and accountability -- in every business dealing and every team interaction.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-2xl mb-5 group-hover:bg-cyan-600 group-hover:text-white transition">
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Teamwork</h3>
+                    <p class="text-gray-500 leading-relaxed">Great products are built by great teams. We collaborate across departments, disciplines, and borders to deliver results.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl mb-5 group-hover:bg-green-600 group-hover:text-white transition">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Sustainability</h3>
+                    <p class="text-gray-500 leading-relaxed">We are committed to reducing our environmental footprint through energy-efficient products and responsible manufacturing.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md card-hover border border-gray-100 group">
+                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-5 group-hover:bg-amber-600 group-hover:text-white transition">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Safety</h3>
+                    <p class="text-gray-500 leading-relaxed">The safety of our people, products, and communities is non-negotiable. We invest in a zero-incident workplace culture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="py-20 bg-gray-50" id="positions">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Open Positions</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Find Your Next Role</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Explore our current openings and take the next step in your career with AeroFlow.</p>
+            </div>
+
+            <!-- Department Filter -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button class="job-filter-btn active bg-secondary text-white font-semibold px-5 py-2.5 rounded-full text-sm transition" data-filter="all">All Departments</button>
+                <button class="job-filter-btn bg-white text-gray-600 font-medium px-5 py-2.5 rounded-full text-sm border border-gray-200 hover:border-secondary hover:text-secondary transition" data-filter="engineering">Engineering</button>
+                <button class="job-filter-btn bg-white text-gray-600 font-medium px-5 py-2.5 rounded-full text-sm border border-gray-200 hover:border-secondary hover:text-secondary transition" data-filter="sales">Sales</button>
+                <button class="job-filter-btn bg-white text-gray-600 font-medium px-5 py-2.5 rounded-full text-sm border border-gray-200 hover:border-secondary hover:text-secondary transition" data-filter="manufacturing">Manufacturing</button>
+                <button class="job-filter-btn bg-white text-gray-600 font-medium px-5 py-2.5 rounded-full text-sm border border-gray-200 hover:border-secondary hover:text-secondary transition" data-filter="rd">R&D</button>
+                <button class="job-filter-btn bg-white text-gray-600 font-medium px-5 py-2.5 rounded-full text-sm border border-gray-200 hover:border-secondary hover:text-secondary transition" data-filter="marketing">Marketing</button>
+                <button class="job-filter-btn bg-white text-gray-600 font-medium px-5 py-2.5 rounded-full text-sm border border-gray-200 hover:border-secondary hover:text-secondary transition" data-filter="operations">Operations</button>
+            </div>
+
+            <!-- Job Cards Grid -->
+            <div class="grid md:grid-cols-2 gap-6" id="job-listings">
+                <!-- Senior Mechanical Engineer -->
+                <div class="job-card bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 group" data-department="engineering">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition">Senior Mechanical Engineer</h3>
+                            <div class="flex flex-wrap items-center gap-3 mt-2">
+                                <span class="inline-flex items-center gap-1 bg-blue-100 text-secondary text-xs font-semibold px-3 py-1 rounded-full">
+                                    <i class="fas fa-cog text-[10px]"></i> Engineering
+                                </span>
+                                <span class="text-gray-400 text-sm"><i class="fas fa-map-marker-alt mr-1"></i> HQ - Global Headquarters</span>
+                            </div>
+                        </div>
+                        <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Full-time</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">Lead the design and development of next-generation fan systems. Collaborate with cross-functional teams to optimize aerodynamic performance, reduce noise, and improve energy efficiency across our product lineup.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:from-blue-800 hover:to-blue-600 transition shadow-md">
+                        Apply Now <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- HVAC Sales Manager -->
+                <div class="job-card bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 group" data-department="sales">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition">HVAC Sales Manager - Asia Pacific</h3>
+                            <div class="flex flex-wrap items-center gap-3 mt-2">
+                                <span class="inline-flex items-center gap-1 bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                    <i class="fas fa-handshake text-[10px]"></i> Sales
+                                </span>
+                                <span class="text-gray-400 text-sm"><i class="fas fa-map-marker-alt mr-1"></i> Regional - Asia Pacific</span>
+                            </div>
+                        </div>
+                        <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Full-time</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">Drive regional sales growth across the Asia Pacific market. Build strategic relationships with HVAC consultants, contractors, and distributors. Develop and execute market entry and expansion strategies for the region.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:from-blue-800 hover:to-blue-600 transition shadow-md">
+                        Apply Now <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Quality Control Inspector -->
+                <div class="job-card bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 group" data-department="manufacturing">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition">Quality Control Inspector</h3>
+                            <div class="flex flex-wrap items-center gap-3 mt-2">
+                                <span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                    <i class="fas fa-industry text-[10px]"></i> Manufacturing
+                                </span>
+                                <span class="text-gray-400 text-sm"><i class="fas fa-map-marker-alt mr-1"></i> Factory - Manufacturing Plant</span>
+                            </div>
+                        </div>
+                        <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Full-time</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">Ensure all products meet AeroFlow's rigorous quality standards. Conduct inspections at every stage of the manufacturing process, from raw material intake through final assembly and performance testing.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:from-blue-800 hover:to-blue-600 transition shadow-md">
+                        Apply Now <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- R&D Engineer -->
+                <div class="job-card bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 group" data-department="rd">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition">R&D Engineer - Aerodynamics</h3>
+                            <div class="flex flex-wrap items-center gap-3 mt-2">
+                                <span class="inline-flex items-center gap-1 bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                    <i class="fas fa-flask text-[10px]"></i> R&D
+                                </span>
+                                <span class="text-gray-400 text-sm"><i class="fas fa-map-marker-alt mr-1"></i> HQ - Global Headquarters</span>
+                            </div>
+                        </div>
+                        <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Full-time</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">Conduct advanced CFD simulations and wind tunnel testing to optimize blade geometry and fan performance. Pioneer new aerodynamic concepts that push the boundaries of airflow efficiency and noise reduction.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:from-blue-800 hover:to-blue-600 transition shadow-md">
+                        Apply Now <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Production Supervisor -->
+                <div class="job-card bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 group" data-department="manufacturing">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition">Production Supervisor</h3>
+                            <div class="flex flex-wrap items-center gap-3 mt-2">
+                                <span class="inline-flex items-center gap-1 bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                    <i class="fas fa-industry text-[10px]"></i> Manufacturing
+                                </span>
+                                <span class="text-gray-400 text-sm"><i class="fas fa-map-marker-alt mr-1"></i> Factory - Manufacturing Plant</span>
+                            </div>
+                        </div>
+                        <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Full-time</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">Oversee daily production operations for fan assembly lines. Manage a team of 30+ technicians, ensure on-time delivery targets, and implement lean manufacturing principles to improve throughput and quality.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:from-blue-800 hover:to-blue-600 transition shadow-md">
+                        Apply Now <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Digital Marketing Specialist -->
+                <div class="job-card bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 group" data-department="marketing">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition">Digital Marketing Specialist</h3>
+                            <div class="flex flex-wrap items-center gap-3 mt-2">
+                                <span class="inline-flex items-center gap-1 bg-pink-100 text-pink-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                    <i class="fas fa-bullhorn text-[10px]"></i> Marketing
+                                </span>
+                                <span class="text-gray-400 text-sm"><i class="fas fa-map-marker-alt mr-1"></i> HQ - Global Headquarters</span>
+                            </div>
+                        </div>
+                        <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Full-time</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">Develop and execute digital marketing campaigns across SEO, SEM, social media, and email channels. Create compelling content that showcases AeroFlow's products and brand story to B2B and B2C audiences globally.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:from-blue-800 hover:to-blue-600 transition shadow-md">
+                        Apply Now <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Technical Support Engineer -->
+                <div class="job-card bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 group" data-department="engineering">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition">Technical Support Engineer</h3>
+                            <div class="flex flex-wrap items-center gap-3 mt-2">
+                                <span class="inline-flex items-center gap-1 bg-blue-100 text-secondary text-xs font-semibold px-3 py-1 rounded-full">
+                                    <i class="fas fa-cog text-[10px]"></i> Engineering
+                                </span>
+                                <span class="text-gray-400 text-sm"><i class="fas fa-map-marker-alt mr-1"></i> Regional Office</span>
+                            </div>
+                        </div>
+                        <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Full-time</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">Provide expert technical guidance to customers, consultants, and project teams. Assist with fan selection, system design reviews, and on-site commissioning support to ensure optimal product performance.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:from-blue-800 hover:to-blue-600 transition shadow-md">
+                        Apply Now <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Supply Chain Coordinator -->
+                <div class="job-card bg-white rounded-2xl p-6 shadow-md card-hover border border-gray-100 group" data-department="operations">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition">Supply Chain Coordinator</h3>
+                            <div class="flex flex-wrap items-center gap-3 mt-2">
+                                <span class="inline-flex items-center gap-1 bg-teal-100 text-teal-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                    <i class="fas fa-truck text-[10px]"></i> Operations
+                                </span>
+                                <span class="text-gray-400 text-sm"><i class="fas fa-map-marker-alt mr-1"></i> HQ - Global Headquarters</span>
+                            </div>
+                        </div>
+                        <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Full-time</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">Manage procurement, logistics, and inventory for global manufacturing operations. Coordinate with suppliers, warehouses, and shipping partners to ensure seamless delivery of raw materials and finished products.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-2.5 rounded-lg text-sm hover:from-blue-800 hover:to-blue-600 transition shadow-md">
+                        Apply Now <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life at AeroFlow -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Life at AeroFlow</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Where Work Meets Purpose</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Get a glimpse into what it is like to be part of the AeroFlow family.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="relative group rounded-2xl overflow-hidden h-64 card-hover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-secondary to-accent flex items-center justify-center">
+                        <i class="fas fa-people-carry-box text-6xl text-white/20 group-hover:text-white/40 transition"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h3 class="font-bold text-lg">Team Building</h3>
+                        <p class="text-blue-200 text-sm mt-1">Annual retreats and collaborative events</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden h-64 card-hover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-800 to-blue-500 flex items-center justify-center">
+                        <i class="fas fa-building text-6xl text-white/20 group-hover:text-white/40 transition"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h3 class="font-bold text-lg">Office Environment</h3>
+                        <p class="text-blue-200 text-sm mt-1">Modern, open-plan collaborative spaces</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden h-64 card-hover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-500 flex items-center justify-center">
+                        <i class="fas fa-gears text-6xl text-white/20 group-hover:text-white/40 transition"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h3 class="font-bold text-lg">Factory Floor</h3>
+                        <p class="text-gray-300 text-sm mt-1">State-of-the-art manufacturing facilities</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden h-64 card-hover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyan-700 to-sky flex items-center justify-center">
+                        <i class="fas fa-chalkboard-user text-6xl text-white/20 group-hover:text-white/40 transition"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h3 class="font-bold text-lg">Training Programs</h3>
+                        <p class="text-cyan-200 text-sm mt-1">Continuous learning and skill development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Program -->
+    <section class="py-20 bg-gradient-to-r from-secondary to-accent text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-blue-200 font-semibold text-sm uppercase tracking-widest mb-3">Early Careers</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Graduate & Internship Programs</h2>
+                    <p class="text-blue-100 leading-relaxed mb-4">
+                        Starting your career? AeroFlow's internship and graduate programs are designed to give you hands-on experience in real-world engineering and business projects from day one.
+                    </p>
+                    <p class="text-blue-100 leading-relaxed mb-6">
+                        Our structured 6-12 month programs include rotations across departments, mentorship from senior leaders, access to cutting-edge labs, and a clear path to full-time employment. We actively recruit from top engineering and business schools worldwide.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-check text-sm"></i></div>
+                            <span>Engineering & R&D Internships</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-check text-sm"></i></div>
+                            <span>Business & Operations Graduate Program</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-check text-sm"></i></div>
+                            <span>Global Rotation Opportunities</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center"><i class="fas fa-check text-sm"></i></div>
+                            <span>Dedicated Mentorship & Development Plans</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-secondary font-semibold px-8 py-3.5 rounded-lg hover:bg-blue-50 transition shadow-lg">
+                        <i class="fas fa-graduation-cap"></i> Apply for 2026 Intake
+                    </a>
+                </div>
+                <div class="hidden md:flex justify-center">
+                    <div class="relative">
+                        <div class="w-80 h-80 bg-white/10 backdrop-blur rounded-3xl border border-white/20 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-graduation-cap text-7xl text-white/40 mb-4"></i>
+                                <div class="text-5xl font-black">85%</div>
+                                <p class="text-blue-200 mt-2">of interns receive<br>full-time offers</p>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -right-4 bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                            <div class="text-2xl font-bold">200+</div>
+                            <div class="text-xs text-blue-200">Interns per year</div>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                            <div class="text-2xl font-bold">15+</div>
+                            <div class="text-xs text-blue-200">Partner universities</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">How It Works</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Our Hiring Process</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">A transparent, straightforward journey from application to your first day.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="relative text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center text-white text-3xl font-black mx-auto mb-5 shadow-lg">
+                        1
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Apply Online</h3>
+                    <p class="text-gray-500 text-sm">Submit your resume and cover letter through our careers portal. We review every application carefully.</p>
+                    <!-- Connector line (hidden on small, shown on lg) -->
+                    <div class="hidden lg:block absolute top-10 left-[calc(50%+40px)] w-[calc(100%-80px)] h-0.5 bg-gradient-to-r from-accent to-highlight"></div>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-accent to-highlight rounded-2xl flex items-center justify-center text-white text-3xl font-black mx-auto mb-5 shadow-lg">
+                        2
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Initial Screening</h3>
+                    <p class="text-gray-500 text-sm">Our HR team will review your profile and reach out for a brief phone or video screening call.</p>
+                    <div class="hidden lg:block absolute top-10 left-[calc(50%+40px)] w-[calc(100%-80px)] h-0.5 bg-gradient-to-r from-highlight to-sky"></div>
+                </div>
+                <!-- Step 3 -->
+                <div class="relative text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-highlight to-sky rounded-2xl flex items-center justify-center text-white text-3xl font-black mx-auto mb-5 shadow-lg">
+                        3
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Interview</h3>
+                    <p class="text-gray-500 text-sm">Meet the team in a technical and behavioral interview. We want to understand your skills, goals, and culture fit.</p>
+                    <div class="hidden lg:block absolute top-10 left-[calc(50%+40px)] w-[calc(100%-80px)] h-0.5 bg-gradient-to-r from-sky to-cyan-400"></div>
+                </div>
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-sky to-cyan-400 rounded-2xl flex items-center justify-center text-white text-3xl font-black mx-auto mb-5 shadow-lg">
+                        4
+                    </div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Welcome Aboard</h3>
+                    <p class="text-gray-500 text-sm">Receive your offer, complete onboarding, and start making an impact from your very first day at AeroFlow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Testimonials -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Employee Voices</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Hear From Our Team</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 card-hover relative">
+                    <div class="text-accent text-5xl mb-4 leading-none">"</div>
+                    <p class="text-gray-600 leading-relaxed mb-6">Joining AeroFlow was the best career decision I have made. The engineering challenges here are genuinely exciting, and the company invests heavily in your professional development. I have grown more in three years than I did in a decade elsewhere.</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white font-bold">MR</div>
+                        <div>
+                            <div class="font-bold text-primary">Maria Rodriguez</div>
+                            <div class="text-gray-400 text-sm">Lead Engineer, R&D Division</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 card-hover relative">
+                    <div class="text-accent text-5xl mb-4 leading-none">"</div>
+                    <p class="text-gray-600 leading-relaxed mb-6">The global exposure at AeroFlow is incredible. I have worked on projects across four continents, from designing ventilation systems for metro tunnels in Asia to HVAC solutions for skyscrapers in the Middle East. Every day brings something new.</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-sky to-cyan-400 rounded-full flex items-center justify-center text-white font-bold">JC</div>
+                        <div>
+                            <div class="font-bold text-primary">James Chen</div>
+                            <div class="text-gray-400 text-sm">Regional Sales Director, Asia Pacific</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 card-hover relative">
+                    <div class="text-accent text-5xl mb-4 leading-none">"</div>
+                    <p class="text-gray-600 leading-relaxed mb-6">I started as an intern and now I lead a production team of 40 people. AeroFlow truly believes in nurturing talent from within. The mentorship program gave me the confidence and skills to take on leadership responsibilities early in my career.</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-400 rounded-full flex items-center justify-center text-white font-bold">SK</div>
+                        <div>
+                            <div class="font-bold text-primary">Sarah Kim</div>
+                            <div class="text-gray-400 text-sm">Production Manager, Manufacturing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA - Don't See Your Perfect Role -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="w-20 h-20 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center text-white text-3xl mx-auto mb-6">
+                <i class="fas fa-paper-plane"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Don't See Your Perfect Role?</h2>
+            <p class="text-blue-300 text-lg mb-8 max-w-2xl mx-auto">
+                We are always on the lookout for exceptional talent. Send us your resume and we will keep you in mind for future opportunities that match your skills and experience.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="contact.html" class="bg-gradient-to-r from-accent to-sky hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-8 py-3.5 rounded-lg transition shadow-lg text-lg flex items-center gap-2">
+                    <i class="fas fa-upload"></i> Submit General Application
+                </a>
+                <a href="mailto:careers@aeroflowfans.com" class="bg-white/10 hover:bg-white/20 backdrop-blur text-white font-semibold px-8 py-3.5 rounded-lg transition border border-white/20 text-lg flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> careers@aeroflowfans.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                            <i class="fas fa-fan text-white text-sm"></i>
+                        </div>
+                        <div class="font-black text-lg">AEROFLOW</div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Leading manufacturer of energy efficient ventilation solutions for commercial, industrial, and residential applications.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Products</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="products.html#axial" class="hover:text-accent transition">Axial Fans</a></li>
+                        <li><a href="products.html#centrifugal" class="hover:text-accent transition">Centrifugal Fans</a></li>
+                        <li><a href="products.html#inline" class="hover:text-accent transition">In-Line Fans</a></li>
+                        <li><a href="products.html#jet" class="hover:text-accent transition">Jet Fans</a></li>
+                        <li><a href="products.html#roof" class="hover:text-accent transition">Roof Exhaust Fans</a></li>
+                        <li><a href="products.html#domestic" class="hover:text-accent transition">Domestic Fans</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="about.html" class="hover:text-accent transition">About AeroFlow</a></li>
+                        <li><a href="projects.html" class="hover:text-accent transition">Projects</a></li>
+                        <li><a href="news.html" class="hover:text-accent transition">News & Media</a></li>
+                        <li><a href="resources.html" class="hover:text-accent transition">Resources</a></li>
+                        <li><a href="careers.html" class="hover:text-accent transition">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>[Street Address]<br>[City, Country]</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><span>+1 (800) XXX-XXXX</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><span>info@aeroflowfans.com</span></li>
+                    </ul>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=ISO" alt="ISO" class="h-8 rounded opacity-60">
+                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=CE" alt="CE" class="h-8 rounded opacity-60">
+                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=UL" alt="UL" class="h-8 rounded opacity-60">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 AeroFlow Ventilation. All rights reserved.</p>
+                <div class="flex gap-4 mt-2 md:mt-0">
+                    <a href="#" class="hover:text-accent transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-accent transition">Terms of Use</a>
+                    <a href="#" class="hover:text-accent transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Job filter functionality
+        const filterBtns = document.querySelectorAll('.job-filter-btn');
+        const jobCards = document.querySelectorAll('.job-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button styling
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-secondary', 'text-white');
+                    b.classList.add('bg-white', 'text-gray-600', 'border', 'border-gray-200');
+                });
+                btn.classList.add('active', 'bg-secondary', 'text-white');
+                btn.classList.remove('bg-white', 'text-gray-600', 'border', 'border-gray-200');
+
+                const filter = btn.getAttribute('data-filter');
+
+                jobCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-department') === filter) {
+                        card.style.display = '';
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(10px)';
+                        requestAnimationFrame(() => {
+                            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        });
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
