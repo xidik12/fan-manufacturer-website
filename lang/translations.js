@@ -163,6 +163,7 @@ const TRANSLATIONS = {
     "news.stayinformed": "Stay Informed",
     "news.allnews": "All News",
     "news.readmore": "Read More",
+    "news.readless": "Read Less",
     "news.medialabel": "For Media",
     "news.mediatitle": "Media Kit & Press Resources",
 
@@ -1025,6 +1026,7 @@ const TRANSLATIONS = {
     "news.stayinformed": "최신 정보",
     "news.allnews": "전체 뉴스",
     "news.readmore": "더 보기",
+    "news.readless": "접기",
     "news.medialabel": "미디어용",
     "news.mediatitle": "미디어 키트 & 보도 자료",
     "projects.pagetitle": "주요 프로젝트",
@@ -1864,6 +1866,7 @@ const TRANSLATIONS = {
     "news.stayinformed": "ទទួលព័ត៌មាន",
     "news.allnews": "ព័ត៌មានទាំងអស់",
     "news.readmore": "អានបន្ថែម",
+    "news.readless": "បង្រួម",
     "news.medialabel": "សម្រាប់ប្រព័ន្ធផ្សព្វផ្សាយ",
     "news.mediatitle": "កញ្ចប់ប្រព័ន្ធផ្សព្វផ្សាយ & ធនធានសារព័ត៌មាន",
     "projects.pagetitle": "គម្រោងសំខាន់ៗ",

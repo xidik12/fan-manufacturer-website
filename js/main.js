@@ -101,3 +101,50 @@ if (heroEl) {
         }
     }, { passive: true });
 }
+
+// ── Scroll-driven spinning fan backgrounds ──
+(function() {
+    // Fan blade SVG (6-blade industrial fan shape)
+    const fanSVG = `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <g fill="currentColor">
+            <circle cx="100" cy="100" r="16" opacity="0.8"/>
+            <ellipse cx="100" cy="50" rx="18" ry="45" transform="rotate(0 100 100)" opacity="0.5"/>
+            <ellipse cx="100" cy="50" rx="18" ry="45" transform="rotate(60 100 100)" opacity="0.5"/>
+            <ellipse cx="100" cy="50" rx="18" ry="45" transform="rotate(120 100 100)" opacity="0.5"/>
+            <ellipse cx="100" cy="50" rx="18" ry="45" transform="rotate(180 100 100)" opacity="0.5"/>
+            <ellipse cx="100" cy="50" rx="18" ry="45" transform="rotate(240 100 100)" opacity="0.5"/>
+            <ellipse cx="100" cy="50" rx="18" ry="45" transform="rotate(300 100 100)" opacity="0.5"/>
+        </g>
+    </svg>`;
+
+    const fanConfigs = [
+        { class: 'scroll-fan--1', speed: 0.15, color: '#A4123F' },
+        { class: 'scroll-fan--2', speed: -0.1, color: '#1e40af' },
+        { class: 'scroll-fan--3', speed: 0.2, color: '#A4123F' },
+    ];
+
+    const fans = [];
+    fanConfigs.forEach(config => {
+        const el = document.createElement('div');
+        el.className = `scroll-fan ${config.class}`;
+        el.style.color = config.color;
+        el.innerHTML = fanSVG;
+        document.body.appendChild(el);
+        fans.push({ el, speed: config.speed, rotation: 0 });
+    });
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                const scrollY = window.scrollY;
+                fans.forEach(fan => {
+                    fan.rotation = scrollY * fan.speed;
+                    fan.el.querySelector('svg').style.transform = `rotate(${fan.rotation}deg)`;
+                });
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+})();
