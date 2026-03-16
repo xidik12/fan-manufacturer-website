@@ -832,6 +832,43 @@ const TRANSLATIONS = {
     "products.eff_static_desc": "Based on static pressure only. The most practically relevant metric for duct system design where outlet velocity energy is lost.",
     "products.eff_comparison": "Air Foil (backward-curved) fans achieve the highest efficiency (70\u201385%), while Sirocco (forward-curved) fans trade efficiency (40\u201360%) for high volume at low pressure.",
     "products.cta_desc": "Our engineering team at Dongil International Cambodia is ready to help you select the right fan for your project. Share your airflow requirements and we\u2019ll provide a recommendation and competitive quote.",
+
+    // Applications page — image card inner titles & subtitles
+    "apps.hvac_card_sub": "Central Air Handling \u00B7 Rooftop Units \u00B7 VAV Systems",
+    "apps.industrial_card_sub": "Process Ventilation \u00B7 Fume Extraction \u00B7 Warehouse Cooling",
+    "apps.hightemp_card_title": "Up to 1000\u00B0C",
+    "apps.hightemp_card_sub": "Foundries \u00B7 Steel Mills \u00B7 Glass Factories \u00B7 Kiln Operations",
+    "apps.commercial_card_sub": "Office Towers \u00B7 Shopping Malls \u00B7 Hotels",
+    "apps.parking_card_sub": "Supply & Exhaust \u00B7 CO/NO2 Monitoring \u00B7 Jet Fan Impulse",
+    "apps.kitchen_card_sub": "Commercial Kitchens \u00B7 Grease Extraction \u00B7 Hood Ventilation",
+    "apps.smoke_card_sub": "F300 \u00B7 F400 \u00B7 F600 Rated \u00B7 Stairwell Pressurization",
+    "apps.residential_card_sub": "Bathroom Exhaust \u00B7 Kitchen Ventilation \u00B7 Ceiling Fans",
+
+    // News page — featured category tags
+    "news.tag_cambodia": "Cambodia",
+    "news.tag_expansion": "Expansion",
+    "news.tag_southeastasia": "Southeast Asia",
+
+    // News page — article dates
+    "news.art1_date": "March 10, 2026",
+    "news.art2_date": "February 20, 2026",
+    "news.art3_date": "February 5, 2026",
+    "news.art4_date": "January 18, 2026",
+    "news.art5_date": "January 8, 2026",
+    "news.art6_date": "December 12, 2025",
+    "news.art7_date": "November 25, 2025",
+    "news.art8_date": "November 5, 2025",
+    "news.art9_date": "October 15, 2025",
+    "news.featured_date": "March 10, 2026",
+
+    // Careers page — stat box large labels
+    "careers.stat_monfri": "Mon\u2013Fri",
+    "careers.stat_phnompenh": "Phnom Penh",
+    "careers.stat_korean": "Korean",
+    "careers.stat_growing": "Growing",
+
+    // Careers page — location badge
+    "careers.location_phnompenh": "Phnom Penh, Cambodia",
   },
 
   ko: {
@@ -1634,6 +1671,43 @@ const TRANSLATIONS = {
     "products.eff_static_desc": "정압만을 기준으로 합니다. 출구 속도 에너지가 손실되는 덕트 시스템 설계에 가장 실용적인 지표입니다.",
     "products.eff_comparison": "에어포일(후향익) 팬은 최고 효율(70~85%)을 달성하며, 시로코(전향익) 팬은 효율(40~60%)을 저압에서의 대풍량과 교환합니다.",
     "products.cta_desc": "동일 인터내셔널 캄보디아의 엔지니어링 팀이 프로젝트에 적합한 팬을 선택하도록 도와드립니다. 풍량 요구사항을 공유해 주시면 추천 및 경쟁력 있는 견적을 제공하겠습니다.",
+
+    // Applications page — image card inner titles & subtitles
+    "apps.hvac_card_sub": "중앙 공기 처리 \u00B7 옥상 유닛 \u00B7 VAV 시스템",
+    "apps.industrial_card_sub": "공정 환기 \u00B7 흄 추출 \u00B7 창고 냉각",
+    "apps.hightemp_card_title": "최대 1000\u00B0C",
+    "apps.hightemp_card_sub": "주물 공장 \u00B7 제철소 \u00B7 유리 공장 \u00B7 가마 작업",
+    "apps.commercial_card_sub": "오피스 타워 \u00B7 쇼핑몰 \u00B7 호텔",
+    "apps.parking_card_sub": "급기 및 배기 \u00B7 CO/NO2 모니터링 \u00B7 제트 팬 임펄스",
+    "apps.kitchen_card_sub": "상업용 주방 \u00B7 그리스 추출 \u00B7 후드 환기",
+    "apps.smoke_card_sub": "F300 \u00B7 F400 \u00B7 F600 등급 \u00B7 계단실 가압",
+    "apps.residential_card_sub": "욕실 배기 \u00B7 주방 환기 \u00B7 천장 팬",
+
+    // News page — featured category tags
+    "news.tag_cambodia": "캄보디아",
+    "news.tag_expansion": "사업 확장",
+    "news.tag_southeastasia": "동남아시아",
+
+    // News page — article dates
+    "news.art1_date": "2026년 3월 10일",
+    "news.art2_date": "2026년 2월 20일",
+    "news.art3_date": "2026년 2월 5일",
+    "news.art4_date": "2026년 1월 18일",
+    "news.art5_date": "2026년 1월 8일",
+    "news.art6_date": "2025년 12월 12일",
+    "news.art7_date": "2025년 11월 25일",
+    "news.art8_date": "2025년 11월 5일",
+    "news.art9_date": "2025년 10월 15일",
+    "news.featured_date": "2026년 3월 10일",
+
+    // Careers page — stat box large labels
+    "careers.stat_monfri": "월\u2013금",
+    "careers.stat_phnompenh": "프놈펜",
+    "careers.stat_korean": "한국어",
+    "careers.stat_growing": "성장 중",
+
+    // Careers page — location badge
+    "careers.location_phnompenh": "프놈펜, 캄보디아",
   },
 
   km: {
@@ -2443,7 +2517,44 @@ const TRANSLATIONS = {
     "apps.enquire_residential": "សាកសួរសំរាប់លំណៅដ្ឋាន",
     "apps.cta_title": "មានកំមវិធីប្រើប្រាស់ជាក់លាក់ក្នុងចិត្តទេ?",
     "apps.contactengineers": "ទំនាក់ទំនងវិស្វកររបស់យើង",
-    "apps.browseproducts": "រកមើលផលិតផល"
+    "apps.browseproducts": "រកមើលផលិតផល",
+
+    // Applications page — image card inner titles & subtitles
+    "apps.hvac_card_sub": "ការដោះស្រាយខ្យល់កណ្តាល \u00B7 ឧបករណ៍ដំបូល \u00B7 ប្រព័ន្ធ VAV",
+    "apps.industrial_card_sub": "ខ្យល់ដំណើរការ \u00B7 ការស្រង់ផ្សែង \u00B7 ការត្រជាក់ឃ្លាំង",
+    "apps.hightemp_card_title": "រហូតដល់ 1000\u00B0C",
+    "apps.hightemp_card_sub": "រោងចក្រស្ទូង \u00B7 រោងថែករ \u00B7 រោងចក្រកញ្ចក់ \u00B7 ប្រតិបត្តិការ Kiln",
+    "apps.commercial_card_sub": "អគារការិយាល័យ \u00B7 ផ្សារទំនើប \u00B7 សណ្ឋាគារ",
+    "apps.parking_card_sub": "ផ្គត់ផ្គង់ & ការបញ្ចេញ \u00B7 ត្រួតពិនិត្យ CO/NO2 \u00B7 Jet Fan Impulse",
+    "apps.kitchen_card_sub": "ផ្ទះបាយពាណិជ្ជកម្ម \u00B7 ការស្រង់ខ្លាញ់ \u00B7 ខ្យល់ Hood",
+    "apps.smoke_card_sub": "ចាត់ថ្នាក់ F300 \u00B7 F400 \u00B7 F600 \u00B7 សម្ពាធជណ្ដើរ",
+    "apps.residential_card_sub": "ការបញ្ចេញបន្ទប់ងូតទឹក \u00B7 ខ្យល់ផ្ទះបាយ \u00B7 គ្រឿងបក់ពិដាន",
+
+    // News page — featured category tags
+    "news.tag_cambodia": "កម្ពុជា",
+    "news.tag_expansion": "ការពង្រីក",
+    "news.tag_southeastasia": "អាស៊ីអាគ្នេយ៍",
+
+    // News page — article dates
+    "news.art1_date": "១០ មីនា ២០២៦",
+    "news.art2_date": "២០ កុម្ភៈ ២០២៦",
+    "news.art3_date": "៥ កុម្ភៈ ២០២៦",
+    "news.art4_date": "១៨ មករា ២០២៦",
+    "news.art5_date": "៨ មករា ២០២៦",
+    "news.art6_date": "១២ ធ្នូ ២០២៥",
+    "news.art7_date": "២៥ វិច្ឆិកា ២០២៥",
+    "news.art8_date": "៥ វិច្ឆិកា ២០២៥",
+    "news.art9_date": "១៥ តុលា ២០២៥",
+    "news.featured_date": "១០ មីនា ២០២៦",
+
+    // Careers page — stat box large labels
+    "careers.stat_monfri": "ច\u2013សុ",
+    "careers.stat_phnompenh": "ភ្នំពេញ",
+    "careers.stat_korean": "កូរ៉េ",
+    "careers.stat_growing": "កំពុងរីកចម្រើន",
+
+    // Careers page — location badge
+    "careers.location_phnompenh": "ភ្នំពេញ, កម្ពុជា"
   }
 };
 // ── Language Switcher ──
