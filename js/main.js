@@ -104,30 +104,25 @@ if (heroEl) {
 
 // ── Scroll-driven spinning fan backgrounds ──
 (function() {
-    // Industrial fan blade SVG — wide curved blades with hub and outer ring
+    // Propeller fan SVG — 4 wide curved organic blades with center hub
     const fanSVG = `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <g fill="none" stroke="currentColor">
-            <!-- Outer ring -->
-            <circle cx="100" cy="100" r="90" stroke-width="3" opacity="0.4"/>
-            <!-- Inner hub -->
-            <circle cx="100" cy="100" r="18" fill="currentColor" opacity="0.5"/>
-            <circle cx="100" cy="100" r="8" fill="currentColor" opacity="0.7"/>
-            <!-- 5 fan blades — wide, tapered, slightly curved -->
-            <path d="M100 82 L88 30 Q100 20 112 30 Z" fill="currentColor" opacity="0.5" transform="rotate(0 100 100)"/>
-            <path d="M100 82 L88 30 Q100 20 112 30 Z" fill="currentColor" opacity="0.5" transform="rotate(72 100 100)"/>
-            <path d="M100 82 L88 30 Q100 20 112 30 Z" fill="currentColor" opacity="0.5" transform="rotate(144 100 100)"/>
-            <path d="M100 82 L88 30 Q100 20 112 30 Z" fill="currentColor" opacity="0.5" transform="rotate(216 100 100)"/>
-            <path d="M100 82 L88 30 Q100 20 112 30 Z" fill="currentColor" opacity="0.5" transform="rotate(288 100 100)"/>
-            <!-- Cross struts -->
-            <line x1="100" y1="18" x2="100" y2="82" stroke-width="1.5" opacity="0.2"/>
-            <line x1="18" y1="100" x2="82" y2="100" stroke-width="1.5" opacity="0.2"/>
+        <g fill="currentColor">
+            <!-- Center hub -->
+            <circle cx="100" cy="100" r="12" opacity="0.9"/>
+            <!-- Blade 1 — top-left, wide curved propeller shape -->
+            <path d="M100 88 C85 75, 50 60, 30 45 C20 38, 25 25, 40 30 C60 38, 80 55, 88 100" opacity="0.7"/>
+            <!-- Blade 2 — top-right -->
+            <path d="M112 100 C125 85, 140 50, 155 30 C162 20, 175 25, 170 40 C162 60, 145 80, 100 88" opacity="0.7"/>
+            <!-- Blade 3 — bottom-right -->
+            <path d="M100 112 C115 125, 150 140, 170 155 C180 162, 175 175, 160 170 C140 162, 120 145, 112 100" opacity="0.7"/>
+            <!-- Blade 4 — bottom-left -->
+            <path d="M88 100 C75 115, 60 150, 45 170 C38 180, 25 175, 30 160 C38 140, 55 120, 100 112" opacity="0.7"/>
         </g>
     </svg>`;
 
     const fanConfigs = [
-        { class: 'scroll-fan--1', speed: 0.15, color: '#1e40af' },
-        { class: 'scroll-fan--2', speed: -0.1, color: '#2563eb' },
-        { class: 'scroll-fan--3', speed: 0.2, color: '#1e40af' },
+        { class: 'scroll-fan--1', speed: 0.12, color: '#1e40af' },
+        { class: 'scroll-fan--2', speed: -0.08, color: '#1e40af' },
     ];
 
     const fans = [];
