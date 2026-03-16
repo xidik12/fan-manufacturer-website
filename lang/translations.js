@@ -870,6 +870,50 @@ const TRANSLATIONS = {
 
     // Careers page — location badge
     "careers.location_phnompenh": "Phnom Penh, Cambodia",
+
+    // ========== CLEANUP KEYS (remove fake content) ==========
+
+    // Stats (homepage) — replacement for "Countries Served"
+    "stats.partnership": "Korean Partnership",
+    "stats.partnership_sub": "Dongil Machinery & Fanzic",
+
+    // About Page — replacement for "10+ Countries"
+    "about.seapresence": "Southeast Asia",
+
+    // About Page — cleaned keys
+    "about.milestonesdesc_clean": "Established in 1998 in South Korea, Dongil Co., Ltd. has grown into a trusted provider of ventilation solutions, with a strategic partnership with Dongil Machinery and Fanzic powering our continued expansion across Southeast Asia.",
+    "about.certdesc_clean": "Dongil products are manufactured under rigorous quality standards. Quality certifications and test reports are available upon request for project specification purposes.",
+    "about.cert_request": "Request Certification Details",
+    "about.globallabel_clean": "Our Presence",
+    "about.globaltitle_clean": "Cambodia Office & Korean Manufacturing Partner",
+    "about.cambodia_office": "Cambodia Office",
+    "about.korean_partner": "Korean Manufacturing Partner",
+    "about.korean_partner_desc": "Dongil Machinery & Fanzic\nSouth Korea",
+    "about.salesandservice": "Sales & Service",
+
+    // News Page — coming soon
+    "news.comingsoon_title": "News & Updates Coming Soon",
+    "news.comingsoon_desc": "We are preparing exciting news, product launches, and industry insights to share with you. Follow us on Facebook and Instagram for the latest from Dongil International.",
+    "news.comingsoon_contact": "Have news to share or media inquiries? Contact us at:",
+
+    // News Homepage — coming soon
+    "news.homepage_comingsoon": "News & Updates Coming Soon",
+    "news.homepage_comingsoon_desc": "Follow us on Facebook and Instagram for the latest from Dongil International.",
+
+    // Projects Page — coming soon
+    "projects.pagesubtitle_clean": "Dongil International provides ventilation solutions for industrial, commercial, and residential projects across Southeast Asia.",
+    "projects.comingsoon_title": "Projects Showcase Coming Soon",
+    "projects.comingsoon_desc": "We are compiling our portfolio of completed ventilation projects across Cambodia and Southeast Asia. Our team has delivered fan and blower solutions for commercial buildings, industrial facilities, residential developments, and more.",
+    "projects.comingsoon_contact": "For project references and case studies, please contact our engineering team directly:",
+    "projects.emailus": "Email Our Team",
+
+    // Careers Page — general openings
+    "careers.openings_general": "For current job openings at our Phnom Penh office, please contact us directly. We are always looking for talented professionals in engineering, sales, technical support, and marketing.",
+
+    // Resources Page — request catalog
+    "resources.request_catalog_title": "Request Our Product Catalog & Technical Documentation",
+    "resources.request_catalog_desc": "Our product catalog, technical datasheets, specification sheets, and engineering documentation are available upon request. Contact our team in Phnom Penh and we will provide the documents you need for your project.",
+    "resources.requestinfo": "Request Information",
   },
 
   ko: {
@@ -1710,6 +1754,40 @@ const TRANSLATIONS = {
 
     // Careers page — location badge
     "careers.location_phnompenh": "프놈펜, 캄보디아",
+
+    // ========== CLEANUP KEYS (Korean) ==========
+
+    "stats.partnership": "한국 파트너십",
+    "stats.partnership_sub": "동일기계 & Fanzic",
+
+    "about.seapresence": "동남아시아",
+    "about.milestonesdesc_clean": "1998년 한국에서 설립된 동일은 동일기계 및 Fanzic과의 전략적 파트너십을 통해 동남아시아 전역으로 지속적으로 확장하고 있는 신뢰받는 환기 솔루션 공급자입니다.",
+    "about.certdesc_clean": "동일 제품은 엄격한 품질 기준에 따라 제조됩니다. 프로젝트 사양을 위한 품질 인증서 및 시험 보고서는 요청 시 제공됩니다.",
+    "about.cert_request": "인증 세부정보 요청",
+    "about.globallabel_clean": "우리의 존재",
+    "about.globaltitle_clean": "캄보디아 사무실 & 한국 제조 파트너",
+    "about.cambodia_office": "캄보디아 사무실",
+    "about.korean_partner": "한국 제조 파트너",
+    "about.korean_partner_desc": "동일기계 & Fanzic\n한국",
+    "about.salesandservice": "영업 & 서비스",
+
+    "news.comingsoon_title": "뉴스 & 업데이트 준비 중",
+    "news.comingsoon_desc": "흥미로운 뉴스, 제품 출시, 업계 인사이트를 준비하고 있습니다. Facebook과 Instagram에서 동일 인터내셔널의 최신 소식을 팔로우하세요.",
+    "news.comingsoon_contact": "뉴스 공유 또는 미디어 문의는 여기로 연락해주세요:",
+    "news.homepage_comingsoon": "뉴스 & 업데이트 준비 중",
+    "news.homepage_comingsoon_desc": "Facebook과 Instagram에서 동일 인터내셔널의 최신 소식을 팔로우하세요.",
+
+    "projects.pagesubtitle_clean": "동일 인터내셔널은 동남아시아 전역의 산업, 상업, 주거 프로젝트에 환기 솔루션을 제공합니다.",
+    "projects.comingsoon_title": "프로젝트 쇼케이스 준비 중",
+    "projects.comingsoon_desc": "캄보디아와 동남아시아 전역에서 완료한 환기 프로젝트 포트폴리오를 정리하고 있습니다. 저희 팀은 상업 건물, 산업 시설, 주거 개발 등에 팬과 블로어 솔루션을 제공해 왔습니다.",
+    "projects.comingsoon_contact": "프로젝트 레퍼런스와 사례 연구는 엔지니어링 팀에 직접 문의하세요:",
+    "projects.emailus": "팀에 이메일 보내기",
+
+    "careers.openings_general": "프놈펜 사무실의 현재 채용 공고는 직접 문의해주세요. 엔지니어링, 영업, 기술 지원, 마케팅 분야의 인재를 항상 찾고 있습니다.",
+
+    "resources.request_catalog_title": "제품 카탈로그 & 기술 문서 요청",
+    "resources.request_catalog_desc": "제품 카탈로그, 기술 데이터시트, 사양서, 엔지니어링 문서는 요청 시 제공됩니다. 프놈펜 팀에 연락하시면 프로젝트에 필요한 문서를 제공합니다.",
+    "resources.requestinfo": "정보 요청",
   },
 
   km: {
@@ -2557,7 +2635,41 @@ const TRANSLATIONS = {
     "careers.stat_growing": "កំពុងរីកចម្រើន",
 
     // Careers page — location badge
-    "careers.location_phnompenh": "ភ្នំពេញ, កម្ពុជា"
+    "careers.location_phnompenh": "ភ្នំពេញ, កម្ពុជា",
+
+    // ========== CLEANUP KEYS (Khmer) ==========
+
+    "stats.partnership": "ភាពជាដៃគូកូរ៉េ",
+    "stats.partnership_sub": "Dongil Machinery & Fanzic",
+
+    "about.seapresence": "អាស៊ីអាគ្នេយ៍",
+    "about.milestonesdesc_clean": "បង្កើតឡើងក្នុងឆ្នាំ ១៩៩៨ នៅកូរ៉េខាងត្បូង Dongil Co., Ltd. បានរីកចម្រើនជាអ្នកផ្គត់ផ្គង់ដំណោះស្រាយខ្យល់ដែលអាចទុកចិត្តបាន ជាមួយភាពជាដៃគូយុទ្ធសាស្ត្រជាមួយ Dongil Machinery និង Fanzic ជំរុញការពង្រីកបន្តទៅអាស៊ីអាគ្នេយ៍។",
+    "about.certdesc_clean": "ផលិតផល Dongil ត្រូវបានផលិតក្រោមស្តង់ដារគុណភាពយ៉ាងម៉ឺងម៉ាត់។ វិញ្ញាបនបត្រគុណភាព និងរបាយការណ៍តេស្ត អាចរកបានតាមការស្នើសុំ។",
+    "about.cert_request": "ស្នើសុំព័ត៌មានវិញ្ញាបនបត្រ",
+    "about.globallabel_clean": "វត្តមានរបស់យើង",
+    "about.globaltitle_clean": "ការិយាល័យកម្ពុជា និងដៃគូផលិតកម្មកូរ៉េ",
+    "about.cambodia_office": "ការិយាល័យកម្ពុជា",
+    "about.korean_partner": "ដៃគូផលិតកម្មកូរ៉េ",
+    "about.korean_partner_desc": "Dongil Machinery & Fanzic\nកូរ៉េខាងត្បូង",
+    "about.salesandservice": "លក់ និងសេវាកម្ម",
+
+    "news.comingsoon_title": "ព័ត៌មាន និងការអាប់ដេតនឹងមកដល់ឆាប់ៗ",
+    "news.comingsoon_desc": "យើងកំពុងរៀបចំព័ត៌មានគួរឱ្យរំភើប ការចេញផ្សាយផលិតផល និងការយល់ដឹងអំពីឧស្សាហកម្មដើម្បីចែករំលែកជាមួយអ្នក។ តាមដានយើងនៅលើ Facebook និង Instagram សម្រាប់ព័ត៌មានថ្មីៗពី Dongil International។",
+    "news.comingsoon_contact": "មានព័ត៌មានដើម្បីចែករំលែក ឬសំណួរប្រព័ន្ធផ្សព្វផ្សាយ? ទំនាក់ទំនងយើងនៅ:",
+    "news.homepage_comingsoon": "ព័ត៌មាន និងការអាប់ដេតនឹងមកដល់ឆាប់ៗ",
+    "news.homepage_comingsoon_desc": "តាមដានយើងនៅលើ Facebook និង Instagram សម្រាប់ព័ត៌មានថ្មីៗពី Dongil International។",
+
+    "projects.pagesubtitle_clean": "Dongil International ផ្តល់ដំណោះស្រាយខ្យល់សម្រាប់គម្រោងឧស្សាហកម្ម ពាណិជ្ជកម្ម និងលំនៅដ្ឋានទូទាំងអាស៊ីអាគ្នេយ៍។",
+    "projects.comingsoon_title": "ការបង្ហាញគម្រោងនឹងមកដល់ឆាប់ៗ",
+    "projects.comingsoon_desc": "យើងកំពុងចងក្រងផលប័ត្រគម្រោងខ្យល់ដែលបានបញ្ចប់ទូទាំងកម្ពុជា និងអាស៊ីអាគ្នេយ៍។ ក្រុមរបស់យើងបានផ្តល់ដំណោះស្រាយគ្រឿងបក់ និង blower សម្រាប់អគារពាណិជ្ជកម្ម រោងចក្រឧស្សាហកម្ម ការអភិវឌ្ឍន៍លំនៅដ្ឋាន និងអ្វីៗជាច្រើនទៀត។",
+    "projects.comingsoon_contact": "សម្រាប់ឯកសារយោងគម្រោង និងករណីសិក្សា សូមទំនាក់ទំនងក្រុមវិស្វកម្មរបស់យើងដោយផ្ទាល់:",
+    "projects.emailus": "ផ្ញើអ៊ីមែលទៅក្រុមយើង",
+
+    "careers.openings_general": "សម្រាប់មុខតំណែងបើកទទួលបច្ចុប្បន្ននៅការិយាល័យភ្នំពេញ សូមទំនាក់ទំនងយើងដោយផ្ទាល់។ យើងតែងតែស្វែងរកអ្នកជំនាញមានទេពកោសល្យក្នុងវិស្វកម្ម ការលក់ ជំនួយបច្ចេកទេស និងទីផ្សារ។",
+
+    "resources.request_catalog_title": "ស្នើសុំកាតាឡុកផលិតផល និងឯកសារបច្ចេកទេស",
+    "resources.request_catalog_desc": "កាតាឡុកផលិតផល ទិន្នន័យបច្ចេកទេស សៀវភៅសម្គាល់ និងឯកសារវិស្វកម្មអាចរកបានតាមការស្នើសុំ។ ទំនាក់ទំនងក្រុមយើងនៅភ្នំពេញ ហើយយើងនឹងផ្តល់ឯកសារដែលអ្នកត្រូវការសម្រាប់គម្រោងរបស់អ្នក។",
+    "resources.requestinfo": "ស្នើសុំព័ត៌មាន"
   }
 };
 // ── Language Switcher ──
