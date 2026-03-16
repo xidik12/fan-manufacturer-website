@@ -104,19 +104,26 @@ if (heroEl) {
 
 // ── Scroll-driven spinning fan backgrounds ──
 (function() {
-    // Propeller fan SVG — 4 wide curved organic blades with center hub
+    // Stand fan SVG — 3 spiral curved blades like a desk/stand fan
     const fanSVG = `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <g fill="currentColor">
+            <!-- Outer guard ring -->
+            <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="2.5" opacity="0.3"/>
+            <circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="1" opacity="0.15"/>
             <!-- Center hub -->
-            <circle cx="100" cy="100" r="12" opacity="0.9"/>
-            <!-- Blade 1 — top-left, wide curved propeller shape -->
-            <path d="M100 88 C85 75, 50 60, 30 45 C20 38, 25 25, 40 30 C60 38, 80 55, 88 100" opacity="0.7"/>
-            <!-- Blade 2 — top-right -->
-            <path d="M112 100 C125 85, 140 50, 155 30 C162 20, 175 25, 170 40 C162 60, 145 80, 100 88" opacity="0.7"/>
-            <!-- Blade 3 — bottom-right -->
-            <path d="M100 112 C115 125, 150 140, 170 155 C180 162, 175 175, 160 170 C140 162, 120 145, 112 100" opacity="0.7"/>
-            <!-- Blade 4 — bottom-left -->
-            <path d="M88 100 C75 115, 60 150, 45 170 C38 180, 25 175, 30 160 C38 140, 55 120, 100 112" opacity="0.7"/>
+            <circle cx="100" cy="100" r="14" opacity="0.8"/>
+            <circle cx="100" cy="100" r="8" opacity="1"/>
+            <!-- Blade 1 — spiral curve sweeping from hub to outer edge -->
+            <path d="M100 86 C92 70, 68 42, 42 28 C28 20, 16 28, 22 42 C30 60, 52 72, 86 100 Z" opacity="0.6"/>
+            <!-- Blade 2 — rotated 120° -->
+            <path d="M100 86 C92 70, 68 42, 42 28 C28 20, 16 28, 22 42 C30 60, 52 72, 86 100 Z" opacity="0.6" transform="rotate(120 100 100)"/>
+            <!-- Blade 3 — rotated 240° -->
+            <path d="M100 86 C92 70, 68 42, 42 28 C28 20, 16 28, 22 42 C30 60, 52 72, 86 100 Z" opacity="0.6" transform="rotate(240 100 100)"/>
+            <!-- Cross guard wires -->
+            <line x1="100" y1="5" x2="100" y2="195" stroke="currentColor" stroke-width="1" opacity="0.12"/>
+            <line x1="5" y1="100" x2="195" y2="100" stroke="currentColor" stroke-width="1" opacity="0.12"/>
+            <line x1="33" y1="33" x2="167" y2="167" stroke="currentColor" stroke-width="0.8" opacity="0.08"/>
+            <line x1="167" y1="33" x2="33" y2="167" stroke="currentColor" stroke-width="0.8" opacity="0.08"/>
         </g>
     </svg>`;
 
