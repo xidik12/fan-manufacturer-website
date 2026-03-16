@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Applications & Solutions - AeroFlow Ventilation</title>
+    <title>Applications & Solutions - Dongil International</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -32,17 +32,17 @@
     <div class="bg-primary text-white text-sm py-2">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <div class="hidden md:flex items-center gap-6">
-                <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +1 (800) XXX-XXXX</span>
-                <span><i class="fas fa-envelope mr-1 text-accent"></i> info@aeroflowfans.com</span>
-                <span><i class="fas fa-map-marker-alt mr-1 text-accent"></i> Global Headquarters</span>
+                <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +855 10 502 228</span>
+                <span><i class="fas fa-envelope mr-1 text-accent"></i> dongilfan.cambodia@gmail.com</span>
+                <span><i class="fas fa-map-marker-alt mr-1 text-accent"></i> Phnom Penh, Cambodia</span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="#" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
                 <a href="#" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-instagram"></i></a>
                 <span class="text-gray-500 mx-2">|</span>
-                <a href="#" class="hover:text-accent transition text-xs font-medium">EN</a>
-                <a href="#" class="text-gray-400 hover:text-accent transition text-xs">中文</a>
+                <a href="#" onclick="switchLang('en'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="en">EN</a>
+                <a href="#" onclick="switchLang('ko'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="ko">한국어</a>
+                <a href="#" onclick="switchLang('km'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="km">ខ្មែរ</a>
             </div>
         </div>
     </div>
@@ -53,75 +53,69 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <a href="../index.html" class="flex items-center gap-3">
-                    <div class="relative">
-                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
-                            <i class="fas fa-fan text-white text-xl"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-black text-primary text-xl tracking-tight">AEROFLOW</div>
-                        <div class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Ventilation Solutions</div>
-                    </div>
+                    <img src="../images/dongil-logo.jpg" alt="Dongil International" class="h-10">
                 </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center gap-1">
                     <div class="relative group">
                         <a href="products.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Products <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.products">Products</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="products.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm font-medium">All Products</a>
-                            <a href="products.html#axial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Axial Fans</a>
-                            <a href="products.html#centrifugal" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Centrifugal Fans</a>
-                            <a href="products.html#inline" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">In-Line Fans</a>
-                            <a href="products.html#jet" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Jet Fans</a>
-                            <a href="products.html#roof" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Roof Exhaust Fans</a>
-                            <a href="products.html#domestic" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Domestic Fans</a>
+                            <a href="products.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm font-medium" data-i18n="nav.allproducts">All Products</a>
+                            <a href="products.html#axial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.axialfans">Axial Fans</a>
+                            <a href="products.html#centrifugal" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.centrifugalfans">Centrifugal Fans</a>
+                            <a href="products.html#inline" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.inlinefans">In-Line Fans</a>
+                            <a href="products.html#jet" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.jetfans">Jet Fans</a>
+                            <a href="products.html#roof" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.roofexhaustfans">Roof Exhaust Fans</a>
+                            <a href="products.html#domestic" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.domesticfans">Domestic Fans</a>
                         </div>
                     </div>
                     <div class="relative group">
                         <a href="applications.html" class="px-4 py-2 rounded-md bg-blue-50 font-semibold text-secondary transition flex items-center gap-1">
-                            Applications <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.applications">Applications</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="applications.html#hvac" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">HVAC & Air Conditioning</a>
-                            <a href="applications.html#carpark" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Car Park Ventilation</a>
-                            <a href="applications.html#commercial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Commercial Buildings</a>
-                            <a href="applications.html#industrial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Industrial & Manufacturing</a>
-                            <a href="applications.html#tunnel" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Tunnels & Transport</a>
-                            <a href="applications.html#residential" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Residential</a>
+                            <a href="#hvac" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.hvacsystems">HVAC Systems</a>
+                            <a href="#industrial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.industrialvent">Industrial Ventilation</a>
+                            <a href="#hightemp" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.hightempenv">High-Temperature Environments</a>
+                            <a href="#commercial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.commercialspaces">Commercial Spaces</a>
+                            <a href="#carpark" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.undergroundparking">Underground Parking</a>
+                            <a href="#kitchen" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.kitchenexhaust">Kitchen Exhaust</a>
+                            <a href="#smoke" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.smokeextraction">Smoke Extraction</a>
+                            <a href="#residential" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.residential">Residential</a>
                         </div>
                     </div>
                     <div class="relative group">
                         <a href="about.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Why AeroFlow <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.why">Why Dongil</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="about.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Company Profile</a>
-                            <a href="about.html#facts" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Facts & Figures</a>
-                            <a href="about.html#innovation" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Innovation</a>
-                            <a href="projects.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Prestigious Projects</a>
+                            <a href="about.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.companyprofile">Company Profile</a>
+                            <a href="about.html#facts" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.factsfigures">Facts & Figures</a>
+                            <a href="about.html#innovation" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.innovation">Innovation</a>
+                            <a href="projects.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.prestigiousprojects">Prestigious Projects</a>
                         </div>
                     </div>
                     <div class="relative group">
                         <a href="resources.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Resources <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.resources">Resources</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="resources.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Case Studies</a>
-                            <a href="resources.html#software" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Fan Selection Software</a>
-                            <a href="resources.html#docs" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Literature & Documentation</a>
+                            <a href="resources.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.documentation">Documentation</a>
+                            <a href="resources.html#software" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.fanselectionsw">Fan Selection Software</a>
+                            <a href="resources.html#docs" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.litdatasheets">Literature & Datasheets</a>
                         </div>
                     </div>
-                    <a href="news.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">News</a>
-                    <a href="contact.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">Contact</a>
+                    <a href="news.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition"><span data-i18n="nav.news">News</span></a>
+                    <a href="contact.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition"><span data-i18n="nav.contact">Contact</span></a>
                 </div>
 
                 <!-- CTA + Mobile -->
                 <div class="flex items-center gap-3">
                     <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow-md">
-                        <i class="fas fa-headset text-sm"></i> Get a Quote
+                        <i class="fas fa-headset text-sm"></i> <span data-i18n="nav.getquote">Get a Quote</span>
                     </a>
                     <button id="mobile-toggle" class="lg:hidden text-2xl text-primary"><i class="fas fa-bars"></i></button>
                 </div>
@@ -131,13 +125,13 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
             <div class="px-4 py-4 space-y-2">
-                <a href="products.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Products</a>
-                <a href="applications.html" class="block py-2 text-secondary font-medium">Applications</a>
-                <a href="about.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Why AeroFlow</a>
-                <a href="resources.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Resources</a>
-                <a href="news.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">News</a>
-                <a href="contact.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Contact</a>
-                <a href="contact.html" class="block bg-gradient-to-r from-secondary to-accent text-white text-center font-semibold py-3 rounded-lg mt-3">Get a Quote</a>
+                <a href="products.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.products">Products</span></a>
+                <a href="applications.html" class="block py-2 text-secondary font-semibold"><span data-i18n="nav.applications">Applications</span></a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.why">Why Dongil</span></a>
+                <a href="resources.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.resources">Resources</span></a>
+                <a href="news.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.news">News</span></a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.contact">Contact</span></a>
+                <a href="contact.html" class="block bg-gradient-to-r from-secondary to-accent text-white text-center font-semibold py-3 rounded-lg mt-3"><span data-i18n="nav.getquote">Get a Quote</span></a>
             </div>
         </div>
     </nav>
@@ -146,785 +140,431 @@
     <section class="page-header text-white">
         <div class="absolute inset-0 z-0">
             <div class="absolute top-10 right-10 w-72 h-72 border border-accent/10 rounded-full"></div>
-            <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
-            <div class="absolute top-1/2 right-1/6 opacity-5">
-                <i class="fas fa-fan text-[200px] animate-spin-slow"></i>
+            <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-secondary/10 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 right-1/3 opacity-5">
+                <i class="fas fa-building text-[200px]"></i>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 relative z-10">
-            <nav class="flex items-center gap-2 text-sm text-blue-300 mb-6">
-                <a href="../index.html" class="hover:text-accent transition">Home</a>
-                <i class="fas fa-chevron-right text-xs text-blue-500"></i>
-                <span class="text-white">Applications</span>
+            <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3" data-i18n="apps.industrysolutions">Industry Solutions</p>
+            <h1 class="text-4xl md:text-5xl font-black mb-4" data-i18n="apps.pagetitle">Applications & Solutions</h1>
+            <p class="text-blue-300 text-lg max-w-2xl mb-6"><span data-i18n="apps.pagesubtitle">Dongil International fans and blowers are engineered for demanding applications across HVAC, industrial, commercial, and residential sectors.</span></p>
+            <nav class="text-sm text-blue-300">
+                <a href="../index.html" class="hover:text-accent transition" data-i18n="nav.home">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-white" data-i18n="nav.applications">Applications</span>
             </nav>
-            <h1 class="text-4xl md:text-5xl font-black mb-4">Applications & Solutions</h1>
-            <p class="text-blue-200 text-lg max-w-2xl leading-relaxed">
-                Delivering precision ventilation across every industry -- from high-rise HVAC systems to underground tunnels and residential comfort. Explore how AeroFlow fans perform in your environment.
+        </div>
+    </section>
+
+    <!-- Overview Stats -->
+    <section class="py-12 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-black text-secondary mb-1">8+</div>
+                    <div class="text-gray-500 text-sm font-medium" data-i18n="apps.sectors">Application Sectors</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-secondary mb-1">1000°C</div>
+                    <div class="text-gray-500 text-sm font-medium" data-i18n="apps.maxtemp">Max Gas Temperature</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-secondary mb-1">500+</div>
+                    <div class="text-gray-500 text-sm font-medium" data-i18n="apps.completedprojects">Completed Projects</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-secondary mb-1">30+</div>
+                    <div class="text-gray-500 text-sm font-medium" data-i18n="apps.yearsexpertise">Years of Expertise</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application 1: HVAC Systems -->
+    <section id="hvac" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-blue-100 text-secondary text-sm font-bold px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-wind"></i> <span data-i18n="apps.hvac">HVAC Systems</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-primary mb-6 leading-tight" data-i18n="apps.hvac_title">Central Air Handling & Climate Control</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Dongil fans are the heart of HVAC systems worldwide. From central air handling units to rooftop installations, our products deliver precise airflow control, low noise, and long-term energy efficiency for modern buildings.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.hvac_b1">Central air handling units (AHU) with high-efficiency impellers</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.hvac_b2">Rooftop packaged units and fresh air supply systems</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.hvac_b3">Variable air volume (VAV) systems with EC motor compatibility</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.hvac_b4">BMS-compatible controls for smart building integration</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-md">
+                        <span data-i18n="apps.enquire_hvac">Enquire for HVAC</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-12 flex items-center justify-center min-h-[360px] relative overflow-hidden shadow-2xl">
+                    <div class="absolute inset-0 opacity-5"><i class="fas fa-wind text-[300px] text-white"></i></div>
+                    <div class="relative z-10 text-center text-white">
+                        <div class="w-24 h-24 bg-accent/20 rounded-3xl flex items-center justify-center text-5xl mx-auto mb-6"><i class="fas fa-wind"></i></div>
+                        <div class="text-2xl font-bold mb-2">HVAC Systems</div>
+                        <div class="text-blue-300 text-sm">Central Air Handling · Rooftop Units · VAV Systems</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application 2: Industrial Ventilation -->
+    <section id="industrial" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="bg-gradient-to-br from-slate-800 to-slate-600 rounded-2xl p-12 flex items-center justify-center min-h-[360px] relative overflow-hidden shadow-2xl order-2 lg:order-1">
+                    <div class="absolute inset-0 opacity-5"><i class="fas fa-industry text-[300px] text-white"></i></div>
+                    <div class="relative z-10 text-center text-white">
+                        <div class="w-24 h-24 bg-white/10 rounded-3xl flex items-center justify-center text-5xl mx-auto mb-6"><i class="fas fa-industry"></i></div>
+                        <div class="text-2xl font-bold mb-2">Industrial Ventilation</div>
+                        <div class="text-slate-300 text-sm">Process Ventilation · Fume Extraction · Warehouse Cooling</div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="inline-flex items-center gap-2 bg-slate-100 text-slate-700 text-sm font-bold px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-industry"></i> <span data-i18n="apps.industrial">Industrial Ventilation</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-primary mb-6 leading-tight" data-i18n="apps.industrial_title">Heavy-Duty Industrial Airflow Solutions</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Industrial environments demand fans that perform reliably under continuous, harsh conditions. Dongil blowers are engineered for process ventilation, chemical fume extraction, and large-scale warehouse and factory cooling.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.industrial_b1">Process ventilation for manufacturing plants and factories</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.industrial_b2">Fume and chemical exhaust extraction systems</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.industrial_b3">High-volume warehouse and logistics center cooling</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.industrial_b4">ATEX-rated fans for hazardous environments</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-md">
+                        <span data-i18n="apps.enquire_industrial">Enquire for Industrial</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application 3: High-Temperature Environments -->
+    <section id="hightemp" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-red-100 text-red-700 text-sm font-bold px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-temperature-high"></i> <span data-i18n="apps.hightemp">High-Temperature Environments</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-primary mb-6 leading-tight" data-i18n="apps.hightemp_title">Heat-Resistant Fans up to 1000°C</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Dongil manufactures specialized high-temperature fans designed for factories, foundries, and industrial processes handling extremely hot gases. Our heat-resistant impellers and housings maintain structural integrity and aerodynamic performance under extreme thermal conditions.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.hightemp_b1">Handling gases and fumes at temperatures up to 1000°C</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.hightemp_b2">Ceramic and stainless steel impellers for thermal resistance</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.hightemp_b3">Suitable for steel mills, glass factories, and kiln operations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.hightemp_b4">Custom engineering for non-standard process requirements</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-red-700 to-orange-500 hover:from-red-800 hover:to-orange-600 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-md">
+                        <span data-i18n="apps.enquire_hightemp">Enquire for High-Temp</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="bg-gradient-to-br from-red-900 to-orange-700 rounded-2xl p-12 flex items-center justify-center min-h-[360px] relative overflow-hidden shadow-2xl">
+                    <div class="absolute inset-0 opacity-5"><i class="fas fa-fire text-[300px] text-white"></i></div>
+                    <div class="relative z-10 text-center text-white">
+                        <div class="w-24 h-24 bg-white/10 rounded-3xl flex items-center justify-center text-5xl mx-auto mb-6"><i class="fas fa-temperature-high"></i></div>
+                        <div class="text-2xl font-bold mb-2">Up to 1000°C</div>
+                        <div class="text-orange-200 text-sm">Foundries · Steel Mills · Glass Factories · Kiln Operations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application 4: Commercial Spaces -->
+    <section id="commercial" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="bg-gradient-to-br from-cyan-800 to-cyan-600 rounded-2xl p-12 flex items-center justify-center min-h-[360px] relative overflow-hidden shadow-2xl order-2 lg:order-1">
+                    <div class="absolute inset-0 opacity-5"><i class="fas fa-city text-[300px] text-white"></i></div>
+                    <div class="relative z-10 text-center text-white">
+                        <div class="w-24 h-24 bg-white/10 rounded-3xl flex items-center justify-center text-5xl mx-auto mb-6"><i class="fas fa-building"></i></div>
+                        <div class="text-2xl font-bold mb-2">Commercial Spaces</div>
+                        <div class="text-cyan-200 text-sm">Office Towers · Shopping Malls · Hotels</div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="inline-flex items-center gap-2 bg-cyan-100 text-cyan-700 text-sm font-bold px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-building"></i> <span data-i18n="apps.commercial">Commercial Spaces</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-primary mb-6 leading-tight" data-i18n="apps.commercial_title">Ventilation for Office Towers, Malls & Hotels</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Modern commercial buildings require ventilation systems that balance air quality, energy efficiency, and acoustic comfort. Dongil fans are specified by leading M&E consultants for prestigious commercial developments across the region.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.commercial_b1">High-rise office towers and mixed-use developments</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.commercial_b2">Shopping malls and retail centers with high occupancy loads</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.commercial_b3">Hotels, serviced apartments, and hospitality facilities</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.commercial_b4">Low-noise EC fans meeting stringent acoustic requirements</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-md">
+                        <span data-i18n="apps.enquire_commercial">Enquire for Commercial</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application 5: Underground Parking -->
+    <section id="carpark" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-gray-200 text-gray-700 text-sm font-bold px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-car"></i> <span data-i18n="apps.parking">Underground Parking</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-primary mb-6 leading-tight" data-i18n="apps.carpark_title">Safe & Compliant Car Park Ventilation</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Underground car parks present unique ventilation challenges. Dongil's jet fan and axial fan systems provide proven impulse ventilation solutions that efficiently manage CO/NO2 levels while meeting fire safety codes.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.carpark_b1">Supply and exhaust fan systems for multi-level car parks</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.carpark_b2">Integrated CO/NO2 monitoring and demand-controlled ventilation</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.carpark_b3">Jet fan impulse ventilation eliminating ductwork requirements</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.carpark_b4">F400 and F600 fire-rated fans for smoke extraction in emergencies</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-md">
+                        <span data-i18n="apps.enquire_carpark">Enquire for Car Parks</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="bg-gradient-to-br from-gray-800 to-gray-600 rounded-2xl p-12 flex items-center justify-center min-h-[360px] relative overflow-hidden shadow-2xl">
+                    <div class="absolute inset-0 opacity-5"><i class="fas fa-parking text-[300px] text-white"></i></div>
+                    <div class="relative z-10 text-center text-white">
+                        <div class="w-24 h-24 bg-white/10 rounded-3xl flex items-center justify-center text-5xl mx-auto mb-6"><i class="fas fa-car"></i></div>
+                        <div class="text-2xl font-bold mb-2">Underground Parking</div>
+                        <div class="text-gray-300 text-sm">Supply & Exhaust · CO/NO2 Monitoring · Jet Fan Impulse</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application 6: Kitchen Exhaust -->
+    <section id="kitchen" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="bg-gradient-to-br from-amber-800 to-amber-600 rounded-2xl p-12 flex items-center justify-center min-h-[360px] relative overflow-hidden shadow-2xl order-2 lg:order-1">
+                    <div class="absolute inset-0 opacity-5"><i class="fas fa-utensils text-[300px] text-white"></i></div>
+                    <div class="relative z-10 text-center text-white">
+                        <div class="w-24 h-24 bg-white/10 rounded-3xl flex items-center justify-center text-5xl mx-auto mb-6"><i class="fas fa-utensils"></i></div>
+                        <div class="text-2xl font-bold mb-2">Kitchen Exhaust</div>
+                        <div class="text-amber-200 text-sm">Commercial Kitchens · Grease Extraction · Hood Ventilation</div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-700 text-sm font-bold px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-utensils"></i> <span data-i18n="apps.kitchen">Kitchen Exhaust</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-primary mb-6 leading-tight" data-i18n="apps.kitchen_title">Commercial Kitchen Hood Ventilation</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Commercial kitchens generate grease-laden air, heat, and smoke that require specialized exhaust fans. Dongil's kitchen exhaust fans are built with grease-resistant materials and cleanable impeller designs to maintain hygiene and fire safety compliance.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.kitchen_b1">High-efficiency exhaust fans for commercial kitchen hoods</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.kitchen_b2">Grease-laden air extraction with cleanable impeller designs</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.kitchen_b3">Stainless steel construction for hygiene and durability</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.kitchen_b4">Suitable for hotels, restaurants, food courts, and catering facilities</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-md">
+                        <span data-i18n="apps.enquire_kitchen">Enquire for Kitchen Exhaust</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application 7: Smoke Extraction -->
+    <section id="smoke" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 text-sm font-bold px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-shield-alt"></i> <span data-i18n="apps.smoke">Smoke Extraction</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-primary mb-6 leading-tight" data-i18n="apps.smoke_title">Life Safety Smoke Extraction Systems</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Fire safety is paramount. Dongil's smoke extraction fans are F300, F400, and F600 rated, ensuring reliable operation during a fire event for the critical window needed to evacuate occupants safely. Used in car parks, atriums, corridors, and stairwells.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.smoke_b1">F300/F400/F600 fire-rated smoke extract fans</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.smoke_b2">Stairwell and lobby pressurization to maintain escape routes</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.smoke_b3">Atrium smoke management and mechanical smoke control</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.smoke_b4">Compliant with international fire safety standards and local codes</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-md">
+                        <span data-i18n="apps.enquire_smoke">Enquire for Smoke Extraction</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="bg-gradient-to-br from-indigo-900 to-indigo-700 rounded-2xl p-12 flex items-center justify-center min-h-[360px] relative overflow-hidden shadow-2xl">
+                    <div class="absolute inset-0 opacity-5"><i class="fas fa-fire-extinguisher text-[300px] text-white"></i></div>
+                    <div class="relative z-10 text-center text-white">
+                        <div class="w-24 h-24 bg-white/10 rounded-3xl flex items-center justify-center text-5xl mx-auto mb-6"><i class="fas fa-shield-alt"></i></div>
+                        <div class="text-2xl font-bold mb-2">Smoke Extraction</div>
+                        <div class="text-indigo-200 text-sm">F300 · F400 · F600 Rated · Stairwell Pressurization</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application 8: Residential -->
+    <section id="residential" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="bg-gradient-to-br from-green-800 to-green-600 rounded-2xl p-12 flex items-center justify-center min-h-[360px] relative overflow-hidden shadow-2xl order-2 lg:order-1">
+                    <div class="absolute inset-0 opacity-5"><i class="fas fa-home text-[300px] text-white"></i></div>
+                    <div class="relative z-10 text-center text-white">
+                        <div class="w-24 h-24 bg-white/10 rounded-3xl flex items-center justify-center text-5xl mx-auto mb-6"><i class="fas fa-home"></i></div>
+                        <div class="text-2xl font-bold mb-2">Residential</div>
+                        <div class="text-green-200 text-sm">Bathroom Exhaust · Kitchen Ventilation · Ceiling Fans</div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="inline-flex items-center gap-2 bg-green-100 text-green-700 text-sm font-bold px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-home"></i> <span data-i18n="apps.residential">Residential</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black text-primary mb-6 leading-tight" data-i18n="apps.residential_title">Quiet, Efficient Home Ventilation</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Fresh air and comfortable living go hand-in-hand. Dongil's residential range offers whisper-quiet bathroom exhaust fans, powerful kitchen ventilation, and large ceiling fans designed for the tropical climate of Southeast Asia.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.residential_b1">Ultra-quiet bathroom exhaust fans for apartments and villas</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.residential_b2">Kitchen inline and wall exhaust ventilation systems</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.residential_b3">Large-diameter ceiling fans for natural airflow in living spaces</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i class="fas fa-check text-white text-xs"></i></div>
+                            <span class="text-gray-600 text-sm" data-i18n="apps.residential_b4">Energy-efficient smart ceiling fans for condominiums and townhouses</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-md">
+                        <span data-i18n="apps.enquire_residential">Enquire for Residential</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                <i class="fas fa-comments"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-black mb-4" data-i18n="apps.cta_title">Have a Specific Application in Mind?</h2>
+            <p class="text-blue-200 text-lg max-w-2xl mx-auto mb-8">
+                Our engineering team in Phnom Penh is ready to help you select the right Dongil fan or blower for your project. Contact us for technical consultation and product recommendations.
             </p>
-        </div>
-    </section>
-
-    <!-- Applications Overview Grid -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-14">
-                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Where We Work</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-primary">Ventilation For Every Environment</h2>
-                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Our fans and ventilation systems are engineered to deliver optimal airflow performance in diverse applications across the globe.</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- Card 1: HVAC -->
-                <a href="#hvac" class="bg-white rounded-2xl shadow-md overflow-hidden card-hover group flex">
-                    <div class="w-32 md:w-40 bg-gradient-to-br from-secondary to-accent flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-snowflake text-4xl text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
-                    </div>
-                    <div class="p-6 flex-1">
-                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition">HVAC & Air Conditioning</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Central air handling units, rooftop packaged systems, and variable air volume installations for climate control in commercial and institutional buildings.</p>
-                    </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="inline-flex items-center gap-2 bg-accent hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl transition shadow-lg">
+                    <i class="fas fa-headset"></i> <span data-i18n="apps.contactengineers">Contact Our Engineers</span>
                 </a>
-                <!-- Card 2: Car Park -->
-                <a href="#carpark" class="bg-white rounded-2xl shadow-md overflow-hidden card-hover group flex">
-                    <div class="w-32 md:w-40 bg-gradient-to-br from-sky to-cyan-600 flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-car text-4xl text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
-                    </div>
-                    <div class="p-6 flex-1">
-                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition">Car Park Ventilation</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Jet fan impulse ventilation systems for enclosed and underground car parks, integrating CO/NO2 sensor-based demand control for maximum efficiency.</p>
-                    </div>
-                </a>
-                <!-- Card 3: Commercial -->
-                <a href="#commercial" class="bg-white rounded-2xl shadow-md overflow-hidden card-hover group flex">
-                    <div class="w-32 md:w-40 bg-gradient-to-br from-indigo-600 to-indigo-500 flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-building text-4xl text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
-                    </div>
-                    <div class="p-6 flex-1">
-                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition">Commercial Buildings</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Office towers, shopping malls, hotels, and hospitality venues requiring superior indoor air quality, thermal comfort, and energy efficiency.</p>
-                    </div>
-                </a>
-                <!-- Card 4: Industrial -->
-                <a href="#industrial" class="bg-white rounded-2xl shadow-md overflow-hidden card-hover group flex">
-                    <div class="w-32 md:w-40 bg-gradient-to-br from-cyan-700 to-cyan-500 flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-industry text-4xl text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
-                    </div>
-                    <div class="p-6 flex-1">
-                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition">Industrial & Manufacturing</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Process ventilation, fume extraction, warehouse cooling, and explosion-proof ventilation for factories, plants, and heavy-duty industrial facilities.</p>
-                    </div>
-                </a>
-                <!-- Card 5: Tunnels -->
-                <a href="#tunnel" class="bg-white rounded-2xl shadow-md overflow-hidden card-hover group flex">
-                    <div class="w-32 md:w-40 bg-gradient-to-br from-blue-800 to-blue-600 flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-road text-4xl text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
-                    </div>
-                    <div class="p-6 flex-1">
-                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition">Tunnels & Transport</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Road tunnels, metro stations, and rail infrastructure requiring longitudinal ventilation, emergency smoke extraction, and passenger comfort systems.</p>
-                    </div>
-                </a>
-                <!-- Card 6: Residential -->
-                <a href="#residential" class="bg-white rounded-2xl shadow-md overflow-hidden card-hover group flex">
-                    <div class="w-32 md:w-40 bg-gradient-to-br from-green-600 to-green-500 flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-home text-4xl text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
-                    </div>
-                    <div class="p-6 flex-1">
-                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition">Residential</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Bathroom exhaust, kitchen ventilation, whole-house systems, and ceiling fans designed for quiet, energy-efficient home comfort.</p>
-                    </div>
-                </a>
-                <!-- Card 7: Kitchen Exhaust -->
-                <a href="#kitchen" class="bg-white rounded-2xl shadow-md overflow-hidden card-hover group flex">
-                    <div class="w-32 md:w-40 bg-gradient-to-br from-yellow-600 to-amber-500 flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-utensils text-4xl text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
-                    </div>
-                    <div class="p-6 flex-1">
-                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition">Kitchen Exhaust</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Commercial kitchen hood ventilation, grease-laden air extraction, make-up air systems, and heat recovery for restaurants and food service.</p>
-                    </div>
-                </a>
-                <!-- Card 8: Smoke Extraction -->
-                <a href="#smoke" class="bg-white rounded-2xl shadow-md overflow-hidden card-hover group flex">
-                    <div class="w-32 md:w-40 bg-gradient-to-br from-red-600 to-red-500 flex items-center justify-center flex-shrink-0">
-                        <i class="fas fa-fire-extinguisher text-4xl text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
-                    </div>
-                    <div class="p-6 flex-1">
-                        <h3 class="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition">Smoke Extraction</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">Fire safety smoke extract and stairwell pressurization systems, emergency ventilation fans rated for high temperatures and compliant with fire codes.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- =============================== -->
-    <!-- DETAILED APPLICATION SECTIONS    -->
-    <!-- =============================== -->
-
-    <!-- HVAC & Air Conditioning -->
-    <section id="hvac" class="py-20 bg-white scroll-mt-24">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-flex items-center gap-2 bg-blue-50 text-secondary text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-                        <i class="fas fa-snowflake"></i> Application
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">HVAC & Air Conditioning</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Heating, ventilation, and air conditioning systems form the backbone of indoor climate control. AeroFlow provides a complete range of fans optimized for AHU supply and return air, duct systems, and condenser applications -- engineered for maximum airflow at minimum energy consumption with low noise levels.
-                    </p>
-                    <div class="space-y-6 mb-8">
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-blue-100 text-secondary rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-wind"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Central Air Handling Units (AHU)</h4>
-                                <p class="text-gray-500 text-sm">Backward-curved and plenum fans for supply and return air in large-scale central AHU systems, delivering high static pressures with EC motor efficiency.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-blue-100 text-secondary rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-solar-panel"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Rooftop Units</h4>
-                                <p class="text-gray-500 text-sm">Weather-resistant axial and centrifugal fans for rooftop packaged HVAC units, designed for outdoor exposure and temperature extremes.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-blue-100 text-secondary rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-sliders-h"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">VAV Systems</h4>
-                                <p class="text-gray-500 text-sm">Variable Air Volume (VAV) compatible fans with integrated speed control for precise zone-by-zone climate regulation and energy optimization.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="products.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-semibold px-6 py-3 rounded-lg transition shadow-md hover:shadow-lg">
-                        View Recommended Products <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-10 text-white relative overflow-hidden min-h-[400px] flex items-center justify-center">
-                    <div class="absolute inset-0 opacity-5">
-                        <i class="fas fa-snowflake text-[280px] absolute -top-10 -right-10"></i>
-                    </div>
-                    <div class="relative z-10 text-center">
-                        <i class="fas fa-snowflake text-8xl text-accent/40 mb-6"></i>
-                        <div class="grid grid-cols-2 gap-4 mt-6">
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-accent">98%</div>
-                                <div class="text-xs text-blue-200">Motor Efficiency</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-sky">-12dB</div>
-                                <div class="text-xs text-blue-200">Noise Reduction</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-highlight">70%</div>
-                                <div class="text-xs text-blue-200">Energy Savings</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-cyan-400">EC</div>
-                                <div class="text-xs text-blue-200">Motor Technology</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Car Park Ventilation -->
-    <section id="carpark" class="py-20 bg-gray-50 scroll-mt-24">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 bg-gradient-to-br from-sky to-cyan-700 rounded-2xl p-10 text-white relative overflow-hidden min-h-[400px] flex items-center justify-center">
-                    <div class="absolute inset-0 opacity-5">
-                        <i class="fas fa-car text-[280px] absolute -bottom-10 -left-10"></i>
-                    </div>
-                    <div class="relative z-10">
-                        <div class="text-center mb-6">
-                            <i class="fas fa-car text-7xl text-white/30 mb-4"></i>
-                            <h3 class="text-xl font-bold">Impulse Ventilation System</h3>
-                            <p class="text-cyan-100 text-sm mt-2">Jet fans create directional airflow to push polluted air towards extraction points without requiring ductwork.</p>
-                        </div>
-                        <div class="grid grid-cols-3 gap-3 mt-6">
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-3 text-center border border-white/10">
-                                <i class="fas fa-wind text-2xl text-white/60 mb-1"></i>
-                                <div class="text-xs text-cyan-100">Jet Thrust</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-3 text-center border border-white/10">
-                                <i class="fas fa-gauge-high text-2xl text-white/60 mb-1"></i>
-                                <div class="text-xs text-cyan-100">CO Sensors</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-3 text-center border border-white/10">
-                                <i class="fas fa-fire text-2xl text-white/60 mb-1"></i>
-                                <div class="text-xs text-cyan-100">Smoke Extract</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <div class="inline-flex items-center gap-2 bg-cyan-50 text-sky text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-                        <i class="fas fa-car"></i> Application
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Car Park Ventilation</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Enclosed and underground car parks present unique ventilation challenges -- from carbon monoxide accumulation during normal operation to rapid smoke extraction during fire emergencies. AeroFlow's jet fan systems use impulse ventilation to efficiently move air without traditional ductwork, reducing construction costs and improving coverage.
-                    </p>
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-cyan-100 text-sky rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Jet fan impulse ventilation eliminates the need for large ductwork, freeing up ceiling height and reducing installation cost</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-cyan-100 text-sky rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">CO and NO2 sensor integration enables demand-controlled ventilation, running fans only when pollutant levels require it</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-cyan-100 text-sky rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Emergency smoke extraction mode with reversible jet fans rated to 300C for 2 hours per EN 12101-3</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-cyan-100 text-sky rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">CFD-validated designs ensure uniform air distribution across the entire parking area</span>
-                        </div>
-                    </div>
-                    <a href="products.html#jet" class="inline-flex items-center gap-2 bg-gradient-to-r from-sky to-cyan-600 text-white font-semibold px-6 py-3 rounded-lg transition shadow-md hover:shadow-lg">
-                        View Recommended Products <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Commercial Buildings -->
-    <section id="commercial" class="py-20 bg-white scroll-mt-24">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-600 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-                        <i class="fas fa-building"></i> Application
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Commercial Buildings</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Modern commercial buildings demand ventilation systems that balance indoor air quality, thermal comfort, and energy efficiency. Whether it is a Class-A office tower, a bustling shopping mall, or a luxury hotel, AeroFlow provides tailored fan solutions that meet stringent building codes while minimizing operational costs.
-                    </p>
-                    <div class="space-y-6 mb-8">
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Office Buildings</h4>
-                                <p class="text-gray-500 text-sm">Low-noise plenum and centrifugal fans for AHUs, floor-by-floor ventilation, and fresh air handling in open-plan and partitioned office environments.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-shopping-bag"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Shopping Malls & Retail</h4>
-                                <p class="text-gray-500 text-sm">High-volume supply and exhaust fans for large atria, food courts, and retail floors, combined with smoke extraction for fire compliance.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-hotel"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Hotels & Hospitality</h4>
-                                <p class="text-gray-500 text-sm">Ultra-quiet fan coil units, bathroom exhaust, and corridor pressurization for guest comfort and regulatory compliance in hospitality venues.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="products.html#centrifugal" class="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-semibold px-6 py-3 rounded-lg transition shadow-md hover:shadow-lg">
-                        View Recommended Products <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="bg-gradient-to-br from-indigo-700 to-indigo-500 rounded-2xl p-10 text-white relative overflow-hidden min-h-[400px] flex items-center justify-center">
-                    <div class="absolute inset-0 opacity-5">
-                        <i class="fas fa-building text-[280px] absolute -top-10 -right-10"></i>
-                    </div>
-                    <div class="relative z-10 text-center">
-                        <i class="fas fa-building text-8xl text-white/30 mb-6"></i>
-                        <div class="grid grid-cols-2 gap-4 mt-6">
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-indigo-200">IAQ</div>
-                                <div class="text-xs text-indigo-200">Air Quality Focus</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-indigo-200">&lt;35dB</div>
-                                <div class="text-xs text-indigo-200">Noise Level</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-indigo-200">LEED</div>
-                                <div class="text-xs text-indigo-200">Green Building</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-indigo-200">BMS</div>
-                                <div class="text-xs text-indigo-200">Integration Ready</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Industrial & Manufacturing -->
-    <section id="industrial" class="py-20 bg-gray-50 scroll-mt-24">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 bg-gradient-to-br from-cyan-800 to-cyan-600 rounded-2xl p-10 text-white relative overflow-hidden min-h-[400px] flex items-center justify-center">
-                    <div class="absolute inset-0 opacity-5">
-                        <i class="fas fa-industry text-[280px] absolute -bottom-10 -left-10"></i>
-                    </div>
-                    <div class="relative z-10 text-center">
-                        <i class="fas fa-industry text-8xl text-white/30 mb-6"></i>
-                        <div class="grid grid-cols-2 gap-4 mt-6">
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-cyan-200">ATEX</div>
-                                <div class="text-xs text-cyan-100">Explosion Proof</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-cyan-200">IP66</div>
-                                <div class="text-xs text-cyan-100">Ingress Protection</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-cyan-200">400C</div>
-                                <div class="text-xs text-cyan-100">High Temperature</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-cyan-200">24/7</div>
-                                <div class="text-xs text-cyan-100">Continuous Duty</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <div class="inline-flex items-center gap-2 bg-cyan-50 text-cyan-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-                        <i class="fas fa-industry"></i> Application
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Industrial & Manufacturing</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Industrial environments demand rugged, high-performance ventilation systems capable of continuous duty in extreme conditions. AeroFlow's industrial fan range is built for process ventilation, fume extraction, high-temperature operations, and hazardous area installations -- with ATEX-certified options for explosive atmospheres.
-                    </p>
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-cyan-100 text-cyan-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Process ventilation and fume extraction for chemical, pharmaceutical, and food manufacturing facilities</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-cyan-100 text-cyan-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Warehouse cooling with high-volume, low-speed axial fans and evaporative cooling integration</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-cyan-100 text-cyan-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">ATEX-certified explosion-proof fans for Zone 1 and Zone 2 hazardous areas with flammable gases or dust</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-cyan-100 text-cyan-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Heavy-duty construction with corrosion-resistant coatings, high-temperature bearings, and vibration-dampened mounts</span>
-                        </div>
-                    </div>
-                    <a href="products.html#axial" class="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-700 to-cyan-600 text-white font-semibold px-6 py-3 rounded-lg transition shadow-md hover:shadow-lg">
-                        View Recommended Products <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tunnels & Transport -->
-    <section id="tunnel" class="py-20 bg-white scroll-mt-24">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-                        <i class="fas fa-road"></i> Application
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Tunnels & Transport</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Transport tunnels and underground transit stations require ventilation systems that can handle normal pollutant dilution and, critically, emergency smoke extraction during a fire event. AeroFlow tunnel ventilation fans are designed for longitudinal and transverse ventilation strategies, tested to withstand extreme temperatures, and engineered for decades of reliable service.
-                    </p>
-                    <div class="space-y-6 mb-8">
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-road"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Road Tunnels</h4>
-                                <p class="text-gray-500 text-sm">Longitudinal jet fans and large axial fans for road tunnel ventilation, handling vehicle exhaust dilution and emergency smoke control with reversible operation.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-train-subway"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Metro Stations</h4>
-                                <p class="text-gray-500 text-sm">Tunnel ventilation fans (TVF) and over-track exhaust fans for passenger comfort and smoke extraction in underground metro systems.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-train"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Rail Tunnels</h4>
-                                <p class="text-gray-500 text-sm">Heavy-duty axial fans for inter-city rail tunnels, piston-effect management, and emergency ventilation with 400C/2hr fire rating.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="products.html#jet" class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-700 to-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition shadow-md hover:shadow-lg">
-                        View Recommended Products <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="bg-gradient-to-br from-blue-900 to-blue-700 rounded-2xl p-10 text-white relative overflow-hidden min-h-[400px] flex items-center justify-center">
-                    <div class="absolute inset-0 opacity-5">
-                        <i class="fas fa-road text-[280px] absolute -top-10 -right-10"></i>
-                    </div>
-                    <div class="relative z-10 text-center">
-                        <i class="fas fa-road text-8xl text-white/30 mb-6"></i>
-                        <div class="grid grid-cols-2 gap-4 mt-6">
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-blue-200">400C</div>
-                                <div class="text-xs text-blue-200">Fire Rating</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-blue-200">2hr</div>
-                                <div class="text-xs text-blue-200">Rated Duration</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-blue-200">50m/s</div>
-                                <div class="text-xs text-blue-200">Thrust Velocity</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-blue-200">CFD</div>
-                                <div class="text-xs text-blue-200">Validated Design</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Residential -->
-    <section id="residential" class="py-20 bg-gray-50 scroll-mt-24">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 bg-gradient-to-br from-green-700 to-green-500 rounded-2xl p-10 text-white relative overflow-hidden min-h-[400px] flex items-center justify-center">
-                    <div class="absolute inset-0 opacity-5">
-                        <i class="fas fa-home text-[280px] absolute -bottom-10 -left-10"></i>
-                    </div>
-                    <div class="relative z-10 text-center">
-                        <i class="fas fa-home text-8xl text-white/30 mb-6"></i>
-                        <div class="grid grid-cols-2 gap-4 mt-6">
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-green-100">&lt;25dB</div>
-                                <div class="text-xs text-green-100">Whisper Quiet</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-green-100">A++</div>
-                                <div class="text-xs text-green-100">Energy Rating</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-green-100">IP44</div>
-                                <div class="text-xs text-green-100">Moisture Proof</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-green-100">IoT</div>
-                                <div class="text-xs text-green-100">Smart Control</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <div class="inline-flex items-center gap-2 bg-green-50 text-green-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-                        <i class="fas fa-home"></i> Application
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Residential</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Every home deserves fresh, clean air. AeroFlow's residential ventilation range combines whisper-quiet operation with energy efficiency and elegant design. From moisture-control bathroom fans to whole-house ventilation systems, our products help homeowners maintain healthy indoor environments year-round.
-                    </p>
-                    <div class="space-y-6 mb-8">
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-green-100 text-green-700 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-bath"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Bathroom Exhaust</h4>
-                                <p class="text-gray-500 text-sm">Ultra-quiet axial fans with humidity sensors and timers for automatic moisture removal, preventing mold and maintaining air quality.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-green-100 text-green-700 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-blender"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Kitchen Hoods</h4>
-                                <p class="text-gray-500 text-sm">Domestic range hood fans and inline kitchen ventilators for effective grease and odor removal during cooking.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-green-100 text-green-700 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-house-chimney"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Whole-House Ventilation</h4>
-                                <p class="text-gray-500 text-sm">Heat recovery ventilation (HRV) and energy recovery ventilation (ERV) systems for continuous fresh air supply with minimal energy loss.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-green-100 text-green-700 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-fan"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-primary">Ceiling Fans</h4>
-                                <p class="text-gray-500 text-sm">DC motor ceiling fans with remote control and summer/winter modes for year-round comfort and reduced HVAC load.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="products.html#domestic" class="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold px-6 py-3 rounded-lg transition shadow-md hover:shadow-lg">
-                        View Recommended Products <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Kitchen Exhaust -->
-    <section id="kitchen" class="py-20 bg-white scroll-mt-24">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-flex items-center gap-2 bg-amber-50 text-amber-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-                        <i class="fas fa-utensils"></i> Application
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Kitchen Exhaust</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Commercial kitchens generate intense heat, grease-laden air, and cooking odors that demand specialized extraction systems. AeroFlow kitchen exhaust fans are engineered with grease-resistant coatings, high-temperature motors, and backward-curved impellers to efficiently handle contaminated airstreams while enabling heat recovery for energy savings.
-                    </p>
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">High-temperature centrifugal fans rated for continuous operation at 200C+ for grease-laden air extraction</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Make-up air units to balance kitchen exhaust volume and maintain correct room pressure</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Heat recovery systems that capture exhaust heat to preheat incoming fresh air, reducing energy costs by up to 40%</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Easy-access designs for simplified cleaning and maintenance of grease buildup</span>
-                        </div>
-                    </div>
-                    <a href="products.html#centrifugal" class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-amber-500 text-white font-semibold px-6 py-3 rounded-lg transition shadow-md hover:shadow-lg">
-                        View Recommended Products <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="bg-gradient-to-br from-amber-700 to-amber-500 rounded-2xl p-10 text-white relative overflow-hidden min-h-[400px] flex items-center justify-center">
-                    <div class="absolute inset-0 opacity-5">
-                        <i class="fas fa-utensils text-[280px] absolute -top-10 -right-10"></i>
-                    </div>
-                    <div class="relative z-10 text-center">
-                        <i class="fas fa-utensils text-8xl text-white/30 mb-6"></i>
-                        <div class="grid grid-cols-2 gap-4 mt-6">
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-amber-100">200C+</div>
-                                <div class="text-xs text-amber-100">Temp Rating</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-amber-100">40%</div>
-                                <div class="text-xs text-amber-100">Heat Recovery</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-amber-100">SS316</div>
-                                <div class="text-xs text-amber-100">Stainless Steel</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-amber-100">UL</div>
-                                <div class="text-xs text-amber-100">Listed & Certified</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Smoke Extraction -->
-    <section id="smoke" class="py-20 bg-gray-50 scroll-mt-24">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 bg-gradient-to-br from-red-700 to-red-500 rounded-2xl p-10 text-white relative overflow-hidden min-h-[400px] flex items-center justify-center">
-                    <div class="absolute inset-0 opacity-5">
-                        <i class="fas fa-fire-extinguisher text-[280px] absolute -bottom-10 -left-10"></i>
-                    </div>
-                    <div class="relative z-10 text-center">
-                        <i class="fas fa-fire-extinguisher text-8xl text-white/30 mb-6"></i>
-                        <div class="grid grid-cols-2 gap-4 mt-6">
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-red-100">400C</div>
-                                <div class="text-xs text-red-100">Fire Rated</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-red-100">EN12101</div>
-                                <div class="text-xs text-red-100">Compliance</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-red-100">2hr</div>
-                                <div class="text-xs text-red-100">Fire Duration</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/10">
-                                <div class="text-2xl font-black text-red-100">F400</div>
-                                <div class="text-xs text-red-100">Temperature Class</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <div class="inline-flex items-center gap-2 bg-red-50 text-red-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-                        <i class="fas fa-fire-extinguisher"></i> Application
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Smoke Extraction</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Fire safety ventilation is not optional -- it is life-saving infrastructure. AeroFlow smoke extraction fans are tested and certified to operate at extreme temperatures during a fire event, maintaining clear escape routes and enabling firefighter access. Our systems comply with EN 12101-3 and local fire code requirements worldwide.
-                    </p>
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-red-100 text-red-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Axial and centrifugal smoke extraction fans rated F400 (400C for 2 hours) per EN 12101-3 certification</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-red-100 text-red-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Stairwell and lobby pressurization fans that maintain positive pressure to keep escape routes smoke-free</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-red-100 text-red-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Emergency ventilation fans with automatic fire alarm integration and backup power supply connections</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-8 h-8 bg-red-100 text-red-700 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i class="fas fa-check text-sm"></i>
-                            </div>
-                            <span class="text-gray-600">Full compliance with international fire codes including BS 7346, NFPA 92, and EN 12101-3</span>
-                        </div>
-                    </div>
-                    <a href="products.html#axial" class="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-500 text-white font-semibold px-6 py-3 rounded-lg transition shadow-md hover:shadow-lg">
-                        View Recommended Products <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Case Study Highlight -->
-    <section class="py-20 bg-primary text-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-14">
-                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Featured Project</p>
-                <h2 class="text-3xl md:text-4xl font-bold">Case Study Highlight</h2>
-            </div>
-            <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl overflow-hidden">
-                <div class="grid lg:grid-cols-2">
-                    <div class="bg-gradient-to-br from-secondary to-accent p-10 flex items-center justify-center min-h-[300px] relative overflow-hidden">
-                        <div class="absolute inset-0 opacity-10">
-                            <i class="fas fa-city text-[200px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
-                        </div>
-                        <div class="relative z-10 text-center">
-                            <i class="fas fa-city text-6xl mb-4 text-white/60"></i>
-                            <h3 class="text-2xl font-bold">Metro City Underground Network</h3>
-                            <p class="text-blue-100 mt-2">Tunnel & Station Ventilation</p>
-                        </div>
-                    </div>
-                    <div class="p-10">
-                        <div class="inline-flex items-center gap-2 bg-accent/20 text-accent text-sm font-semibold px-3 py-1 rounded-full mb-4">
-                            <i class="fas fa-star"></i> Featured Case Study
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Metro City Underground Transit Expansion</h3>
-                        <p class="text-blue-200 leading-relaxed mb-6">
-                            AeroFlow supplied and commissioned a complete tunnel ventilation system for a 45km metro extension -- including 120 tunnel ventilation fans, 80 jet fans for station car parks, and integrated smoke extraction systems across 12 new stations.
-                        </p>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
-                            <div class="text-center">
-                                <div class="text-3xl font-black text-accent">45km</div>
-                                <div class="text-xs text-blue-300 mt-1">Tunnel Length</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-black text-accent">120</div>
-                                <div class="text-xs text-blue-300 mt-1">Tunnel Fans</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-black text-accent">12</div>
-                                <div class="text-xs text-blue-300 mt-1">Stations</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-black text-accent">80</div>
-                                <div class="text-xs text-blue-300 mt-1">Jet Fans</div>
-                            </div>
-                        </div>
-                        <a href="resources.html" class="inline-flex items-center gap-2 text-accent font-semibold hover:text-highlight transition">
-                            Read Full Case Study <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-r from-secondary to-accent text-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Find the Right Fan for Your Application</h2>
-            <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-                Not sure which fan suits your project? Our ventilation engineers will assess your requirements and recommend the optimal solution -- free of charge.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="contact.html" class="bg-white text-secondary hover:bg-blue-50 font-semibold px-8 py-3.5 rounded-lg transition shadow-lg text-lg flex items-center gap-2">
-                    <i class="fas fa-headset"></i> Contact Our Engineers
-                </a>
-                <a href="resources.html#software" class="bg-white/10 hover:bg-white/20 backdrop-blur text-white font-semibold px-8 py-3.5 rounded-lg transition border border-white/20 text-lg flex items-center gap-2">
-                    <i class="fas fa-laptop"></i> Fan Selection Tool
+                <a href="products.html" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4 rounded-xl transition">
+                    <i class="fas fa-fan"></i> <span data-i18n="apps.browseproducts">Browse Products</span>
                 </a>
             </div>
         </div>
@@ -936,67 +576,62 @@
             <div class="grid md:grid-cols-4 gap-10">
                 <div>
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
-                            <i class="fas fa-fan text-white text-sm"></i>
-                        </div>
-                        <div class="font-black text-lg">AEROFLOW</div>
+                        <img src="../images/dongil-logo.jpg" alt="Dongil International" class="h-10">
                     </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Leading manufacturer of energy efficient ventilation solutions for commercial, industrial, and residential applications.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-2">Dongil International</p>
+                    <p class="text-accent text-sm font-medium italic mb-4"><span data-i18n="footer.tagline">"Good Air, The Better Life"</span></p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4"><span data-i18n="footer.desc">Korean-quality fan and blower solutions for industrial, commercial, and residential applications across Southeast Asia.</span></p>
                     <div class="flex gap-3">
-                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-youtube"></i></a>
                         <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Products</h4>
+                    <h4 class="font-semibold text-lg mb-4"><span data-i18n="nav.products">Products</span></h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="products.html#axial" class="hover:text-accent transition">Axial Fans</a></li>
-                        <li><a href="products.html#centrifugal" class="hover:text-accent transition">Centrifugal Fans</a></li>
-                        <li><a href="products.html#inline" class="hover:text-accent transition">In-Line Fans</a></li>
-                        <li><a href="products.html#jet" class="hover:text-accent transition">Jet Fans</a></li>
-                        <li><a href="products.html#roof" class="hover:text-accent transition">Roof Exhaust Fans</a></li>
-                        <li><a href="products.html#domestic" class="hover:text-accent transition">Domestic Fans</a></li>
+                        <li><a href="products.html#axial" class="hover:text-accent transition" data-i18n="nav.axialfans">Axial Fans</a></li>
+                        <li><a href="products.html#centrifugal" class="hover:text-accent transition" data-i18n="nav.centrifugalfans">Centrifugal Fans</a></li>
+                        <li><a href="products.html#inline" class="hover:text-accent transition" data-i18n="nav.inlinefans">In-Line Fans</a></li>
+                        <li><a href="products.html#jet" class="hover:text-accent transition" data-i18n="nav.jetfans">Jet Fans</a></li>
+                        <li><a href="products.html#roof" class="hover:text-accent transition" data-i18n="nav.roofexhaustfans">Roof Exhaust Fans</a></li>
+                        <li><a href="products.html#domestic" class="hover:text-accent transition" data-i18n="nav.domesticfans">Domestic Fans</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <h4 class="font-semibold text-lg mb-4"><span data-i18n="footer.company">Company</span></h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="about.html" class="hover:text-accent transition">About AeroFlow</a></li>
-                        <li><a href="projects.html" class="hover:text-accent transition">Projects</a></li>
-                        <li><a href="news.html" class="hover:text-accent transition">News & Media</a></li>
-                        <li><a href="resources.html" class="hover:text-accent transition">Resources</a></li>
-                        <li><a href="careers.html" class="hover:text-accent transition">Careers</a></li>
-                        <li><a href="contact.html" class="hover:text-accent transition">Contact Us</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition"><span data-i18n="footer.about">About Dongil International</span></a></li>
+                        <li><a href="projects.html" class="hover:text-accent transition"><span data-i18n="footer.projects">Projects</span></a></li>
+                        <li><a href="news.html" class="hover:text-accent transition"><span data-i18n="footer.newslink">News & Media</span></a></li>
+                        <li><a href="resources.html" class="hover:text-accent transition"><span data-i18n="footer.resourceslink">Resources</span></a></li>
+                        <li><a href="careers.html" class="hover:text-accent transition"><span data-i18n="footer.careerslink">Careers</span></a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition"><span data-i18n="footer.contactlink">Contact Us</span></a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <h4 class="font-semibold text-lg mb-4"><span data-i18n="footer.contact">Contact</span></h4>
                     <ul class="space-y-3 text-gray-400 text-sm">
-                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>[Street Address]<br>[City, Country]</span></li>
-                        <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><span>+1 (800) XXX-XXXX</span></li>
-                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><span>info@aeroflowfans.com</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>Realestate.com.kh, 4th Floors,<br>306BCD Preah Monivong Blvd (93),<br>Phnom Penh 12302</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><span>+855 10 502 228</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><span>dongilfan.cambodia@gmail.com</span></li>
                     </ul>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=ISO" alt="ISO" class="h-8 rounded opacity-60">
-                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=CE" alt="CE" class="h-8 rounded opacity-60">
-                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=UL" alt="UL" class="h-8 rounded opacity-60">
-                    </div>
                 </div>
             </div>
         </div>
+        <!-- Bottom Bar -->
         <div class="border-t border-white/10">
             <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <p>&copy; 2026 AeroFlow Ventilation. All rights reserved.</p>
+                <p>&copy; 2026 Dongil International. <span data-i18n="footer.rights">All rights reserved.</span></p>
                 <div class="flex gap-4 mt-2 md:mt-0">
-                    <a href="#" class="hover:text-accent transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-accent transition">Terms of Use</a>
-                    <a href="#" class="hover:text-accent transition">Sitemap</a>
+                    <a href="#" class="hover:text-accent transition"><span data-i18n="footer.privacy">Privacy Policy</span></a>
+                    <a href="#" class="hover:text-accent transition"><span data-i18n="footer.terms">Terms of Use</span></a>
+                    <a href="#" class="hover:text-accent transition"><span data-i18n="footer.sitemap">Sitemap</span></a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="../lang/translations.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

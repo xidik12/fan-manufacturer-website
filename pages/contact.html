@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - AeroFlow Ventilation Solutions</title>
+    <title>Contact Us - Dongil International</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -32,17 +32,17 @@
     <div class="bg-primary text-white text-sm py-2">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <div class="hidden md:flex items-center gap-6">
-                <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +1 (800) XXX-XXXX</span>
-                <span><i class="fas fa-envelope mr-1 text-accent"></i> info@aeroflowfans.com</span>
-                <span><i class="fas fa-map-marker-alt mr-1 text-accent"></i> Global Headquarters</span>
+                <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +855 10 502 228</span>
+                <span><i class="fas fa-envelope mr-1 text-accent"></i> dongilfan.cambodia@gmail.com</span>
+                <span><i class="fas fa-map-marker-alt mr-1 text-accent"></i> Phnom Penh, Cambodia</span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="#" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
                 <a href="#" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-instagram"></i></a>
                 <span class="text-gray-500 mx-2">|</span>
-                <a href="#" class="hover:text-accent transition text-xs font-medium">EN</a>
-                <a href="#" class="text-gray-400 hover:text-accent transition text-xs">中文</a>
+                <a href="#" onclick="switchLang('en'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="en">EN</a>
+                <a href="#" onclick="switchLang('ko'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="ko">한국어</a>
+                <a href="#" onclick="switchLang('km'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="km">ខ្មែរ</a>
             </div>
         </div>
     </div>
@@ -53,75 +53,67 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <a href="../index.html" class="flex items-center gap-3">
-                    <div class="relative">
-                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
-                            <i class="fas fa-fan text-white text-xl"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-black text-primary text-xl tracking-tight">AEROFLOW</div>
-                        <div class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Ventilation Solutions</div>
-                    </div>
+                    <img src="../images/dongil-logo.jpg" alt="Dongil International" class="h-10">
                 </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center gap-1">
                     <div class="relative group">
                         <a href="products.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Products <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.products">Products</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="products.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm font-medium">All Products</a>
-                            <a href="products.html#axial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Axial Fans</a>
-                            <a href="products.html#centrifugal" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Centrifugal Fans</a>
-                            <a href="products.html#inline" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">In-Line Fans</a>
-                            <a href="products.html#jet" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Jet Fans</a>
-                            <a href="products.html#roof" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Roof Exhaust Fans</a>
-                            <a href="products.html#domestic" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Domestic Fans</a>
+                            <a href="products.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm font-medium" data-i18n="nav.allproducts">All Products</a>
+                            <a href="products.html#axial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.axialfans">Axial Fans</a>
+                            <a href="products.html#centrifugal" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.centrifugalfans">Centrifugal Fans</a>
+                            <a href="products.html#inline" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.inlinefans">In-Line Fans</a>
+                            <a href="products.html#jet" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.jetfans">Jet Fans</a>
+                            <a href="products.html#roof" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.roofexhaustfans">Roof Exhaust Fans</a>
+                            <a href="products.html#domestic" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.domesticfans">Domestic Fans</a>
                         </div>
                     </div>
                     <div class="relative group">
                         <a href="applications.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Applications <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.applications">Applications</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="applications.html#hvac" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">HVAC & Air Conditioning</a>
-                            <a href="applications.html#carpark" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Car Park Ventilation</a>
-                            <a href="applications.html#commercial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Commercial Buildings</a>
-                            <a href="applications.html#industrial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Industrial & Manufacturing</a>
-                            <a href="applications.html#tunnel" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Tunnels & Transport</a>
-                            <a href="applications.html#residential" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Residential</a>
+                            <a href="applications.html#hvac" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.hvacsystems">HVAC Systems</a>
+                            <a href="applications.html#industrial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.industrialvent">Industrial Ventilation</a>
+                            <a href="applications.html#commercial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.commercialspaces">Commercial Spaces</a>
+                            <a href="applications.html#carpark" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.undergroundparking">Underground Parking</a>
+                            <a href="applications.html#smoke" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.smokeextraction">Smoke Extraction</a>
+                            <a href="applications.html#residential" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.residential">Residential</a>
                         </div>
                     </div>
                     <div class="relative group">
                         <a href="about.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Why AeroFlow <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.why">Why Dongil</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="about.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Company Profile</a>
-                            <a href="about.html#facts" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Facts & Figures</a>
-                            <a href="about.html#innovation" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Innovation</a>
-                            <a href="projects.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Prestigious Projects</a>
+                            <a href="about.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.companyprofile">Company Profile</a>
+                            <a href="about.html#facts" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.factsfigures">Facts & Figures</a>
+                            <a href="about.html#innovation" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.innovation">Innovation</a>
+                            <a href="projects.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.prestigiousprojects">Prestigious Projects</a>
                         </div>
                     </div>
                     <div class="relative group">
                         <a href="resources.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Resources <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.resources">Resources</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="resources.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Case Studies</a>
-                            <a href="resources.html#software" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Fan Selection Software</a>
-                            <a href="resources.html#docs" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Literature & Documentation</a>
+                            <a href="resources.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.documentation">Documentation</a>
+                            <a href="resources.html#software" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.fanselectionsw">Fan Selection Software</a>
+                            <a href="resources.html#docs" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.litdatasheets">Literature & Datasheets</a>
                         </div>
                     </div>
-                    <a href="news.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">News</a>
-                    <a href="contact.html" class="px-4 py-2 rounded-md bg-blue-50 font-semibold text-secondary transition">Contact</a>
+                    <a href="news.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition"><span data-i18n="nav.news">News</span></a>
+                    <a href="contact.html" class="px-4 py-2 rounded-md bg-blue-50 font-semibold text-secondary transition"><span data-i18n="nav.contact">Contact</span></a>
                 </div>
 
                 <!-- CTA + Mobile -->
                 <div class="flex items-center gap-3">
                     <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow-md">
-                        <i class="fas fa-headset text-sm"></i> Get a Quote
+                        <i class="fas fa-headset text-sm"></i> <span data-i18n="nav.getquote">Get a Quote</span>
                     </a>
                     <button id="mobile-toggle" class="lg:hidden text-2xl text-primary"><i class="fas fa-bars"></i></button>
                 </div>
@@ -131,13 +123,13 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
             <div class="px-4 py-4 space-y-2">
-                <a href="products.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Products</a>
-                <a href="applications.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Applications</a>
-                <a href="about.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Why AeroFlow</a>
-                <a href="resources.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Resources</a>
-                <a href="news.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">News</a>
-                <a href="contact.html" class="block py-2 text-secondary font-semibold">Contact</a>
-                <a href="contact.html" class="block bg-gradient-to-r from-secondary to-accent text-white text-center font-semibold py-3 rounded-lg mt-3">Get a Quote</a>
+                <a href="products.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.products">Products</span></a>
+                <a href="applications.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.applications">Applications</span></a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.why">Why Dongil</span></a>
+                <a href="resources.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.resources">Resources</span></a>
+                <a href="news.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.news">News</span></a>
+                <a href="contact.html" class="block py-2 text-secondary font-semibold"><span data-i18n="nav.contact">Contact</span></a>
+                <a href="contact.html" class="block bg-gradient-to-r from-secondary to-accent text-white text-center font-semibold py-3 rounded-lg mt-3"><span data-i18n="nav.getquote">Get a Quote</span></a>
             </div>
         </div>
     </nav>
@@ -146,401 +138,202 @@
     <section class="page-header text-white">
         <div class="absolute inset-0 z-0">
             <div class="absolute top-10 right-10 w-72 h-72 border border-accent/10 rounded-full"></div>
-            <div class="absolute -bottom-20 -left-10 w-60 h-60 bg-secondary/10 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-secondary/10 rounded-full blur-3xl"></div>
             <div class="absolute top-1/2 right-1/3 opacity-5">
                 <i class="fas fa-envelope text-[200px]"></i>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 relative z-10">
-            <nav class="flex items-center gap-2 text-sm text-blue-300 mb-6">
-                <a href="../index.html" class="hover:text-accent transition">Home</a>
-                <i class="fas fa-chevron-right text-xs text-blue-500"></i>
-                <span class="text-white">Contact Us</span>
+            <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3" data-i18n="contact.getintouch">Get In Touch</p>
+            <h1 class="text-4xl md:text-5xl font-black mb-4" data-i18n="contact.title">Contact Us</h1>
+            <p class="text-blue-300 text-lg max-w-2xl mb-6" data-i18n="contact.subtitle">Reach out to Dongil International for product inquiries, technical support, or partnership opportunities. Our team in Phnom Penh is ready to assist.</p>
+            <nav class="text-sm text-blue-300">
+                <a href="../index.html" class="hover:text-accent transition" data-i18n="nav.home">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-white" data-i18n="contact.title">Contact Us</span>
             </nav>
-            <h1 class="text-4xl md:text-5xl font-black mb-4">Contact Us</h1>
-            <p class="text-blue-200 text-lg max-w-2xl">We'd love to hear from you. Reach out to our team for inquiries, technical support, or partnership opportunities.</p>
         </div>
     </section>
 
-    <!-- Quick Contact Cards -->
-    <section class="relative z-20 -mt-8">
+    <!-- Contact Info Cards -->
+    <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 card-hover text-center">
-                    <div class="w-14 h-14 bg-blue-100 text-secondary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white rounded-2xl p-8 text-center shadow-md border border-gray-100 hover:border-secondary/30 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-100 text-secondary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5 group-hover:bg-secondary group-hover:text-white transition">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <h3 class="font-bold text-primary text-lg mb-1">Phone</h3>
-                    <p class="text-gray-500 text-sm mb-2">Mon - Fri, 8:00 AM - 5:00 PM</p>
-                    <a href="tel:+1800XXXXXXX" class="text-secondary font-semibold hover:text-accent transition">+1 (800) XXX-XXXX</a>
+                    <h3 class="font-bold text-primary text-lg mb-2" data-i18n="contact.phone">Phone</h3>
+                    <p class="text-gray-500 text-sm mb-3" data-i18n="contact.calldirectly">Call us directly</p>
+                    <a href="tel:+85510502228" class="text-secondary font-semibold hover:text-accent transition">+855 10 502 228</a>
                 </div>
-                <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 card-hover text-center">
-                    <div class="w-14 h-14 bg-cyan-100 text-sky rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                <div class="bg-white rounded-2xl p-8 text-center shadow-md border border-gray-100 hover:border-secondary/30 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-100 text-secondary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5 group-hover:bg-secondary group-hover:text-white transition">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h3 class="font-bold text-primary text-lg mb-1">Email</h3>
-                    <p class="text-gray-500 text-sm mb-2">We respond within 24 hours</p>
-                    <a href="mailto:info@aeroflowfans.com" class="text-secondary font-semibold hover:text-accent transition">info@aeroflowfans.com</a>
+                    <h3 class="font-bold text-primary text-lg mb-2" data-i18n="contact.email">Email</h3>
+                    <p class="text-gray-500 text-sm mb-3" data-i18n="contact.sendmsg">Send us a message</p>
+                    <a href="mailto:dongilfan.cambodia@gmail.com" class="text-secondary font-semibold hover:text-accent transition text-sm">dongilfan.cambodia@gmail.com</a>
                 </div>
-                <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 card-hover text-center">
-                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                <div class="bg-white rounded-2xl p-8 text-center shadow-md border border-gray-100 hover:border-secondary/30 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-100 text-secondary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5 group-hover:bg-secondary group-hover:text-white transition">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3 class="font-bold text-primary text-lg mb-1">Address</h3>
-                    <p class="text-gray-500 text-sm mb-2">Visit our headquarters</p>
-                    <span class="text-secondary font-semibold">123 Ventilation Blvd,<br>Industrial City, CA 90210</span>
+                    <h3 class="font-bold text-primary text-lg mb-2" data-i18n="contact.address">Address</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Realestate.com.kh, 4th Floors,<br>306BCD Preah Monivong Blvd (93),<br>Phnom Penh 12302</p>
                 </div>
-                <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 card-hover text-center">
-                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                <div class="bg-white rounded-2xl p-8 text-center shadow-md border border-gray-100 hover:border-secondary/30 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-100 text-secondary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-5 group-hover:bg-secondary group-hover:text-white transition">
                         <i class="fas fa-clock"></i>
                     </div>
-                    <h3 class="font-bold text-primary text-lg mb-1">Working Hours</h3>
-                    <p class="text-gray-500 text-sm mb-2">Our business hours</p>
-                    <span class="text-secondary font-semibold">Mon - Fri: 8:00 - 17:00</span>
-                    <p class="text-gray-400 text-xs mt-1">Sat - Sun: Closed</p>
+                    <h3 class="font-bold text-primary text-lg mb-2" data-i18n="contact.hours">Working Hours</h3>
+                    <div class="text-gray-500 text-sm space-y-1">
+                        <p data-i18n="contact.hours_monfri">Mon - Fri: 8:00 AM - 5:00 PM</p>
+                        <p data-i18n="contact.hours_sat">Sat: 8:00 AM - 12:00 PM</p>
+                        <p data-i18n="contact.hours_sun">Sun: Closed</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Form + Info -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-3 gap-10">
-                <!-- Contact Form (2 columns wide) -->
-                <div class="lg:col-span-2">
-                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 md:p-10">
-                        <h2 class="text-2xl md:text-3xl font-bold text-primary mb-2">Send Us a Message</h2>
-                        <p class="text-gray-500 mb-8">Fill out the form below and our team will get back to you as soon as possible.</p>
-                        <form action="#" method="POST">
-                            <div class="grid md:grid-cols-2 gap-6 mb-6">
-                                <div>
-                                    <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
-                                    <input type="text" id="name" name="name" placeholder="Your full name" class="form-input" required>
-                                </div>
-                                <div>
-                                    <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address <span class="text-red-500">*</span></label>
-                                    <input type="email" id="email" name="email" placeholder="your@email.com" class="form-input" required>
-                                </div>
-                                <div>
-                                    <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="+1 (XXX) XXX-XXXX" class="form-input">
-                                </div>
-                                <div>
-                                    <label for="company" class="block text-sm font-semibold text-gray-700 mb-2">Company</label>
-                                    <input type="text" id="company" name="company" placeholder="Your company name" class="form-input">
-                                </div>
-                            </div>
-                            <div class="grid md:grid-cols-2 gap-6 mb-6">
-                                <div>
-                                    <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Subject <span class="text-red-500">*</span></label>
-                                    <select id="subject" name="subject" class="form-input" required>
-                                        <option value="" disabled selected>Select a subject</option>
-                                        <option value="general">General Inquiry</option>
-                                        <option value="product">Product Information</option>
-                                        <option value="technical">Technical Support</option>
-                                        <option value="quote">Quote Request</option>
-                                        <option value="distributor">Distributor Partnership</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label for="application" class="block text-sm font-semibold text-gray-700 mb-2">Application Type</label>
-                                    <select id="application" name="application" class="form-input">
-                                        <option value="" disabled selected>Select application</option>
-                                        <option value="hvac">HVAC</option>
-                                        <option value="carpark">Car Park</option>
-                                        <option value="commercial">Commercial</option>
-                                        <option value="industrial">Industrial</option>
-                                        <option value="tunnel">Tunnel</option>
-                                        <option value="residential">Residential</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="mb-6">
-                                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message <span class="text-red-500">*</span></label>
-                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project requirements..." class="form-input resize-vertical" required></textarea>
-                            </div>
-                            <div class="mb-8">
-                                <label class="block text-sm font-semibold text-gray-700 mb-2">Attachment (optional)</label>
-                                <div class="border-2 border-dashed border-gray-200 rounded-xl p-6 text-center hover:border-accent transition cursor-pointer">
-                                    <i class="fas fa-cloud-upload-alt text-3xl text-gray-300 mb-2"></i>
-                                    <p class="text-gray-500 text-sm">Drag & drop files here or <span class="text-accent font-semibold">browse</span></p>
-                                    <p class="text-gray-400 text-xs mt-1">PDF, DWG, DOCX, JPG up to 10MB</p>
-                                    <input type="file" name="attachment" class="hidden">
-                                </div>
-                            </div>
-                            <button type="submit" class="w-full md:w-auto bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-10 py-3.5 rounded-lg transition shadow-md flex items-center justify-center gap-2 text-lg">
-                                <i class="fas fa-paper-plane"></i> Send Message
-                            </button>
-                        </form>
+            <!-- Contact Form + Map -->
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl shadow-xl p-10 border border-gray-100">
+                    <div class="mb-8">
+                        <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-2" data-i18n="contact.send">Send a Message</p>
+                        <h2 class="text-2xl md:text-3xl font-bold text-primary" data-i18n="contact.howhelp">How Can We Help You?</h2>
+                        <p class="text-gray-500 mt-3" data-i18n="contact.formdesc">Fill in the form and our team will get back to you within 24 hours.</p>
                     </div>
+                    <form action="https://formsubmit.co/dongilfan.cambodia@gmail.com" method="POST" class="space-y-5">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Dongil International Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://xidik12.github.io/fan-manufacturer-website/pages/contact.html?submitted=true">
+                        <input type="text" name="_honey" style="display:none">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.firstname">First Name *</label>
+                                <input type="text" name="first_name" placeholder="John" required class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.lastname">Last Name *</label>
+                                <input type="text" name="last_name" placeholder="Doe" required class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.emailaddr">Email Address *</label>
+                            <input type="email" name="email" placeholder="john.doe@company.com" required class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.phonenum">Phone Number</label>
+                            <input type="tel" name="phone" placeholder="+855 xx xxx xxx" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.company">Company / Organization</label>
+                            <input type="text" name="company" placeholder="Your company name" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.inquiry">Inquiry Type *</label>
+                            <select name="inquiry_type" required class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition">
+                                <option value="" data-i18n="contact.selectinquiry">Select inquiry type</option>
+                                <option value="product" data-i18n="contact.opt_product">Product Information</option>
+                                <option value="quote" data-i18n="contact.opt_quote">Request a Quote</option>
+                                <option value="technical" data-i18n="contact.opt_technical">Technical Support</option>
+                                <option value="distribution" data-i18n="contact.opt_distribution">Distribution / Partnership</option>
+                                <option value="project" data-i18n="contact.opt_project">Project Specification</option>
+                                <option value="other" data-i18n="contact.opt_other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2" data-i18n="contact.message">Message *</label>
+                            <textarea rows="5" name="message" placeholder="Describe your project or inquiry in detail..." required class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition resize-none"></textarea>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="privacy" class="mt-1 accent-secondary" required>
+                            <label for="privacy" class="text-sm text-gray-500"><span data-i18n="contact.agree_prefix">I agree to the</span> <a href="#" class="text-secondary hover:text-accent font-medium"><span data-i18n="footer.privacy">Privacy Policy</span></a> <span data-i18n="contact.agree_suffix">and consent to being contacted by Dongil International.</span></label>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-bold py-4 rounded-xl transition shadow-lg flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i> <span data-i18n="contact.submit">Send Message</span>
+                        </button>
+                    </form>
                 </div>
 
-                <!-- Right Sidebar -->
-                <div class="space-y-8">
-                    <!-- Map Placeholder -->
-                    <div class="bg-gradient-to-br from-secondary to-accent rounded-2xl overflow-hidden shadow-lg relative h-64 flex items-center justify-center">
-                        <div class="absolute inset-0 bg-gradient-to-br from-primary/40 to-secondary/40"></div>
-                        <div class="relative z-10 text-center text-white">
-                            <i class="fas fa-map-marker-alt text-5xl mb-3 animate-bounce"></i>
-                            <p class="font-semibold text-lg">AeroFlow Headquarters</p>
-                            <p class="text-blue-200 text-sm">123 Ventilation Blvd, Industrial City</p>
+                <!-- Info Panel -->
+                <div class="flex flex-col gap-8">
+                    <!-- Google Map -->
+                    <div class="rounded-2xl overflow-hidden shadow-xl flex-1 min-h-[400px]">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.8!2d104.9221!3d11.5564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513d6a46bf01%3A0x2e2e9b5e6b8f8c4a!2s306%20Preah%20Monivong%20Blvd%20(93)%2C%20Phnom%20Penh%2C%20Cambodia!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
+                            width="100%"
+                            height="100%"
+                            style="border:0; min-height:400px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8">
+                        <h3 class="font-bold text-primary text-lg mb-5" data-i18n="contact.connect">Connect With Us</h3>
+                        <div class="flex gap-4">
+                            <a href="#" class="flex-1 flex items-center gap-3 bg-blue-50 hover:bg-blue-100 text-secondary rounded-xl p-4 transition">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                                <span class="font-semibold text-sm">Facebook</span>
+                            </a>
+                            <a href="#" class="flex-1 flex items-center gap-3 bg-pink-50 hover:bg-pink-100 text-pink-600 rounded-xl p-4 transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                                <span class="font-semibold text-sm">Instagram</span>
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Visit Our Showroom -->
-                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
-                        <h3 class="font-bold text-primary text-lg mb-4 flex items-center gap-2">
-                            <i class="fas fa-store text-accent"></i> Visit Our Showroom
-                        </h3>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">
-                            Experience our full range of ventilation products in person. Our showroom features working demonstrations of our latest fan technologies and ventilation systems.
-                        </p>
-                        <div class="space-y-2 text-sm">
-                            <div class="flex items-center gap-2 text-gray-600">
-                                <i class="fas fa-clock text-accent w-5 text-center"></i>
-                                <span>Monday - Friday: 9:00 AM - 4:30 PM</span>
-                            </div>
-                            <div class="flex items-center gap-2 text-gray-600">
-                                <i class="fas fa-calendar-check text-accent w-5 text-center"></i>
-                                <span>Appointments recommended</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Department Contacts -->
-                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
-                        <h3 class="font-bold text-primary text-lg mb-4 flex items-center gap-2">
-                            <i class="fas fa-building text-accent"></i> Direct Department Contacts
-                        </h3>
-                        <div class="space-y-4">
-                            <div class="flex items-start gap-3">
-                                <div class="w-10 h-10 bg-blue-100 text-secondary rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-chart-line"></i>
+                    <!-- Quick Contact Info -->
+                    <div class="bg-gradient-to-r from-secondary to-accent rounded-2xl p-8 text-white">
+                        <h3 class="font-bold text-lg mb-5" data-i18n="contact.quickcontact">Quick Contact</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone-alt"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-primary text-sm">Sales Department</h4>
-                                    <a href="mailto:sales@aeroflowfans.com" class="text-accent text-sm hover:text-secondary transition">sales@aeroflowfans.com</a>
+                                    <p class="text-blue-200 text-xs" data-i18n="contact.phone">Phone</p>
+                                    <a href="tel:+85510502228" class="font-semibold hover:text-blue-200 transition">+855 10 502 228</a>
                                 </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <div class="w-10 h-10 bg-cyan-100 text-sky rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-wrench"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-primary text-sm">Technical Support</h4>
-                                    <a href="mailto:tech@aeroflowfans.com" class="text-accent text-sm hover:text-secondary transition">tech@aeroflowfans.com</a>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <div class="w-10 h-10 bg-green-100 text-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-headset"></i>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-primary text-sm">After-Sales Service</h4>
-                                    <a href="mailto:support@aeroflowfans.com" class="text-accent text-sm hover:text-secondary transition">support@aeroflowfans.com</a>
+                                    <p class="text-blue-200 text-xs" data-i18n="contact.email">Email</p>
+                                    <a href="mailto:dongilfan.cambodia@gmail.com" class="font-semibold hover:text-blue-200 transition text-sm">dongilfan.cambodia@gmail.com</a>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Regional Offices -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-14">
-                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Global Presence</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-primary">Our Regional Offices</h2>
-                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">With offices across four continents, we provide local support and service wherever your projects are located.</p>
+    <!-- Partner CTA -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                <i class="fas fa-handshake"></i>
             </div>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Head Office -->
-                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 card-hover relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary to-accent"></div>
-                    <div class="w-12 h-12 bg-blue-100 text-secondary rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3 class="font-bold text-primary text-lg mb-1">Head Office</h3>
-                    <p class="text-accent text-sm font-semibold mb-3">United States</p>
-                    <div class="space-y-2 text-sm text-gray-500">
-                        <div class="flex items-start gap-2">
-                            <i class="fas fa-map-marker-alt mt-1 text-gray-400 w-4 text-center"></i>
-                            <span>123 Ventilation Blvd,<br>Industrial City, CA 90210</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-phone text-gray-400 w-4 text-center"></i>
-                            <span>+1 (800) XXX-XXXX</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-envelope text-gray-400 w-4 text-center"></i>
-                            <span>hq@aeroflowfans.com</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Asia Pacific -->
-                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 card-hover relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky to-cyan-400"></div>
-                    <div class="w-12 h-12 bg-cyan-100 text-sky rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-globe-asia"></i>
-                    </div>
-                    <h3 class="font-bold text-primary text-lg mb-1">Asia Pacific</h3>
-                    <p class="text-sky text-sm font-semibold mb-3">Singapore</p>
-                    <div class="space-y-2 text-sm text-gray-500">
-                        <div class="flex items-start gap-2">
-                            <i class="fas fa-map-marker-alt mt-1 text-gray-400 w-4 text-center"></i>
-                            <span>45 Tech Park Drive,<br>Singapore 609927</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-phone text-gray-400 w-4 text-center"></i>
-                            <span>+65 XXXX XXXX</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-envelope text-gray-400 w-4 text-center"></i>
-                            <span>apac@aeroflowfans.com</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Middle East -->
-                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 card-hover relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-indigo-400"></div>
-                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-globe-africa"></i>
-                    </div>
-                    <h3 class="font-bold text-primary text-lg mb-1">Middle East</h3>
-                    <p class="text-indigo-500 text-sm font-semibold mb-3">United Arab Emirates</p>
-                    <div class="space-y-2 text-sm text-gray-500">
-                        <div class="flex items-start gap-2">
-                            <i class="fas fa-map-marker-alt mt-1 text-gray-400 w-4 text-center"></i>
-                            <span>78 Commerce Avenue,<br>Dubai, UAE</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-phone text-gray-400 w-4 text-center"></i>
-                            <span>+971 X XXX XXXX</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-envelope text-gray-400 w-4 text-center"></i>
-                            <span>mena@aeroflowfans.com</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Europe -->
-                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 card-hover relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-green-400"></div>
-                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fas fa-globe-europe"></i>
-                    </div>
-                    <h3 class="font-bold text-primary text-lg mb-1">Europe</h3>
-                    <p class="text-green-500 text-sm font-semibold mb-3">Germany</p>
-                    <div class="space-y-2 text-sm text-gray-500">
-                        <div class="flex items-start gap-2">
-                            <i class="fas fa-map-marker-alt mt-1 text-gray-400 w-4 text-center"></i>
-                            <span>15 Industriestrasse,<br>Frankfurt 60311, Germany</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-phone text-gray-400 w-4 text-center"></i>
-                            <span>+49 XXX XXXX XXXX</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-envelope text-gray-400 w-4 text-center"></i>
-                            <span>europe@aeroflowfans.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-20">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="text-center mb-14">
-                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">FAQ</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-primary">Frequently Asked Questions</h2>
-                <p class="text-gray-500 mt-4">Quick answers to the most common questions we receive.</p>
-            </div>
-            <div class="space-y-4">
-                <!-- FAQ 1 -->
-                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
-                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition" onclick="this.parentElement.classList.toggle('faq-open')">
-                        <span class="font-semibold text-primary text-lg pr-4">How do I request a quote for ventilation products?</span>
-                        <i class="fas fa-chevron-down text-accent transition-transform duration-300 flex-shrink-0"></i>
-                    </button>
-                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 leading-relaxed pb-6">
-                            You can request a quote by filling out the contact form on this page and selecting "Quote Request" as the subject. Alternatively, you can email us directly at <a href="mailto:sales@aeroflowfans.com" class="text-accent hover:text-secondary font-medium">sales@aeroflowfans.com</a> with your project specifications including airflow requirements, static pressure, application type, and quantity. Our engineering team will typically respond with a detailed quotation within 24-48 business hours.
-                        </p>
-                    </div>
-                </div>
-                <!-- FAQ 2 -->
-                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
-                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition" onclick="this.parentElement.classList.toggle('faq-open')">
-                        <span class="font-semibold text-primary text-lg pr-4">Do you offer custom ventilation solutions?</span>
-                        <i class="fas fa-chevron-down text-accent transition-transform duration-300 flex-shrink-0"></i>
-                    </button>
-                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 leading-relaxed pb-6">
-                            Yes, AeroFlow specializes in custom-engineered ventilation solutions. Our in-house engineering team can design and manufacture fans tailored to your specific requirements, including custom sizes, materials, motor configurations, coatings, and certifications. We work closely with consultants and contractors to ensure the perfect fit for every project, no matter how unique the specifications.
-                        </p>
-                    </div>
-                </div>
-                <!-- FAQ 3 -->
-                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
-                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition" onclick="this.parentElement.classList.toggle('faq-open')">
-                        <span class="font-semibold text-primary text-lg pr-4">What is the typical lead time for orders?</span>
-                        <i class="fas fa-chevron-down text-accent transition-transform duration-300 flex-shrink-0"></i>
-                    </button>
-                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 leading-relaxed pb-6">
-                            Lead times vary depending on the product type and customization level. Standard catalogue products are typically available within 2-4 weeks. Custom-engineered solutions may require 6-10 weeks from order confirmation. For urgent project needs, we offer expedited manufacturing on select product lines. Contact our sales team for specific lead time estimates based on your requirements.
-                        </p>
-                    </div>
-                </div>
-                <!-- FAQ 4 -->
-                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
-                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition" onclick="this.parentElement.classList.toggle('faq-open')">
-                        <span class="font-semibold text-primary text-lg pr-4">Do you provide installation support?</span>
-                        <i class="fas fa-chevron-down text-accent transition-transform duration-300 flex-shrink-0"></i>
-                    </button>
-                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 leading-relaxed pb-6">
-                            AeroFlow provides comprehensive installation support including detailed installation manuals, CAD drawings, and technical guidance. For larger projects, our field service engineers can conduct on-site supervision, commissioning, and performance testing. We also offer training programs for maintenance personnel to ensure optimal long-term operation of your ventilation systems.
-                        </p>
-                    </div>
-                </div>
-                <!-- FAQ 5 -->
-                <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
-                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition" onclick="this.parentElement.classList.toggle('faq-open')">
-                        <span class="font-semibold text-primary text-lg pr-4">What warranty do you offer on your products?</span>
-                        <i class="fas fa-chevron-down text-accent transition-transform duration-300 flex-shrink-0"></i>
-                    </button>
-                    <div class="faq-content px-6 pb-0 max-h-0 overflow-hidden transition-all duration-300">
-                        <p class="text-gray-600 leading-relaxed pb-6">
-                            All AeroFlow products come with a standard 2-year warranty covering manufacturing defects in materials and workmanship. Extended warranty options of up to 5 years are available for select product ranges. Our warranty includes replacement parts and technical support. For detailed warranty terms and conditions, please contact our after-sales team at <a href="mailto:support@aeroflowfans.com" class="text-accent hover:text-secondary font-medium">support@aeroflowfans.com</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Urgent Assistance CTA -->
-    <section class="py-16 bg-gradient-to-r from-secondary to-accent text-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 border border-white/20">
-                <i class="fas fa-phone-volume"></i>
-            </div>
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Need Urgent Assistance?</h2>
-            <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-                For time-critical projects or emergency technical support, call us directly. Our dedicated team is ready to help.
+            <h2 class="text-3xl md:text-4xl font-black mb-4" data-i18n="contact.partner">Partner with Dongil International</h2>
+            <p class="text-blue-200 text-lg max-w-2xl mx-auto mb-8" data-i18n="contact.partner_desc">
+                Join our network of distributors and project partners across Southeast Asia. Dongil International offers competitive terms, technical support, and Korean-quality fan and blower products for every application.
             </p>
-            <a href="tel:+1800XXXXXXX" class="inline-flex items-center gap-3 bg-white text-secondary font-bold px-10 py-4 rounded-xl shadow-lg hover:bg-blue-50 transition text-2xl">
-                <i class="fas fa-phone-alt"></i> +1 (800) XXX-XXXX
-            </a>
-            <p class="text-blue-200 text-sm mt-4">Available Monday - Friday, 8:00 AM - 5:00 PM (EST)</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:dongilfan.cambodia@gmail.com" class="inline-flex items-center gap-2 bg-accent hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl transition shadow-lg">
+                    <i class="fas fa-envelope"></i> <span data-i18n="contact.emaildirectly">Email Us Directly</span>
+                </a>
+                <a href="tel:+85510502228" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4 rounded-xl transition">
+                    <i class="fas fa-phone-alt"></i> <span data-i18n="contact.callnow">Call Now</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -550,78 +343,74 @@
             <div class="grid md:grid-cols-4 gap-10">
                 <div>
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
-                            <i class="fas fa-fan text-white text-sm"></i>
-                        </div>
-                        <div class="font-black text-lg">AEROFLOW</div>
+                        <img src="../images/dongil-logo.jpg" alt="Dongil International" class="h-10">
                     </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Leading manufacturer of energy efficient ventilation solutions for commercial, industrial, and residential applications.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-2">Dongil International</p>
+                    <p class="text-accent text-sm font-medium italic mb-4"><span data-i18n="footer.tagline">"Good Air, The Better Life"</span></p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4"><span data-i18n="footer.desc">Korean-quality fan and blower solutions for industrial, commercial, and residential applications across Southeast Asia.</span></p>
                     <div class="flex gap-3">
-                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-youtube"></i></a>
                         <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Products</h4>
+                    <h4 class="font-semibold text-lg mb-4"><span data-i18n="nav.products">Products</span></h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="products.html#axial" class="hover:text-accent transition">Axial Fans</a></li>
-                        <li><a href="products.html#centrifugal" class="hover:text-accent transition">Centrifugal Fans</a></li>
-                        <li><a href="products.html#inline" class="hover:text-accent transition">In-Line Fans</a></li>
-                        <li><a href="products.html#jet" class="hover:text-accent transition">Jet Fans</a></li>
-                        <li><a href="products.html#roof" class="hover:text-accent transition">Roof Exhaust Fans</a></li>
-                        <li><a href="products.html#domestic" class="hover:text-accent transition">Domestic Fans</a></li>
+                        <li><a href="products.html#axial" class="hover:text-accent transition" data-i18n="nav.axialfans">Axial Fans</a></li>
+                        <li><a href="products.html#centrifugal" class="hover:text-accent transition" data-i18n="nav.centrifugalfans">Centrifugal Fans</a></li>
+                        <li><a href="products.html#inline" class="hover:text-accent transition" data-i18n="nav.inlinefans">In-Line Fans</a></li>
+                        <li><a href="products.html#jet" class="hover:text-accent transition" data-i18n="nav.jetfans">Jet Fans</a></li>
+                        <li><a href="products.html#roof" class="hover:text-accent transition" data-i18n="nav.roofexhaustfans">Roof Exhaust Fans</a></li>
+                        <li><a href="products.html#domestic" class="hover:text-accent transition" data-i18n="nav.domesticfans">Domestic Fans</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <h4 class="font-semibold text-lg mb-4"><span data-i18n="footer.company">Company</span></h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="about.html" class="hover:text-accent transition">About AeroFlow</a></li>
-                        <li><a href="projects.html" class="hover:text-accent transition">Projects</a></li>
-                        <li><a href="news.html" class="hover:text-accent transition">News & Media</a></li>
-                        <li><a href="resources.html" class="hover:text-accent transition">Resources</a></li>
-                        <li><a href="careers.html" class="hover:text-accent transition">Careers</a></li>
-                        <li><a href="contact.html" class="hover:text-accent transition">Contact Us</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition"><span data-i18n="footer.about">About Dongil International</span></a></li>
+                        <li><a href="projects.html" class="hover:text-accent transition"><span data-i18n="footer.projects">Projects</span></a></li>
+                        <li><a href="news.html" class="hover:text-accent transition"><span data-i18n="footer.newslink">News & Media</span></a></li>
+                        <li><a href="resources.html" class="hover:text-accent transition"><span data-i18n="footer.resourceslink">Resources</span></a></li>
+                        <li><a href="careers.html" class="hover:text-accent transition"><span data-i18n="footer.careerslink">Careers</span></a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition"><span data-i18n="footer.contactlink">Contact Us</span></a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <h4 class="font-semibold text-lg mb-4"><span data-i18n="footer.contact">Contact</span></h4>
                     <ul class="space-y-3 text-gray-400 text-sm">
-                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>123 Ventilation Blvd,<br>Industrial City, CA 90210</span></li>
-                        <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><span>+1 (800) XXX-XXXX</span></li>
-                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><span>info@aeroflowfans.com</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>Realestate.com.kh, 4th Floors,<br>306BCD Preah Monivong Blvd (93),<br>Phnom Penh 12302</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><span>+855 10 502 228</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><span>dongilfan.cambodia@gmail.com</span></li>
                     </ul>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=ISO" alt="ISO" class="h-8 rounded opacity-60">
-                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=CE" alt="CE" class="h-8 rounded opacity-60">
-                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=UL" alt="UL" class="h-8 rounded opacity-60">
-                    </div>
                 </div>
             </div>
         </div>
+        <!-- Bottom Bar -->
         <div class="border-t border-white/10">
             <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <p>&copy; 2026 AeroFlow Ventilation. All rights reserved.</p>
+                <p>&copy; 2026 Dongil International. <span data-i18n="footer.rights">All rights reserved.</span></p>
                 <div class="flex gap-4 mt-2 md:mt-0">
-                    <a href="#" class="hover:text-accent transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-accent transition">Terms of Use</a>
-                    <a href="#" class="hover:text-accent transition">Sitemap</a>
+                    <a href="#" class="hover:text-accent transition"><span data-i18n="footer.privacy">Privacy Policy</span></a>
+                    <a href="#" class="hover:text-accent transition"><span data-i18n="footer.terms">Terms of Use</span></a>
+                    <a href="#" class="hover:text-accent transition"><span data-i18n="footer.sitemap">Sitemap</span></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <style>
-        /* FAQ accordion styles */
-        .faq-open .faq-content {
-            max-height: 300px;
-            padding-bottom: 0;
-        }
-        .faq-open .faq-toggle i {
-            transform: rotate(180deg);
-        }
-    </style>
-
+    <script src="../lang/translations.js"></script>
     <script src="../js/main.js"></script>
+
+    <script>
+        // Show success message after form submission redirect
+        if (window.location.search.includes('submitted=true')) {
+            const banner = document.createElement('div');
+            banner.className = 'fixed top-4 left-1/2 -translate-x-1/2 z-[9999] bg-green-600 text-white px-8 py-4 rounded-xl shadow-2xl flex items-center gap-3 animate-fade-in';
+            banner.innerHTML = '<i class="fas fa-check-circle text-xl"></i><div><strong>Message Sent!</strong><br><span class="text-sm text-green-100">Thank you. We will get back to you within 24 hours.</span></div>';
+            document.body.appendChild(banner);
+            setTimeout(() => banner.remove(), 8000);
+            history.replaceState(null, '', window.location.pathname);
+        }
+    </script>
 </body>
 </html>

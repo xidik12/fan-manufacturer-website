@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prestigious Projects - AeroFlow Ventilation Solutions</title>
+    <title>Prestigious Projects - Dongil International</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -32,17 +32,17 @@
     <div class="bg-primary text-white text-sm py-2">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <div class="hidden md:flex items-center gap-6">
-                <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +1 (800) XXX-XXXX</span>
-                <span><i class="fas fa-envelope mr-1 text-accent"></i> info@aeroflowfans.com</span>
-                <span><i class="fas fa-map-marker-alt mr-1 text-accent"></i> Global Headquarters</span>
+                <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +855 10 502 228</span>
+                <span><i class="fas fa-envelope mr-1 text-accent"></i> dongilfan.cambodia@gmail.com</span>
+                <span><i class="fas fa-map-marker-alt mr-1 text-accent"></i> Phnom Penh, Cambodia</span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="#" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
                 <a href="#" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-accent transition"><i class="fab fa-instagram"></i></a>
                 <span class="text-gray-500 mx-2">|</span>
-                <a href="#" class="hover:text-accent transition text-xs font-medium">EN</a>
-                <a href="#" class="text-gray-400 hover:text-accent transition text-xs">中文</a>
+                <a href="#" onclick="switchLang('en'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="en">EN</a>
+                <a href="#" onclick="switchLang('ko'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="ko">한국어</a>
+                <a href="#" onclick="switchLang('km'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="km">ខ្មែរ</a>
             </div>
         </div>
     </div>
@@ -53,75 +53,67 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <a href="../index.html" class="flex items-center gap-3">
-                    <div class="relative">
-                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-xl flex items-center justify-center">
-                            <i class="fas fa-fan text-white text-xl"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-black text-primary text-xl tracking-tight">AEROFLOW</div>
-                        <div class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Ventilation Solutions</div>
-                    </div>
+                    <img src="../images/dongil-logo.jpg" alt="Dongil International" class="h-10">
                 </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center gap-1">
                     <div class="relative group">
                         <a href="products.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Products <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.products">Products</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="products.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm font-medium">All Products</a>
-                            <a href="products.html#axial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Axial Fans</a>
-                            <a href="products.html#centrifugal" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Centrifugal Fans</a>
-                            <a href="products.html#inline" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">In-Line Fans</a>
-                            <a href="products.html#jet" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Jet Fans</a>
-                            <a href="products.html#roof" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Roof Exhaust Fans</a>
-                            <a href="products.html#domestic" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Domestic Fans</a>
+                            <a href="products.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm font-medium" data-i18n="nav.allproducts">All Products</a>
+                            <a href="products.html#axial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.axialfans">Axial Fans</a>
+                            <a href="products.html#centrifugal" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.centrifugalfans">Centrifugal Fans</a>
+                            <a href="products.html#inline" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.inlinefans">In-Line Fans</a>
+                            <a href="products.html#jet" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.jetfans">Jet Fans</a>
+                            <a href="products.html#roof" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.roofexhaustfans">Roof Exhaust Fans</a>
+                            <a href="products.html#domestic" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.domesticfans">Domestic Fans</a>
                         </div>
                     </div>
                     <div class="relative group">
                         <a href="applications.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Applications <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.applications">Applications</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="applications.html#hvac" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">HVAC & Air Conditioning</a>
-                            <a href="applications.html#carpark" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Car Park Ventilation</a>
-                            <a href="applications.html#commercial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Commercial Buildings</a>
-                            <a href="applications.html#industrial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Industrial & Manufacturing</a>
-                            <a href="applications.html#tunnel" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Tunnels & Transport</a>
-                            <a href="applications.html#residential" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Residential</a>
+                            <a href="applications.html#hvac" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.hvacsystems">HVAC Systems</a>
+                            <a href="applications.html#industrial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.industrialvent">Industrial Ventilation</a>
+                            <a href="applications.html#commercial" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.commercialspaces">Commercial Spaces</a>
+                            <a href="applications.html#carpark" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.undergroundparking">Underground Parking</a>
+                            <a href="applications.html#smoke" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.smokeextraction">Smoke Extraction</a>
+                            <a href="applications.html#residential" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.residential">Residential</a>
                         </div>
                     </div>
                     <div class="relative group">
                         <a href="about.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Why AeroFlow <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.why">Why Dongil</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="about.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Company Profile</a>
-                            <a href="about.html#facts" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Facts & Figures</a>
-                            <a href="about.html#innovation" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Innovation</a>
-                            <a href="projects.html" class="block px-5 py-2.5 hover:bg-blue-50 text-secondary text-sm font-medium">Prestigious Projects</a>
+                            <a href="about.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.companyprofile">Company Profile</a>
+                            <a href="about.html#facts" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.factsfigures">Facts & Figures</a>
+                            <a href="about.html#innovation" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.innovation">Innovation</a>
+                            <a href="projects.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.prestigiousprojects">Prestigious Projects</a>
                         </div>
                     </div>
                     <div class="relative group">
                         <a href="resources.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition flex items-center gap-1">
-                            Resources <i class="fas fa-chevron-down text-xs"></i>
+                            <span data-i18n="nav.resources">Resources</span> <i class="fas fa-chevron-down text-xs"></i>
                         </a>
                         <div class="dropdown absolute left-0 top-full bg-white shadow-2xl rounded-xl py-3 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
-                            <a href="resources.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Case Studies</a>
-                            <a href="resources.html#software" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Fan Selection Software</a>
-                            <a href="resources.html#docs" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm">Literature & Documentation</a>
+                            <a href="resources.html" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.documentation">Documentation</a>
+                            <a href="resources.html#software" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.fanselectionsw">Fan Selection Software</a>
+                            <a href="resources.html#docs" class="block px-5 py-2.5 hover:bg-blue-50 text-gray-600 hover:text-secondary text-sm" data-i18n="nav.litdatasheets">Literature & Datasheets</a>
                         </div>
                     </div>
-                    <a href="news.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">News</a>
-                    <a href="contact.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition">Contact</a>
+                    <a href="news.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition"><span data-i18n="nav.news">News</span></a>
+                    <a href="contact.html" class="px-4 py-2 rounded-md hover:bg-blue-50 font-semibold text-gray-700 hover:text-secondary transition"><span data-i18n="nav.contact">Contact</span></a>
                 </div>
 
                 <!-- CTA + Mobile -->
                 <div class="flex items-center gap-3">
                     <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-accent hover:from-blue-800 hover:to-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow-md">
-                        <i class="fas fa-headset text-sm"></i> Get a Quote
+                        <i class="fas fa-headset text-sm"></i> <span data-i18n="nav.getquote">Get a Quote</span>
                     </a>
                     <button id="mobile-toggle" class="lg:hidden text-2xl text-primary"><i class="fas fa-bars"></i></button>
                 </div>
@@ -131,13 +123,13 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
             <div class="px-4 py-4 space-y-2">
-                <a href="products.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Products</a>
-                <a href="applications.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Applications</a>
-                <a href="about.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Why AeroFlow</a>
-                <a href="resources.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Resources</a>
-                <a href="news.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">News</a>
-                <a href="contact.html" class="block py-2 text-gray-700 hover:text-secondary font-medium">Contact</a>
-                <a href="contact.html" class="block bg-gradient-to-r from-secondary to-accent text-white text-center font-semibold py-3 rounded-lg mt-3">Get a Quote</a>
+                <a href="products.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.products">Products</span></a>
+                <a href="applications.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.applications">Applications</span></a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.why">Why Dongil</span></a>
+                <a href="resources.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.resources">Resources</span></a>
+                <a href="news.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.news">News</span></a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-secondary font-medium"><span data-i18n="nav.contact">Contact</span></a>
+                <a href="contact.html" class="block bg-gradient-to-r from-secondary to-accent text-white text-center font-semibold py-3 rounded-lg mt-3"><span data-i18n="nav.getquote">Get a Quote</span></a>
             </div>
         </div>
     </nav>
@@ -146,574 +138,365 @@
     <section class="page-header text-white">
         <div class="absolute inset-0 z-0">
             <div class="absolute top-10 right-10 w-72 h-72 border border-accent/10 rounded-full"></div>
-            <div class="absolute -bottom-16 -left-16 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-secondary/10 rounded-full blur-3xl"></div>
             <div class="absolute top-1/2 right-1/3 opacity-5">
-                <i class="fas fa-building text-[200px]"></i>
+                <i class="fas fa-city text-[200px]"></i>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 relative z-10">
-            <nav class="flex items-center gap-2 text-sm text-blue-300 mb-6">
-                <a href="../index.html" class="hover:text-accent transition">Home</a>
-                <i class="fas fa-chevron-right text-xs text-blue-500"></i>
-                <span class="text-white">Prestigious Projects</span>
+            <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3" data-i18n="projects.trackrecord">Our Track Record</p>
+            <h1 class="text-4xl md:text-5xl font-black mb-4" data-i18n="projects.pagetitle">Prestigious Projects</h1>
+            <p class="text-blue-300 text-lg max-w-2xl mb-6"><span data-i18n="projects.pagesubtitle">From Cambodia's landmark high-rises to regional industrial facilities, Dongil International fans are trusted on Southeast Asia's most demanding projects.</span></p>
+            <nav class="text-sm text-blue-300">
+                <a href="../index.html" class="hover:text-accent transition" data-i18n="nav.home">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-white" data-i18n="footer.projects">Projects</span>
             </nav>
-            <h1 class="text-4xl md:text-5xl font-black mb-4">Prestigious Projects</h1>
-            <p class="text-blue-200 text-lg max-w-2xl leading-relaxed">
-                Explore our portfolio of worldwide installations spanning commercial complexes, industrial facilities, transportation networks, and critical infrastructure across 80+ countries.
-            </p>
         </div>
     </section>
 
-    <!-- Filter Bar -->
-    <section class="bg-white border-b border-gray-200 sticky top-20 z-40">
+    <!-- Stats -->
+    <section class="py-12 bg-white border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center gap-2 py-4 overflow-x-auto scrollbar-hide">
-                <button class="filter-btn active px-5 py-2 rounded-full text-sm font-semibold bg-secondary text-white transition whitespace-nowrap" data-filter="all">All Projects</button>
-                <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 hover:bg-secondary hover:text-white transition whitespace-nowrap" data-filter="commercial">Commercial</button>
-                <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 hover:bg-secondary hover:text-white transition whitespace-nowrap" data-filter="industrial">Industrial</button>
-                <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 hover:bg-secondary hover:text-white transition whitespace-nowrap" data-filter="infrastructure">Infrastructure</button>
-                <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 hover:bg-secondary hover:text-white transition whitespace-nowrap" data-filter="hospitality">Hospitality</button>
-                <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 hover:bg-secondary hover:text-white transition whitespace-nowrap" data-filter="healthcare">Healthcare</button>
-                <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-600 hover:bg-secondary hover:text-white transition whitespace-nowrap" data-filter="transportation">Transportation</button>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-black text-secondary mb-1">500+</div>
+                    <div class="text-gray-500 text-sm font-medium" data-i18n="projects.completedprojects">Completed Projects</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-secondary mb-1">10+</div>
+                    <div class="text-gray-500 text-sm font-medium" data-i18n="projects.countriesserved">Countries Served</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-secondary mb-1">30+</div>
+                    <div class="text-gray-500 text-sm font-medium" data-i18n="projects.yearsexp">Years Experience</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-secondary mb-1">100%</div>
+                    <div class="text-gray-500 text-sm font-medium" data-i18n="projects.koreanquality">Korean-Quality Products</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Project -->
+    <!-- Projects Filter -->
+    <section class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center gap-1 overflow-x-auto py-4 -mb-px" id="project-filters">
+                <button class="project-filter-btn active px-5 py-2.5 rounded-lg text-sm font-semibold transition whitespace-nowrap bg-secondary text-white" data-filter="all" data-i18n="projects.allprojects">
+                    All Projects
+                </button>
+                <button class="project-filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-secondary" data-filter="commercial">
+                    <i class="fas fa-building mr-1.5"></i> <span data-i18n="projects.commercial">Commercial</span>
+                </button>
+                <button class="project-filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-secondary" data-filter="industrial">
+                    <i class="fas fa-industry mr-1.5"></i> <span data-i18n="projects.industrial">Industrial</span>
+                </button>
+                <button class="project-filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-secondary" data-filter="residential">
+                    <i class="fas fa-home mr-1.5"></i> <span data-i18n="projects.residential_filter">Residential</span>
+                </button>
+                <button class="project-filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-secondary" data-filter="hospitality">
+                    <i class="fas fa-concierge-bell mr-1.5"></i> <span data-i18n="projects.hospitality">Hospitality</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
     <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="bg-gradient-to-br from-primary via-secondary to-primary rounded-3xl overflow-hidden shadow-2xl">
-                <div class="grid md:grid-cols-2 gap-0">
-                    <div class="relative min-h-[350px] flex items-center justify-center bg-gradient-to-br from-blue-900 to-cyan-800">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="commercial">
+                    <div class="h-52 bg-gradient-to-br from-primary to-secondary relative flex items-end p-6">
                         <div class="absolute inset-0 flex items-center justify-center opacity-10">
-                            <i class="fas fa-plane-departure text-[250px] text-white"></i>
+                            <i class="fas fa-building text-[120px] text-white"></i>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-24 h-24 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center mx-auto mb-4 border border-white/20">
-                                <i class="fas fa-plane-departure text-4xl text-accent"></i>
-                            </div>
-                            <span class="inline-block bg-accent/20 text-accent text-xs font-bold px-3 py-1 rounded-full border border-accent/30">FEATURED PROJECT</span>
+                        <div class="relative z-10">
+                            <span class="bg-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase" data-i18n="projects.commercial">Commercial</span>
                         </div>
                     </div>
-                    <div class="p-8 md:p-12 text-white flex flex-col justify-center">
-                        <div class="inline-flex items-center gap-2 bg-accent/20 text-accent text-xs font-bold px-3 py-1 rounded-full mb-4 w-fit border border-accent/30">
-                            <i class="fas fa-star"></i> Flagship Installation
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>Phnom Penh, Cambodia</span>
+                            <span class="mx-1">·</span>
+                            <span>2025</span>
                         </div>
-                        <h2 class="text-3xl md:text-4xl font-black mb-3">International Airport Terminal Expansion</h2>
-                        <p class="text-blue-200 text-sm mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Middle East Region</p>
-                        <p class="text-blue-300 leading-relaxed mb-8">
-                            Complete ventilation system design and supply for the new terminal expansion, including air handling units, jet fans for the multi-level car park, and smoke extraction systems. One of the largest single-project fan installations in the region.
-                        </p>
-                        <div class="grid grid-cols-3 gap-4 mb-8">
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center border border-white/10">
-                                <div class="text-2xl md:text-3xl font-black text-accent">500+</div>
-                                <div class="text-blue-300 text-xs mt-1">Fans Installed</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center border border-white/10">
-                                <div class="text-2xl md:text-3xl font-black text-sky">250K</div>
-                                <div class="text-blue-300 text-xs mt-1">sqm Area</div>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center border border-white/10">
-                                <div class="text-2xl md:text-3xl font-black text-highlight">$4.2M</div>
-                                <div class="text-blue-300 text-xs mt-1">Project Value</div>
-                            </div>
+                        <h3 class="font-bold text-primary text-xl mb-3 leading-snug" data-i18n="projects.proj1_title">Canadia Tower — Full HVAC Ventilation Upgrade</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5" data-i18n="projects.proj1_desc">Supply and installation of Dongil centrifugal fans and AHU units across 29 floors of Canadia Tower, Phnom Penh's landmark commercial skyscraper. Includes basement car park jet fan ventilation system.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Centrifugal Fans</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Jet Fans</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">HVAC</span>
                         </div>
-                        <a href="#" class="inline-flex items-center gap-2 bg-gradient-to-r from-accent to-sky text-white font-semibold px-6 py-3 rounded-lg hover:from-blue-600 hover:to-cyan-600 transition shadow-lg w-fit">
-                            View Full Case Study <i class="fas fa-arrow-right"></i>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            <span data-i18n="projects.enquire">Enquire About This Project</span> <i class="fas fa-arrow-right text-xs"></i>
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Project Grid -->
-    <section class="py-16">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Project Portfolio</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-primary">Worldwide Installations</h2>
-                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">From tunnels deep underground to high-rise towers reaching the sky, AeroFlow ventilation systems are at work in the world's most demanding environments.</p>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="project-grid">
-
-                <!-- Project 1: Metro Highway Tunnel -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="infrastructure">
-                    <div class="h-52 bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-road text-[140px] text-white"></i>
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="industrial">
+                    <div class="h-52 bg-gradient-to-br from-slate-800 to-slate-600 relative flex items-end p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <i class="fas fa-industry text-[120px] text-white"></i>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-road text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-blue-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Infrastructure</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
+                        <div class="relative z-10">
+                            <span class="bg-slate-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Industrial</span>
                         </div>
                     </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">Metro Highway Tunnel</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Southeast Asia</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Longitudinal ventilation system with reversible jet fans for a 3.8km dual-bore highway tunnel, including emergency smoke extraction.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 120 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 3.8 km</span>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>Sihanoukville, Cambodia</span>
+                            <span class="mx-1">·</span>
+                            <span>2025</span>
                         </div>
+                        <h3 class="font-bold text-primary text-xl mb-3 leading-snug" data-i18n="projects.proj2_title">Sihanoukville Special Economic Zone — Factory Ventilation</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5" data-i18n="projects.proj2_desc">Complete factory ventilation solution for a textile and garment manufacturing facility in the Sihanoukville SEZ. Axial and centrifugal fans providing process cooling and fume extraction across 40,000 sqm of production floor.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Axial Fans</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Industrial</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Fume Extraction</span>
+                        </div>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            <span data-i18n="projects.enquire">Enquire About This Project</span> <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 2: Grand Luxury Resort & Spa -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="hospitality">
-                    <div class="h-52 bg-gradient-to-br from-amber-800 to-amber-600 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-hotel text-[140px] text-white"></i>
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="residential">
+                    <div class="h-52 bg-gradient-to-br from-green-800 to-green-600 relative flex items-end p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <i class="fas fa-city text-[120px] text-white"></i>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-hotel text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-amber-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Hospitality</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
+                        <div class="relative z-10">
+                            <span class="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Residential</span>
                         </div>
                     </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">Grand Luxury Resort & Spa</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Maldives</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Full HVAC ventilation for a 5-star resort with 400 rooms, conference halls, spa facilities, and commercial kitchens.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 85 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 48,000 sqm</span>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>Phnom Penh, Cambodia</span>
+                            <span class="mx-1">·</span>
+                            <span>2025</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Shopping Mall Complex -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="commercial">
-                    <div class="h-52 bg-gradient-to-br from-purple-900 to-purple-700 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-store text-[140px] text-white"></i>
+                        <h3 class="font-bold text-primary text-xl mb-3 leading-snug" data-i18n="projects.proj3_title">Borey Peng Huoth — Residential Estate Ventilation</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5" data-i18n="projects.proj3_desc">Supply of Dongil bathroom exhaust fans, kitchen ventilation units, and large ceiling fans for a major residential township development outside Phnom Penh. Over 1,200 units equipped.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Domestic Fans</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Ceiling Fans</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Residential</span>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-store text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-purple-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Commercial</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">Shopping Mall Complex</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Dubai, UAE</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Multi-level car park ventilation with jet fans, main AHU supply and return fans, and kitchen exhaust systems for 200+ food outlets.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 340 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 180,000 sqm</span>
-                        </div>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            <span data-i18n="projects.enquire">Enquire About This Project</span> <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 4: Pharmaceutical Plant -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="industrial">
-                    <div class="h-52 bg-gradient-to-br from-green-900 to-green-700 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-pills text-[140px] text-white"></i>
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="hospitality">
+                    <div class="h-52 bg-gradient-to-br from-amber-800 to-amber-600 relative flex items-end p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <i class="fas fa-hotel text-[120px] text-white"></i>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-pills text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-green-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Industrial</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
+                        <div class="relative z-10">
+                            <span class="bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Hospitality</span>
                         </div>
                     </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">Pharmaceutical Plant</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Hyderabad, India</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Cleanroom-rated ventilation with HEPA filtration, precise temperature and humidity control for GMP-compliant manufacturing areas.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 75 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 32,000 sqm</span>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>Phnom Penh, Cambodia</span>
+                            <span class="mx-1">·</span>
+                            <span>2024</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: City Hospital Expansion -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="healthcare">
-                    <div class="h-52 bg-gradient-to-br from-red-800 to-rose-600 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-hospital text-[140px] text-white"></i>
+                        <h3 class="font-bold text-primary text-xl mb-3 leading-snug" data-i18n="projects.proj4_title">Hotel & Serviced Apartments — HVAC & Kitchen Exhaust</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5" data-i18n="projects.proj4_desc">Full ventilation package for a 5-star hotel and serviced apartment complex including AHU fans, kitchen exhaust systems, basement car park ventilation, and stairwell pressurization for fire safety compliance.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Kitchen Exhaust</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Smoke Extract</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">HVAC</span>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-hospital text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-red-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Healthcare</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">City Hospital Expansion</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Riyadh, Saudi Arabia</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Critical ventilation for operating theatres, isolation wards, and ICU units with redundant systems ensuring 24/7 uptime and infection control.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 200 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 95,000 sqm</span>
-                        </div>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            <span data-i18n="projects.enquire">Enquire About This Project</span> <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 6: Underground Metro Station -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="transportation">
-                    <div class="h-52 bg-gradient-to-br from-slate-800 to-slate-600 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-train-subway text-[140px] text-white"></i>
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="commercial">
+                    <div class="h-52 bg-gradient-to-br from-cyan-800 to-cyan-600 relative flex items-end p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <i class="fas fa-shopping-bag text-[120px] text-white"></i>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-train-subway text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-slate-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Transportation</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
+                        <div class="relative z-10">
+                            <span class="bg-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Commercial</span>
                         </div>
                     </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">Underground Metro Station</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Cairo, Egypt</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Tunnel ventilation and platform cooling for a new metro line serving 500,000+ daily passengers, with fire mode smoke extraction.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 160 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 12 stations</span>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>Phnom Penh, Cambodia</span>
+                            <span class="mx-1">·</span>
+                            <span>2024</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project 7: Data Center Campus -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="commercial">
-                    <div class="h-52 bg-gradient-to-br from-cyan-900 to-cyan-700 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-server text-[140px] text-white"></i>
+                        <h3 class="font-bold text-primary text-xl mb-3 leading-snug" data-i18n="projects.proj5_title">Aeon Mall Phase Expansion — Retail Ventilation</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5" data-i18n="projects.proj5_desc">Supply of Dongil centrifugal fans and inline fans for retail unit HVAC, fresh air supply, and exhaust ventilation across a major shopping mall expansion project in Phnom Penh.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">In-Line Fans</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Centrifugal Fans</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Retail</span>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-server text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-cyan-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Commercial</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">Data Center Campus</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Frankfurt, Germany</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Precision cooling airflow management for a Tier IV data center with hot/cold aisle containment and free cooling economizer fans.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 280 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 45,000 sqm</span>
-                        </div>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            <span data-i18n="projects.enquire">Enquire About This Project</span> <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 8: High-Rise Office Tower -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="commercial">
-                    <div class="h-52 bg-gradient-to-br from-indigo-900 to-indigo-700 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-city text-[140px] text-white"></i>
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="industrial">
+                    <div class="h-52 bg-gradient-to-br from-red-900 to-red-700 relative flex items-end p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <i class="fas fa-fire text-[120px] text-white"></i>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-city text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-indigo-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Commercial</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
+                        <div class="relative z-10">
+                            <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Industrial</span>
                         </div>
                     </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">High-Rise Office Tower</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Kuala Lumpur, Malaysia</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">65-storey commercial tower with stairwell pressurization, AHU supply fans, car park jet fans, and smoke spill systems on every floor.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 420 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 120,000 sqm</span>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>Kandal Province, Cambodia</span>
+                            <span class="mx-1">·</span>
+                            <span>2024</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project 9: Convention Center -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="commercial">
-                    <div class="h-52 bg-gradient-to-br from-violet-900 to-violet-700 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-landmark text-[140px] text-white"></i>
+                        <h3 class="font-bold text-primary text-xl mb-3 leading-snug" data-i18n="projects.proj6_title">Cement Factory — High-Temperature Process Fans</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5" data-i18n="projects.proj6_desc">Supply of Dongil high-temperature industrial fans rated for handling kiln exhaust gases at temperatures exceeding 600°C. Critical process ventilation for a regional cement production facility.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-red-50 text-red-600 text-xs font-medium px-3 py-1 rounded-full">High-Temp Fans</span>
+                            <span class="bg-red-50 text-red-600 text-xs font-medium px-3 py-1 rounded-full">Process Industry</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Industrial</span>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-landmark text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-violet-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Commercial</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">Convention Center</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Singapore</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Large-volume air handling for exhibition halls, ballrooms, and conference rooms with variable air volume control and low noise requirements.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 150 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 85,000 sqm</span>
-                        </div>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            <span data-i18n="projects.enquire">Enquire About This Project</span> <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 10: Food Processing Factory -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="industrial">
-                    <div class="h-52 bg-gradient-to-br from-orange-800 to-orange-600 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-industry text-[140px] text-white"></i>
+                <!-- Project 7 -->
+                <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="commercial">
+                    <div class="h-52 bg-gradient-to-br from-indigo-900 to-indigo-700 relative flex items-end p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <i class="fas fa-hospital text-[120px] text-white"></i>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-industry text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-orange-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Industrial</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
+                        <div class="relative z-10">
+                            <span class="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Commercial</span>
                         </div>
                     </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">Food Processing Factory</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Bangkok, Thailand</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Corrosion-resistant ventilation for food-grade environments with washdown-rated fans, cold storage ventilation, and production area exhaust.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 95 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 28,000 sqm</span>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>Phnom Penh, Cambodia</span>
+                            <span class="mx-1">·</span>
+                            <span>2023</span>
                         </div>
+                        <h3 class="font-bold text-primary text-xl mb-3 leading-snug" data-i18n="projects.proj7_title">Khmer-Soviet Friendship Hospital — Critical Ventilation</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5" data-i18n="projects.proj7_desc">Replacement and upgrade of ventilation fans across operating theatres, ICU, and general wards. Supply of Dongil low-noise centrifugal fans with precise airflow control for healthcare facility compliance.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Centrifugal Fans</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Healthcare</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Low Noise</span>
+                        </div>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            <span data-i18n="projects.enquire">Enquire About This Project</span> <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 11: Road Tunnel Ventilation -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="infrastructure">
-                    <div class="h-52 bg-gradient-to-br from-teal-900 to-teal-700 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-mountain text-[140px] text-white"></i>
+                <!-- Project 8 -->
+                <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="residential">
+                    <div class="h-52 bg-gradient-to-br from-teal-800 to-teal-600 relative flex items-end p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <i class="fas fa-building text-[120px] text-white"></i>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-mountain text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-teal-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Infrastructure</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
+                        <div class="relative z-10">
+                            <span class="bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Residential</span>
                         </div>
                     </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">Road Tunnel Ventilation</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Norway</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Sub-zero rated jet fans for a 6.2km mountain tunnel with bi-directional traffic, CO/NO2 monitoring integration, and SIL2 fire safety mode.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 84 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 6.2 km</span>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>Ho Chi Minh City, Vietnam</span>
+                            <span class="mx-1">·</span>
+                            <span>2023</span>
                         </div>
+                        <h3 class="font-bold text-primary text-xl mb-3 leading-snug" data-i18n="projects.proj8_title">High-Rise Condominium Complex — Whole Building Ventilation</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5" data-i18n="projects.proj8_desc">Specification and supply of Dongil fans for a 35-floor residential condominium tower in Ho Chi Minh City, covering fresh air supply, car park ventilation, and smoke extraction systems throughout.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Jet Fans</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Smoke Extract</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">HVAC</span>
+                        </div>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            <span data-i18n="projects.enquire">Enquire About This Project</span> <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 12: University Campus -->
-                <div class="rounded-2xl overflow-hidden shadow-lg card-hover group bg-white project-card" data-category="commercial">
-                    <div class="h-52 bg-gradient-to-br from-sky-800 to-sky-600 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center opacity-15 group-hover:opacity-25 transition">
-                            <i class="fas fa-graduation-cap text-[140px] text-white"></i>
+                <!-- Project 9 -->
+                <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden card-hover" data-category="hospitality">
+                    <div class="h-52 bg-gradient-to-br from-purple-900 to-purple-700 relative flex items-end p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <i class="fas fa-utensils text-[120px] text-white"></i>
                         </div>
-                        <div class="relative z-10 text-center">
-                            <div class="w-16 h-16 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center mx-auto border border-white/20">
-                                <i class="fas fa-graduation-cap text-2xl text-white"></i>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-sky-500/80 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">Commercial</span>
-                        </div>
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                            <span class="text-white font-semibold bg-accent/80 px-4 py-2 rounded-lg text-sm">View Case Study</span>
+                        <div class="relative z-10">
+                            <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Hospitality</span>
                         </div>
                     </div>
-                    <div class="p-5">
-                        <h3 class="font-bold text-primary text-lg mb-1">University Campus</h3>
-                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-1"></i> London, UK</p>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Campus-wide ventilation upgrade across 15 buildings including lecture halls, laboratories, libraries, and student residences with BMS integration.</p>
-                        <div class="flex items-center gap-4 text-xs text-gray-400 border-t border-gray-100 pt-3">
-                            <span><i class="fas fa-fan mr-1 text-accent"></i> 310 fans</span>
-                            <span><i class="fas fa-ruler-combined mr-1 text-accent"></i> 75,000 sqm</span>
+                    <div class="p-7">
+                        <div class="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>Siem Reap, Cambodia</span>
+                            <span class="mx-1">·</span>
+                            <span>2023</span>
                         </div>
+                        <h3 class="font-bold text-primary text-xl mb-3 leading-snug" data-i18n="projects.proj9_title">Angkor-Area Resort — Kitchen & General Ventilation</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5" data-i18n="projects.proj9_desc">Comprehensive ventilation package for an international resort near the Angkor Wat complex, including commercial kitchen exhaust fans, dining area ventilation, and room exhaust systems across 200+ keys.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Kitchen Exhaust</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Roof Exhaust</span>
+                            <span class="bg-blue-50 text-secondary text-xs font-medium px-3 py-1 rounded-full">Hospitality</span>
+                        </div>
+                        <a href="contact.html" class="inline-flex items-center gap-2 text-secondary font-semibold text-sm hover:text-accent transition">
+                            <span data-i18n="projects.enquire">Enquire About This Project</span> <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Bar -->
-    <section class="py-16 bg-gradient-to-r from-secondary to-accent text-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div>
-                    <div class="text-5xl md:text-6xl font-black mb-2" data-target="10000" data-suffix="+">0</div>
-                    <div class="text-blue-200 text-lg font-medium">Projects Completed</div>
-                    <p class="text-blue-300 text-sm mt-1">Across all sectors worldwide</p>
-                </div>
-                <div>
-                    <div class="text-5xl md:text-6xl font-black mb-2" data-target="80" data-suffix="+">0</div>
-                    <div class="text-blue-200 text-lg font-medium">Countries Served</div>
-                    <p class="text-blue-300 text-sm mt-1">On every inhabited continent</p>
-                </div>
-                <div>
-                    <div class="text-5xl md:text-6xl font-black mb-2" data-target="500000" data-suffix="+">0</div>
-                    <div class="text-blue-200 text-lg font-medium">Fans Installed</div>
-                    <p class="text-blue-300 text-sm mt-1">And counting every day</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Logos Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Trusted By</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-primary">Our Partners & Clients</h2>
-                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">We collaborate with leading contractors, consultants, and developers on landmark projects around the world.</p>
-            </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-building text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">Global Builders</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-hard-hat text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">MegaCon EPC</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-drafting-compass text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">Apex MEP</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-cogs text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">TechVent Corp</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-ruler-combined text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">UrbanArch</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-layer-group text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">InfraPlan</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-globe-americas text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">WorldBuild</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-project-diagram text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">ProMech</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-compass text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">Skyline Group</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-shield-alt text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">SafeAir Ltd</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-temperature-low text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">CoolTech HVAC</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-6 flex items-center justify-center h-24 shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="text-center">
-                        <i class="fas fa-bolt text-2xl text-gray-300 mb-1"></i>
-                        <div class="text-[10px] text-gray-400 font-semibold uppercase tracking-wide">PowerGrid Eng</div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="py-16 bg-primary text-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <div class="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-accent text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
-                <i class="fas fa-handshake"></i> Let's Collaborate
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                <i class="fas fa-hard-hat"></i>
             </div>
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Have a Project? Let's Talk</h2>
-            <p class="text-blue-300 text-lg mb-8 max-w-2xl mx-auto">
-                Whether you are planning a new development or upgrading an existing facility, our engineering team is ready to design the ideal ventilation solution for your project.
+            <h2 class="text-3xl md:text-4xl font-black mb-4" data-i18n="projects.cta_title">Have a Project to Discuss?</h2>
+            <p class="text-blue-200 text-lg max-w-2xl mx-auto mb-8">
+                <span data-i18n="projects.cta_desc">Contact our engineering team in Phnom Penh to discuss your ventilation requirements. We provide full product selection, technical documentation, and project support from specification to commissioning.</span>
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="contact.html" class="bg-gradient-to-r from-accent to-sky hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-8 py-3.5 rounded-lg transition shadow-lg text-lg flex items-center gap-2">
-                    <i class="fas fa-headset"></i> Request a Quote
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="inline-flex items-center gap-2 bg-accent hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl transition shadow-lg">
+                    <i class="fas fa-headset"></i> <span data-i18n="projects.startinquiry">Start a Project Enquiry</span>
                 </a>
-                <a href="contact.html" class="bg-white/10 hover:bg-white/20 backdrop-blur text-white font-semibold px-8 py-3.5 rounded-lg transition border border-white/20 text-lg flex items-center gap-2">
-                    <i class="fas fa-phone"></i> Contact Our Team
+                <a href="products.html" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4 rounded-xl transition">
+                    <i class="fas fa-fan"></i> <span data-i18n="products.viewall">View All Products</span>
                 </a>
             </div>
         </div>
@@ -725,100 +508,85 @@
             <div class="grid md:grid-cols-4 gap-10">
                 <div>
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
-                            <i class="fas fa-fan text-white text-sm"></i>
-                        </div>
-                        <div class="font-black text-lg">AEROFLOW</div>
+                        <img src="../images/dongil-logo.jpg" alt="Dongil International" class="h-10">
                     </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Leading manufacturer of energy efficient ventilation solutions for commercial, industrial, and residential applications.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-2">Dongil International</p>
+                    <p class="text-accent text-sm font-medium italic mb-4"><span data-i18n="footer.tagline">"Good Air, The Better Life"</span></p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4"><span data-i18n="footer.desc">Korean-quality fan and blower solutions for industrial, commercial, and residential applications across Southeast Asia.</span></p>
                     <div class="flex gap-3">
-                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-youtube"></i></a>
                         <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-accent transition"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Products</h4>
+                    <h4 class="font-semibold text-lg mb-4"><span data-i18n="nav.products">Products</span></h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="products.html#axial" class="hover:text-accent transition">Axial Fans</a></li>
-                        <li><a href="products.html#centrifugal" class="hover:text-accent transition">Centrifugal Fans</a></li>
-                        <li><a href="products.html#inline" class="hover:text-accent transition">In-Line Fans</a></li>
-                        <li><a href="products.html#jet" class="hover:text-accent transition">Jet Fans</a></li>
-                        <li><a href="products.html#roof" class="hover:text-accent transition">Roof Exhaust Fans</a></li>
-                        <li><a href="products.html#domestic" class="hover:text-accent transition">Domestic Fans</a></li>
+                        <li><a href="products.html#axial" class="hover:text-accent transition" data-i18n="nav.axialfans">Axial Fans</a></li>
+                        <li><a href="products.html#centrifugal" class="hover:text-accent transition" data-i18n="nav.centrifugalfans">Centrifugal Fans</a></li>
+                        <li><a href="products.html#inline" class="hover:text-accent transition" data-i18n="nav.inlinefans">In-Line Fans</a></li>
+                        <li><a href="products.html#jet" class="hover:text-accent transition" data-i18n="nav.jetfans">Jet Fans</a></li>
+                        <li><a href="products.html#roof" class="hover:text-accent transition" data-i18n="nav.roofexhaustfans">Roof Exhaust Fans</a></li>
+                        <li><a href="products.html#domestic" class="hover:text-accent transition" data-i18n="nav.domesticfans">Domestic Fans</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <h4 class="font-semibold text-lg mb-4"><span data-i18n="footer.company">Company</span></h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="about.html" class="hover:text-accent transition">About AeroFlow</a></li>
-                        <li><a href="projects.html" class="hover:text-accent transition">Projects</a></li>
-                        <li><a href="news.html" class="hover:text-accent transition">News & Media</a></li>
-                        <li><a href="resources.html" class="hover:text-accent transition">Resources</a></li>
-                        <li><a href="careers.html" class="hover:text-accent transition">Careers</a></li>
-                        <li><a href="contact.html" class="hover:text-accent transition">Contact Us</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition"><span data-i18n="footer.about">About Dongil International</span></a></li>
+                        <li><a href="projects.html" class="hover:text-accent transition"><span data-i18n="footer.projects">Projects</span></a></li>
+                        <li><a href="news.html" class="hover:text-accent transition"><span data-i18n="footer.newslink">News & Media</span></a></li>
+                        <li><a href="resources.html" class="hover:text-accent transition"><span data-i18n="footer.resourceslink">Resources</span></a></li>
+                        <li><a href="careers.html" class="hover:text-accent transition"><span data-i18n="footer.careerslink">Careers</span></a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition"><span data-i18n="footer.contactlink">Contact Us</span></a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <h4 class="font-semibold text-lg mb-4"><span data-i18n="footer.contact">Contact</span></h4>
                     <ul class="space-y-3 text-gray-400 text-sm">
-                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>[Street Address]<br>[City, Country]</span></li>
-                        <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><span>+1 (800) XXX-XXXX</span></li>
-                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><span>info@aeroflowfans.com</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>Realestate.com.kh, 4th Floors,<br>306BCD Preah Monivong Blvd (93),<br>Phnom Penh 12302</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><span>+855 10 502 228</span></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><span>dongilfan.cambodia@gmail.com</span></li>
                     </ul>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=ISO" alt="ISO" class="h-8 rounded opacity-60">
-                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=CE" alt="CE" class="h-8 rounded opacity-60">
-                        <img src="https://via.placeholder.com/60x30/1e40af/ffffff?text=UL" alt="UL" class="h-8 rounded opacity-60">
-                    </div>
                 </div>
             </div>
         </div>
         <!-- Bottom Bar -->
         <div class="border-t border-white/10">
             <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                <p>&copy; 2026 AeroFlow Ventilation. All rights reserved.</p>
+                <p>&copy; 2026 Dongil International. <span data-i18n="footer.rights">All rights reserved.</span></p>
                 <div class="flex gap-4 mt-2 md:mt-0">
-                    <a href="#" class="hover:text-accent transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-accent transition">Terms of Use</a>
-                    <a href="#" class="hover:text-accent transition">Sitemap</a>
+                    <a href="#" class="hover:text-accent transition"><span data-i18n="footer.privacy">Privacy Policy</span></a>
+                    <a href="#" class="hover:text-accent transition"><span data-i18n="footer.terms">Terms of Use</span></a>
+                    <a href="#" class="hover:text-accent transition"><span data-i18n="footer.sitemap">Sitemap</span></a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="../lang/translations.js"></script>
     <script src="../js/main.js"></script>
     <script>
         // Project filter functionality
-        const filterBtns = document.querySelectorAll('.filter-btn');
+        const filterBtns = document.querySelectorAll('.project-filter-btn');
         const projectCards = document.querySelectorAll('.project-card');
 
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Update active state
                 filterBtns.forEach(b => {
-                    b.classList.remove('bg-secondary', 'text-white', 'active');
+                    b.classList.remove('bg-secondary', 'text-white');
                     b.classList.add('bg-gray-100', 'text-gray-600');
                 });
                 btn.classList.remove('bg-gray-100', 'text-gray-600');
-                btn.classList.add('bg-secondary', 'text-white', 'active');
+                btn.classList.add('bg-secondary', 'text-white');
 
                 const filter = btn.getAttribute('data-filter');
 
                 projectCards.forEach(card => {
                     if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                        card.style.display = '';
-                        card.style.opacity = '0';
-                        card.style.transform = 'translateY(12px)';
-                        requestAnimationFrame(() => {
-                            card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                            card.style.opacity = '1';
-                            card.style.transform = 'translateY(0)';
-                        });
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeInUp 0.4s ease-out forwards';
                     } else {
-                        card.style.opacity = '0';
-                        card.style.transform = 'translateY(12px)';
-                        setTimeout(() => { card.style.display = 'none'; }, 300);
+                        card.style.display = 'none';
                     }
                 });
             });
