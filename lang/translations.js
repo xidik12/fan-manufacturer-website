@@ -1840,10 +1840,13 @@ const TRANSLATIONS = {
   // Expose globally
   window.switchLang = setLang;
 
-  // Apply on page load
+  // Apply on page load, then reveal
   document.addEventListener('DOMContentLoaded', () => {
     const lang = getCurrentLang();
     applyTranslations(lang);
     updateLangButtons(lang);
+    // Remove the i18n-loading style injected in <head>
+    var ls = document.getElementById('i18n-hide');
+    if (ls) ls.remove();
   });
 })();

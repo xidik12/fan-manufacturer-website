@@ -2,6 +2,10 @@
 html { scroll-behavior: smooth; }
 *, *::before, *::after { box-sizing: border-box; }
 
+/* Hide body until translations are applied to prevent flash of English */
+body.i18n-loading { opacity: 0; }
+body.i18n-ready { opacity: 1; transition: opacity 0.1s ease; }
+
 /* ── Typography ── */
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
