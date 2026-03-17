@@ -315,6 +315,88 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
         width: 100%;
         justify-content: center;
     }
+    /* Mobile product page improvements */
+    .page-header { padding: 3rem 0 2rem; }
+    .page-header h1 { font-size: 1.75rem !important; }
+    .page-header p { font-size: 0.875rem !important; }
+}
+
+/* ── Mobile product cards ── */
+@media (max-width: 640px) {
+    /* Larger touch targets */
+    .card-hover { transform: none !important; }
+    .card-hover:active { transform: scale(0.98) !important; }
+
+    /* Better product image display on mobile */
+    .product-img-area {
+        min-height: 200px !important;
+        padding: 1rem !important;
+    }
+    .product-img-area img {
+        max-height: 180px !important;
+    }
+
+    /* Filter bar scroll */
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+
+    /* Sticky filter bar spacing */
+    .filter-btn { min-height: 44px; display: inline-flex; align-items: center; }
+
+    /* Product section headings */
+    .product-section-heading h2 { font-size: 1.5rem !important; }
+
+    /* Accessories grid on mobile */
+    .accessories-grid { grid-template-columns: 1fr !important; }
+
+    /* CTA buttons full width on mobile */
+    .product-cta-btn {
+        width: 100%;
+        min-height: 48px;
+        font-size: 0.9375rem;
+    }
+}
+
+/* ── Lightbox for product images ── */
+.product-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+.product-lightbox.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.product-lightbox img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.product-lightbox .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 44px;
+    height: 44px;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
 }
 
 /* ── Smooth page load ── */

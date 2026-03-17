@@ -42,7 +42,6 @@
                 <span class="text-gray-500 mx-2">|</span>
                 <a href="#" onclick="switchLang('en'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="en">EN</a>
                 <a href="#" onclick="switchLang('ko'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="ko">한국어</a>
-                <a href="#" onclick="switchLang('km'); return false;" class="lang-btn px-2.5 py-1 rounded-full text-[11px] font-bold tracking-wide transition hover:bg-white/20" data-lang="km">ខ្មែរ</a>
             </div>
         </div>
     </div>
@@ -152,7 +151,7 @@
     <!-- Product Filter Bar -->
     <section class="bg-white border-b border-gray-200 sticky top-20 z-40 shadow-sm">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center gap-2 py-4 overflow-x-auto scrollbar-hide">
+            <div class="flex items-center gap-2 py-3 md:py-4 overflow-x-auto scrollbar-hide -mx-4 px-4">
                 <a href="#" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold bg-secondary text-white whitespace-nowrap transition" data-filter="all" data-i18n="products.allproducts">
                     All Products
                 </a>
@@ -173,7 +172,7 @@
     </section>
 
     <!-- Main content with sidebar layout -->
-    <div class="max-w-7xl mx-auto px-4 py-12">
+    <div class="max-w-7xl mx-auto px-3 sm:px-4 py-8 sm:py-12">
         <div class="flex gap-8">
 
             <!-- Sidebar -->
@@ -231,12 +230,12 @@
 
                 <!-- ==================== CENTRIFUGAL FANS ==================== -->
                 <section id="centrifugal" class="mb-16">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-14 h-14 bg-gradient-to-br from-slate-700 to-slate-500 rounded-2xl flex items-center justify-center text-white text-2xl">
+                    <div class="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+                        <div class="w-11 h-11 sm:w-14 sm:h-14 bg-gradient-to-br from-slate-700 to-slate-500 rounded-2xl flex items-center justify-center text-white text-2xl">
                             <i class="fas fa-cog"></i>
                         </div>
                         <div>
-                            <h2 class="text-3xl font-bold text-primary" data-i18n="products.centrifugal_heading">Centrifugal Fans</h2>
+                            <h2 class="text-xl sm:text-3xl font-bold text-primary" data-i18n="products.centrifugal_heading">Centrifugal Fans</h2>
                             <p class="text-gray-500 text-sm mt-1" data-i18n="products.centrifugal_desc">High-performance centrifugal fans for HVAC, underground ventilation, firefighting smoke control, and industrial applications</p>
                         </div>
                     </div>
@@ -244,8 +243,8 @@
 
                         <!-- Sirocco Fan SS/DS -->
                         <div id="sirocco" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/sirocco-fan.jpeg" alt="Sirocco Fan SS DS" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/sirocco-fan.png" alt="Sirocco Fan SS DS" class="max-h-48 w-full object-contain">
                                 <div class="absolute top-3 right-3 bg-accent/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide" data-i18n="products.badge_popular">Popular</div>
                                 <div class="absolute bottom-3 left-3 flex gap-1">
                                     <span class="bg-white/70 text-gray-700 text-[10px] font-semibold px-2 py-0.5 rounded-full">SS</span>
@@ -277,8 +276,8 @@
 
                         <!-- Air Foil Fan SS/DS -->
                         <div id="airfoil" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/airfoil-impeller.jpeg" alt="Air Foil Fan SS DS" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/airfoil-fan.png" alt="Air Foil Fan SS DS" class="max-h-48 w-full object-contain">
                                 <div class="absolute top-3 right-3 bg-green-500/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide" data-i18n="products.badge_higheff">High Efficiency</div>
                                 <div class="absolute bottom-3 left-3 flex gap-1">
                                     <span class="bg-white/70 text-gray-700 text-[10px] font-semibold px-2 py-0.5 rounded-full">SS</span>
@@ -310,8 +309,8 @@
 
                         <!-- Sirocco Fan Motor Direct Type -->
                         <div id="motor-direct" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/small-sirocco-fan.jpeg" alt="Sirocco Fan Motor Direct Type" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/small-centrifugal-fans.png" alt="Sirocco Fan Motor Direct Type" class="max-h-48 w-full object-contain">
                                 <div class="absolute top-3 right-3 bg-yellow-500/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide" data-i18n="products.badge_lowmaint">Low Maintenance</div>
                             </div>
                             <div class="p-5">
@@ -339,8 +338,8 @@
 
                         <!-- Cabinet Sirocco Fan -->
                         <div id="cabinet" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/cabinet-fan.jpeg" alt="Cabinet Sirocco Fan" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/cabinet-centrifugal-fans.png" alt="Cabinet Sirocco Fan" class="max-h-48 w-full object-contain">
                                 <div class="absolute top-3 right-3 bg-blue-500/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide" data-i18n="products.badge_quiet">Quiet</div>
                             </div>
                             <div class="p-5">
@@ -371,12 +370,12 @@
 
                 <!-- ==================== AXIAL FANS ==================== -->
                 <section id="axial" class="mb-16">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-14 h-14 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center text-white text-2xl">
+                    <div class="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+                        <div class="w-11 h-11 sm:w-14 sm:h-14 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center text-white text-2xl">
                             <i class="fas fa-fan"></i>
                         </div>
                         <div>
-                            <h2 class="text-3xl font-bold text-primary" data-i18n="products.axial_heading">Axial Fans</h2>
+                            <h2 class="text-xl sm:text-3xl font-bold text-primary" data-i18n="products.axial_heading">Axial Fans</h2>
                             <p class="text-gray-500 text-sm mt-1" data-i18n="products.axial_desc">Propeller-type fans for large-volume low-pressure ventilation, cooling towers, duct installations, and industrial rooftop exhaust</p>
                         </div>
                     </div>
@@ -384,8 +383,8 @@
 
                         <!-- Axial Fan -->
                         <div id="axial-fan" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/axial-fan.jpeg" alt="Axial Fan" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/axial-fan.png" alt="Axial Fan" class="max-h-48 w-full object-contain">
                                 <div class="absolute top-3 right-3 bg-accent/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide" data-i18n="products.badge_popular">Popular</div>
                             </div>
                             <div class="p-5">
@@ -413,8 +412,8 @@
 
                         <!-- Duct In-Line Fan -->
                         <div id="duct-inline" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/duct-inline-fan.jpeg" alt="Duct In-Line Fan" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/duct-inline-fan.png" alt="Duct In-Line Fan" class="max-h-48 w-full object-contain">
                             </div>
                             <div class="p-5">
                                 <h3 class="font-bold text-primary text-lg mb-1" data-i18n="products.ductinline">Duct In-Line Fan</h3>
@@ -441,8 +440,8 @@
 
                         <!-- Small Duct In-Line Fan -->
                         <div id="small-duct" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/small-duct-inline-fan.jpeg" alt="Small Duct In-Line Fan" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/small-duct-inline-fan.png" alt="Small Duct In-Line Fan" class="max-h-48 w-full object-contain">
                                 <div class="absolute top-3 right-3 bg-green-500/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide" data-i18n="products.badge_compact">Compact</div>
                             </div>
                             <div class="p-5">
@@ -470,8 +469,8 @@
 
                         <!-- Roof Fan -->
                         <div id="roof-fan" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/roof-fan.jpeg" alt="Roof Fan" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/roof-fan.jpeg" alt="Roof Fan" class="max-h-48 w-full object-contain">
                                 <div class="absolute top-3 right-3 bg-accent/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide" data-i18n="products.badge_weatherproof">Weatherproof</div>
                             </div>
                             <div class="p-5">
@@ -502,12 +501,12 @@
 
                 <!-- ==================== WALL & RESIDENTIAL ==================== -->
                 <section id="wall-residential" class="mb-16">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-14 h-14 bg-gradient-to-br from-blue-600 to-accent rounded-2xl flex items-center justify-center text-white text-2xl">
+                    <div class="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+                        <div class="w-11 h-11 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-600 to-accent rounded-2xl flex items-center justify-center text-white text-2xl">
                             <i class="fas fa-house-user"></i>
                         </div>
                         <div>
-                            <h2 class="text-3xl font-bold text-primary" data-i18n="products.wallres_heading">Wall &amp; Residential Fans</h2>
+                            <h2 class="text-xl sm:text-3xl font-bold text-primary" data-i18n="products.wallres_heading">Wall &amp; Residential Fans</h2>
                             <p class="text-gray-500 text-sm mt-1" data-i18n="products.wallres_desc">Wall-mounted, plastic ventilation, and high-volume low-speed ceiling fans for residential, commercial, and industrial spaces</p>
                         </div>
                     </div>
@@ -515,8 +514,8 @@
 
                         <!-- Wall Ventilation -->
                         <div id="wall-vent" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/wall-fan-medium.jpeg" alt="Wall Ventilation Fan" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/medium-propeller-fans.png" alt="Wall Ventilation Fan" class="max-h-48 w-full object-contain">
                             </div>
                             <div class="p-5">
                                 <h3 class="font-bold text-primary text-lg mb-1" data-i18n="products.wall">Wall Ventilation</h3>
@@ -543,8 +542,8 @@
 
                         <!-- Plastic Ventilation Fan -->
                         <div id="plastic-vent" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/plastic-vent-fan.jpeg" alt="Plastic Ventilation Fan" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/shutter.png" alt="Plastic Ventilation Fan" class="max-h-48 w-full object-contain">
                                 <div class="absolute top-3 right-3 bg-accent/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide" data-i18n="products.badge_bestseller">Best Seller</div>
                             </div>
                             <div class="p-5">
@@ -572,8 +571,8 @@
 
                         <!-- Smart Large Ceiling Fan (HVLS) -->
                         <div id="hvls-ceiling" class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md card-hover group">
-                            <div class="bg-white flex items-center justify-center relative overflow-hidden p-6 cursor-pointer" style="min-height: 220px;" onclick="openLightbox(this.querySelector('img'))">
-                                <img src="../images/products/large-ceiling-fan.jpeg" alt="Smart Large Ceiling Fan HVLS" class="max-h-48 object-contain">
+                            <div class="bg-gray-50 flex items-center justify-center relative overflow-hidden p-4 sm:p-6 cursor-pointer" style="min-height: 180px;" onclick="openLightbox(this.querySelector('img'))">
+                                <img src="../images/products/large-ceiling-fan.png" alt="Smart Large Ceiling Fan HVLS" class="max-h-48 w-full object-contain">
                                 <div class="absolute top-3 right-3 bg-green-500/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide" data-i18n="products.badge_hvls">HVLS</div>
                             </div>
                             <div class="p-5">
@@ -604,12 +603,12 @@
 
                 <!-- ==================== ACCESSORIES ==================== -->
                 <section id="accessories" class="mb-16">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gray-700 to-gray-500 rounded-2xl flex items-center justify-center text-white text-2xl">
+                    <div class="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+                        <div class="w-11 h-11 sm:w-14 sm:h-14 bg-gradient-to-br from-gray-700 to-gray-500 rounded-2xl flex items-center justify-center text-white text-2xl">
                             <i class="fas fa-toolbox"></i>
                         </div>
                         <div>
-                            <h2 class="text-3xl font-bold text-primary" data-i18n="products.accessories_heading">Accessories</h2>
+                            <h2 class="text-xl sm:text-3xl font-bold text-primary" data-i18n="products.accessories_heading">Accessories</h2>
                             <p class="text-gray-500 text-sm mt-1" data-i18n="products.accessories_desc">Complete range of genuine Dongil accessories for installation, integration, and long-term fan system performance</p>
                         </div>
                     </div>
@@ -853,7 +852,7 @@
                     <h4 class="font-semibold text-lg mb-4"><span data-i18n="footer.contact">Contact</span></h4>
                     <ul class="space-y-3 text-gray-400 text-sm">
                         <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-accent"></i><span>Realestate.com.kh, 4th Floors,<br>306BCD Preah Monivong Blvd (93),<br>Phnom Penh 12302</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-phone text-accent mt-0.5"></i><span><a href="tel:+85510502228" class="hover:text-accent transition">+855 10 502 228</a><br><a href="tel:+85588764869400" class="hover:text-accent transition">088-764-8694</a><br><a href="tel:+855012929490" class="hover:text-accent transition">012-929-490</a></span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-phone text-accent mt-0.5"></i><span><a href="tel:+85510502228" class="hover:text-accent transition">+855 10 502 228</a></span></li>
                         <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><a href="mailto:dongilfan.cambodia@gmail.com" class="hover:text-accent transition">dongilfan.cambodia@gmail.com</a></li>
                     </ul>
                 </div>
@@ -910,12 +909,12 @@
     </script>
 
     <!-- Lightbox for product images -->
-    <div id="lightbox" class="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4" onclick="closeLightbox()">
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-gray-300 transition z-10">&times;</button>
+    <div id="lightbox" class="fixed inset-0 z-[9999] bg-black/90 backdrop-blur-sm hidden items-center justify-center p-2 sm:p-4" onclick="closeLightbox()">
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 w-11 h-11 bg-white/15 rounded-full text-white text-2xl hover:bg-white/25 transition z-10 flex items-center justify-center backdrop-blur">&times;</button>
         <div class="relative max-w-4xl max-h-[90vh] w-full flex items-center justify-center" onclick="event.stopPropagation()">
-            <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[85vh] object-contain bg-white rounded-2xl shadow-2xl p-8">
+            <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[80vh] sm:max-h-[85vh] object-contain bg-white rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-8">
         </div>
-        <p id="lightbox-caption" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white text-lg font-semibold bg-black/50 px-6 py-2 rounded-full"></p>
+        <p id="lightbox-caption" class="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 text-white text-sm sm:text-lg font-semibold bg-black/50 px-4 sm:px-6 py-2 rounded-full whitespace-nowrap max-w-[90vw] truncate"></p>
     </div>
     <script>
     function openLightbox(imgEl) {
