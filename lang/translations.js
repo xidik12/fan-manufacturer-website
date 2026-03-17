@@ -930,7 +930,7 @@ const TRANSLATIONS = {
 
     // Hero
     "hero.badge": "1998년 설립 — 동일 인터내셔널",
-    "hero.title": "30년 이상의 환기 기술 노하우",
+    "hero.title": "28년 이상의 환기 기술 노하우",
     "hero.subtitle": "생활에 유익한 바람을 만드는 기업 — 고품질 팬과 블로어를 설계, 제조, 전 세계에 공급합니다.",
     "hero.cta1": "문의하기",
     "hero.cta2": "제품 보기",
@@ -1040,9 +1040,9 @@ const TRANSLATIONS = {
     "nav.home": "홈",
     "about.badge": "회사 소개",
     "about.title": "동일 인터내셔널 소개",
-    "about.subtitle": "30년 이상의 품질 환기 엔지니어링과 고객 중심 혁신의 이야기를 발견하세요.",
+    "about.subtitle": "28년 이상의 품질 환기 엔지니어링과 고객 중심 혁신의 이야기를 발견하세요.",
     "about.profilelabel": "회사 소개",
-    "about.profiletitle": "30년 이상의 환기 기술 우수성",
+    "about.profiletitle": "28년 이상의 환기 기술 우수성",
     "about.mission": "우리의 미션",
     "about.vision": "우리의 비전",
     "about.ourvalues": "우리의 가치",
