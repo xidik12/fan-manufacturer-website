@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="120" viewBox="0 0 1200 120"
+     role="img" aria-labelledby="t d">
+  <title id="t">Section: How it's built</title>
+  <desc id="d">Section header introducing the technical structure of the website.</desc>
+  <rect width="1200" height="120" rx="20" fill="#0d1d38"/>
+  <rect x="0" y="0" width="6" height="120" rx="3" fill="#1e40af"/>
+  <g transform="translate(58 60)">
+    <circle r="26" fill="#12233f" stroke="#33507e" stroke-width="2"/>
+    <g fill="#3b6bd4">
+      <path id="b1" d="M 5 -3 C 12 -12 24 -11 26 0 C 20 -2 12 -1 8 4 C 6 1 5 -1 5 -3 Z"/>
+      <use href="#b1" transform="rotate(90)"/>
+      <use href="#b1" transform="rotate(180)"/>
+      <use href="#b1" transform="rotate(270)"/>
+    </g>
+    <circle r="4" fill="#A4123F"/>
+  </g>
+  <text x="112" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="2.5" fill="#7c96c4">02 — STRUCTURE</text>
+  <text x="112" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="32" font-weight="800" fill="#f2f6fc">How it's built</text>
+</svg>
